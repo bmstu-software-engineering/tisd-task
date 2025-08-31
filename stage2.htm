@@ -1,0 +1,1679 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Лабораторная работа № 1</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+h1
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:35.4pt;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:-5.4pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h4
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h5
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h6
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:0cm;
+	margin-right:13.85pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:5.65pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.35pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:27.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.85pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:black;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0cm;
+	margin-right:1.1pt;
+	margin-bottom:0cm;
+	margin-left:27.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:windowtext;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#000066;}
+code
+	{font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	color:windowtext;}
+p.a, li.a, div.a
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:51.05pt 73.3pt 45.35pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1>Этап № 2</h1>
+
+<h1>Записи с вариантами. Обработка таблиц</h1>
+
+<h3 style='margin-top:6.0pt;margin-right:-4.05pt;margin-bottom:6.0pt;
+margin-left:0cm;text-align:justify;text-indent:27.0pt;line-height:150%'><span
+style='line-height:150%;font-family:"Times New Roman"'>Цель работы </span><span
+style='font-family:"Times New Roman"'>–</span><span style='line-height:150%;
+font-family:"Times New Roman"'> приобрести навыки работы с типом данных
+«запись», содержащим вариантную часть, и с данными, хранящимися в таблицах,
+произвести сравнительный анализ реализации алгоритма сортировки и поиска информации
+в таблицах при использовании записей с большим числом полей и таблицы ключей,
+оценить эффективности программы по времени и по используемому объему памяти.</span></h3>
+
+<h2>Краткие теоретические сведения</h2>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Параметры
+реальных объектов бывает сложно описать, используя  только числовые, либо
+только символьные типы данных. Часто требуется комбинация разных типов. Для
+этого используется тип «запись». Запись </span>–<span style='font-size:12.0pt;
+line-height:150%'> это структурированный тип, состоящий из фиксированного числа
+компонентов различного типа. Компоненты записи называются полями записи. Каждое
+поле имеет свое собственное имя и тип. Тип поля может быть любым, кроме
+файлового. Обращение к полю записи осуществляется с помощью идентификатора переменной
+и идентификатора поля, разделенных точкой. Такая структура называется составным
+именем.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Объем
+памяти, необходимый для размещения записи, складывается из размера памяти под
+каждое из ее полей.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Запись
+может содержать поля, которые, в свою очередь, также являются записями, то
+есть, возможна структура вложенных записей.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Тип
+«запись» объявляется следующим образом:</span></p>
+
+<p class=MsoNormal style='line-height:150%'><strong><span style='font-size:
+11.0pt;line-height:150%'>Type                                          </span></strong><br>
+   <code><span style='font-size:11.0pt;line-height:150%;font-family:"Times New Roman"'>&quot;имя
+записи1&quot; = </span></code><strong><span style='font-size:11.0pt;line-height:
+150%'>Record       </span></strong><br>
+<span style='font-size:11.0pt;line-height:150%'>       &quot;поле 1&quot; :
+&quot;тип 1&quot;;             <br>
+       &quot;поле 2&quot; : &quot;тип 2&quot;;             <br>
+</span>    <strong><span style='font-size:11.0pt;line-height:150%'>…                                         
+</span></strong><br>
+<span style='font-size:11.0pt;line-height:150%'>       </span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'>&quot;</span><span style='font-size:
+11.0pt;line-height:150%'>поле</span><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'> n&quot; : &quot;</span><span style='font-size:11.0pt;
+line-height:150%'>тип</span><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'> n&quot;<b>             </b><br>
+</span><span lang=EN-US>   </span><strong><span lang=EN-US style='font-size:
+11.0pt;line-height:150%'>End</span></strong><code><span lang=EN-US
+style='font-size:11.0pt;line-height:150%;font-family:"Times New Roman"'>;</span></code></p>
+
+<p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;margin-left:
+0cm;text-indent:27.0pt;line-height:150%'><strong><span style='color:windowtext;
+font-weight:normal'>Пример вложенной записи:</span></strong></p>
+
+<p class=MsoNormal style='line-height:150%'><code><span style='font-size:11.0pt;
+line-height:150%;font-family:"Times New Roman"'>   &quot;имя записи2&quot; = </span></code><strong><span
+style='font-size:11.0pt;line-height:150%'>Record</span></strong></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%'>       &quot;поле 1&quot; : &quot;тип 1&quot;;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%'>       &quot;поле 2&quot; : &quot;тип 2&quot;;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%'>       &quot;поле 3&quot; : &quot;&quot;имя записи1&quot;</span></p>
+
+<p class=MsoNormal style='line-height:150%'><b><span style='font-size:11.0pt;
+line-height:150%'>   End;</span></b></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Запись может включать в
+себя вариантную часть, которая позволяет определить тип, содержащий описания
+нескольких вариантов структуры. Вариантное поле в записи может быть только одно
+и оно всегда последнее. В свою очередь последнее поле в вариантной части может
+быть вариантным, то есть вариантное поле так же может быть вложенным. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Таким образом, записи с
+вариантами обеспечивают средства объединения записей, которые похожи, но не
+идентичны по форме. Объем памяти, необходимый для записи с вариантами
+складывается из длин полей фиксированной части и максимального по длине поля
+вариантной части. Тип данных в вариантной части при компиляции не проверяется,
+поэтому, контроль за правильностью ее использования возлагается на
+программиста.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Объявление вариантной
+записи:</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><b><span
+style='font-size:11.0pt;line-height:150%'>Т</span></b><b><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'>ype</span></b></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%'>   &quot;имя записи1&quot; = <b>Record                         
+</b><br>
+       &quot;поле 1&quot;: &quot;тип 1&quot;;                                 <br>
+       &quot;поле 2&quot;: &quot;тип 2&quot;;</span>                                
+<span style='font-size:11.0pt;line-height:150%'><br>
+    …                                                              <br>
+       &quot;поле n-1&quot;: &quot;тип
+n-1&quot;;                                 </span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%'>        </span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'>C</span><span style='font-size:11.0pt;
+line-height:150%'>ase &quot;вариант&quot;  </span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'>O</span><span style='font-size:11.0pt;
+line-height:150%'>f</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%'>          &quot;вариант 1&quot;:
+(&quot;поле 11&quot;: &quot;тип 11&quot;, …, &quot;поле 1n&quot;:&quot;тип
+1n&quot;)</span><code><span style='font-size:10.0pt;line-height:150%'> </span></code><br>
+<span style='font-size:11.0pt;line-height:150%'>          &quot;вариант
+2&quot;: (&quot;поле 21&quot;: &quot;тип 21&quot;, …, &quot;поле
+2n&quot;:&quot;тип 2n&quot;) <br>
+….</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%'>          &quot;вариант k&quot;:
+(&quot;поле k1&quot;: &quot;тип k1&quot;, …, &quot;поле kn&quot;:&quot;тип
+kn&quot;) <br>
+<b>Е</b></span><b><span lang=EN-US style='font-size:11.0pt;line-height:150%'>nd</span></b><b><span
+style='font-size:11.0pt;line-height:150%'>;</span></b></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:27.0pt;line-height:
+150%'>Объявление записи с вложенной вариантной частью:</p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'>   <code><span
+style='font-size:11.0pt;line-height:150%;font-family:"Times New Roman"'>&quot;имя
+записи1&quot; = </span></code><strong><span style='font-size:11.0pt;line-height:
+150%'>Record                          </span></strong><br>
+<span style='font-size:11.0pt;line-height:150%'>      &quot;поле 1&quot; :
+&quot;тип 1&quot;;</span>                                 <br>
+<span style='font-size:11.0pt;line-height:150%'>      &quot;поле 2&quot; :
+&quot;тип 2&quot;;                                </span> <span
+style='font-size:11.0pt;line-height:150%'><br>
+    …                                                              <br>
+      &quot;поле n-1&quot; : &quot;тип
+n-1&quot;;                                 </span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%'>     </span><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'>Case</span><span style='font-size:11.0pt;line-height:150%'>
+&quot;вар.&quot;  </span><span lang=EN-US style='font-size:11.0pt;line-height:
+150%'>Of</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%'>       &quot;вар.1&quot; : (&quot;поле11&quot;:
+&quot;тип11&quot;, …, &quot;поле1n&quot;:&quot;тип1n&quot;) <br>
+       &quot;вар.2&quot; : (&quot;поле21&quot;: &quot;тип21&quot;, …,
+&quot;поле n&quot;:&quot;тип2n&quot;) <br>
+….</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%'>       &quot;вар.k-1&quot; : (&quot;полеk-11&quot;:
+&quot;типk-11&quot;, …, &quot;полеk-1n&quot;:&quot;типk-1n&quot;)</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%'>       </span><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'>C</span><span style='font-size:11.0pt;line-height:150%'>ase
+&quot;вариант&quot;<b> </b> </span><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'>O</span><span style='font-size:11.0pt;line-height:150%'>f</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%'>          &quot;вариант1&quot; : (&quot;поле11&quot;:
+&quot;тип11&quot;, …, &quot;поле1n&quot;:&quot;тип1n&quot;) <br>
+          &quot;вариант2&quot; : (&quot;поле21&quot;: &quot;тип21&quot;, …,
+&quot;поле2n&quot;:&quot;тип2n&quot;) <br>
+….</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
+line-height:150%'>         &quot;вариантk&quot; : (&quot;полеk1&quot;:
+&quot;типk1&quot;, …, &quot;полеkn&quot;:&quot;типkn&quot;) </span></p>
+
+<p class=MsoNormal><b><span style='font-size:11.0pt'>Е</span></b><b><span
+lang=EN-US style='font-size:11.0pt'>nd</span></b><b><span style='font-size:
+11.0pt'>;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Приведем
+пример. Пусть необходимо обеспечить вывод в заданную точку экрана монитора с
+координатами x и y следующих геометрических фигур: квадрата, прямоугольника,
+окружности и точки. При этом квадрат задается длиной своей стороны, прямоугольник
+– длинами двух сторон, окружность – координатами центра, которые совпадают с
+точкой (x,y) и радиусом. При желании мы можем еще закрасить окружность, что
+потребует дополнительно указания стиля и цвета закраски. Тогда можно определить
+следующий тип:</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%'>Т</span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'>ype</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>      
+figure=(sq,rec,cir,pix);                                                       {</span><span
+style='font-size:11.0pt;line-height:150%'>тип</span><span style='font-size:
+11.0pt;line-height:150%'> </span><span style='font-size:11.0pt;line-height:
+150%'>фигуры</span><span lang=EN-US style='font-size:11.0pt;line-height:150%'>}</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>       param = record                                                     {</span><span
+style='font-size:11.0pt;line-height:150%'>параметры</span><span
+style='font-size:11.0pt;line-height:150%'> </span><span style='font-size:11.0pt;
+line-height:150%'>вывода</span><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'>}</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>               x,y:
+integer;</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>               fig:
+figure;</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>Case figure Of                                                 {</span><span
+style='font-size:11.0pt;line-height:150%'>в</span><span style='font-size:11.0pt;
+line-height:150%'> </span><span style='font-size:11.0pt;line-height:150%'>зависимости</span><span
+style='font-size:11.0pt;line-height:150%'> </span><span style='font-size:11.0pt;
+line-height:150%'>от</span><span style='font-size:11.0pt;line-height:150%'> </span><span
+style='font-size:11.0pt;line-height:150%'>типа</span><span style='font-size:
+11.0pt;line-height:150%'> </span><span style='font-size:11.0pt;line-height:
+150%'>фигуры</span><span lang=EN-US style='font-size:11.0pt;line-height:150%'>:}</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>             sq:(side:
+word);</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>             rec:(side1,
+side2:word);</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>             pix:();</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:1.1pt;margin-bottom:0cm;
+margin-left:35.4pt;margin-bottom:.0001pt;text-indent:35.4pt;line-height:150%'><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'> cir:(pc:record</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                    
+radius:word;</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                   
+stl:boolean;</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                   
+Case boolean Of                                      {</span><span
+style='font-size:11.0pt;line-height:150%'>закраска</span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'> – </span><span style='font-size:
+11.0pt;line-height:150%'>по</span><span style='font-size:11.0pt;line-height:
+150%'> </span><span style='font-size:11.0pt;line-height:150%'>желанию</span><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>}</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                         true:
+(st,cl:word);                                 {</span><span style='font-size:
+11.0pt;line-height:150%'>стиль</span><span style='font-size:11.0pt;line-height:
+150%'> </span><span style='font-size:11.0pt;line-height:150%'>и</span><span
+style='font-size:11.0pt;line-height:150%'> </span><span style='font-size:11.0pt;
+line-height:150%'>цвет</span><span style='font-size:11.0pt;line-height:150%'> </span><span
+style='font-size:11.0pt;line-height:150%'>закраски</span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'>}</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                         false:();</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                   
+</span><span style='font-size:11.0pt;line-height:150%'>Е</span><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>nd;)</span></p>
+
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>       </span><span
+style='font-size:11.0pt;line-height:150%'>Е</span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'>nd;</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>На физическом уровне
+информация о переменной типа «запись» содержится в <i>дескрипторе</i> или <i>заголовке
+записи</i>. Дескриптор записи может содержать имя записи, количество полей, их
+имена, а также указатели значений элементов. Поля записи занимают в памяти непрерывную
+область, поэтому в дескрипторе достаточно иметь один указатель на начало
+записи, а в описании полей – смещение относительно начала. Смещение вычисляется
+при компиляции программы, что повышает эффективность доступа к полям записи. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При обработке записей с
+вариантами программисту необходимо следить за правильностью хранения и
+обработки данных, содержащихся в вариантной части. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Тип «запись» очень часто
+используется в информационно-поисковых системах, когда приходится хранить и
+обрабатывать большие объемы данных. Очень часто эти данные группируются в
+таблицы.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><i><span style='font-size:12.0pt;line-height:150%'>Таблица</span></i><span
+style='font-size:12.0pt;line-height:150%'> – это конечное множество элементов,
+имеющих одну и ту же организацию. Таблица в оперативной памяти обычно
+представляется в виде массива (в том числе, массива записей). Доступ к элементу
+таблицы осуществляется по его номеру (индексу). Часто для поиска или обработки
+данных в таблице используется одно (или несколько) полей записи. В этом случае
+такое поле называется ключевым полем или ключом записи. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Пусть, имеется таблица,
+содержащая данные из адресной книги: фамилию,  год рождения, адрес и телефон
+человека (табл.1). Назовем ее исходной или основной.</span></p>
+
+<p class=MsoBodyText align=right style='margin-right:13.95pt;text-align:right;
+text-indent:35.45pt;line-height:150%'><i><span style='font-size:12.0pt;
+line-height:150%'>Таблица1</span></i></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=67 valign=top style='width:50.4pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><b><span style='font-family:"Times New Roman"'>Индекс</span></b></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-5.4pt;text-indent:0cm;
+  line-height:150%'><b><span style='font-family:"Times New Roman"'>Фамилия</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><b><span style='font-family:"Times New Roman"'>Год рождения</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><b><span style='font-family:"Times New Roman"'>Адрес</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><b><span style='font-family:"Times New Roman"'>Телефон</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=67 valign=top style='width:50.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>Сидоров</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>1990</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>Ул. Первая, 1</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>1234567</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=67 valign=top style='width:50.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>Петров</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>1989</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>Ул. Вторая, 2</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>2345678</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=67 valign=top style='width:50.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>Иванов</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>1980</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>Ул. Первая, 3</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>3456789</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoBodyTextIndent style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>Если необходимо осуществлять частый поиск
+информации в основной таблице по фамилии, то ключевым полем будет являться
+фамилия. Если же при поиске нас больше интересует возраст человека (например,
+если эти же сведения используются в военкомате), то роль ключа может играть 
+год рождения. </span></p>
+
+<p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>При больших размерах таблиц поиск данных,
+имеющих указанный ключ, может потребовать больших затрат времени. Если же
+помимо поиска требуется произвести сортировку данных, то временн<b>ые</b>
+затраты многократно возрастут, так как потребуется осуществлять их перестановку
+(перемещение). В этом случае можно уменьшить время обработки за счет создания
+дополнительного массива – таблицы ключей, содержащей индекс элемента в исходной
+таблице и выбранный ключ. Если в качестве ключевого поля используется фамилия,
+то таблица ключей будет выглядеть как в табл. 2. </span></p>
+
+<p class=MsoBodyText align=right style='margin-right:67.95pt;text-align:right;
+text-indent:35.45pt;line-height:150%'><i><span style='font-size:12.0pt;
+line-height:150%'>Таблица2</span></i></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>№п/п</span></b></p>
+  </td>
+  <td width=222 valign=top style='width:166.2pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Индекс
+  исходной таблицы</span></b></p>
+  </td>
+  <td width=127 valign=top style='width:95.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Фамилия</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=222 valign=top style='width:166.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=127 valign=top style='width:95.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Сидоров</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=222 valign=top style='width:166.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=127 valign=top style='width:95.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петров</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=222 valign=top style='width:166.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=127 valign=top style='width:95.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Иванов</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoBodyTextIndent style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>При необходимости произвести сортировку
+данных в основной таблице,  (см. табл.1) осуществляется упорядочивание
+соответствующих ключей в дополнительном массиве (табл.3). При этом расположение
+записей в основной таблице не меняется. </span></p>
+
+<p class=MsoBodyText align=right style='margin-right:67.95pt;text-align:right;
+text-indent:35.45pt;line-height:150%'><i><span style='font-size:12.0pt;
+line-height:150%'>Таблица3</span></i></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:-4.6pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=57 valign=top style='width:42.7pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>№п/п
+  </span></b></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Индекс
+  исходной таблицы</span></b></p>
+  </td>
+  <td width=124 valign=top style='width:92.65pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Фамилия</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=57 valign=top style='width:42.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=124 valign=top style='width:92.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Иванов</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=57 valign=top style='width:42.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=124 valign=top style='width:92.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петров</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=57 valign=top style='width:42.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=124 valign=top style='width:92.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Сидоров</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoBodyTextIndent style='text-align:justify;text-indent:26.95pt;
+line-height:150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>Для того чтобы вывести информацию из
+основной таблицы (см. табл.1) в алфавитном порядке следования фамилий, надо
+данные из нее выбирать в том порядке, в котором они находятся дополнительном
+массиве- в таблице ключей (см. табл.3). То есть, в нашем примере, первой должна
+быть напечатана третья запись из табл. 1, потом вторая, а потом первая. Таким
+образом экономится время, поскольку перестановка записей в исходной таблице,
+которая иногда может содержать достаточно большое число полей, отсутствует.
+Этот выигрыш во времени особенно заметен при большой размерности таблиц и при
+правильно подобранных ключах. При этом, правда, надо помнить, что для
+размещения таблицы ключей требуется дополнительная память. Кроме того, следует
+учитывать, что если в качестве ключа используется символьное поле записи, то
+это влечет за собой необходимость посимвольной обработки данного поля в цикле,
+и, следовательно, приводит к увеличению времени выполнения любых операций. </span></p>
+
+<p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>Отметим еще, что при подобной организации
+вычислительного процесса разделяются понятия хранения данных и их
+структурирования и обработки. Например, добавим в табл.1 еще несколько записей
+и получим табл.4:</span></p>
+
+<p class=MsoBodyText align=right style='margin-right:13.95pt;text-align:right;
+text-indent:35.45pt;line-height:150%'><i><span style='font-size:12.0pt;
+line-height:150%'>Таблица4</span></i></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=547
+ style='width:410.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=79 valign=top style='width:59.4pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Индекс</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Фамилия</span></b></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Телефон</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Год
+  рождения</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Адрес</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=79 valign=top style='width:59.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Сидоров</span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1234567</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1990</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
+  Первая,1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=79 valign=top style='width:59.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петров</span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2345678</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1989</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
+  Вторая,2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=79 valign=top style='width:59.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Иванов</span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3456789</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1980</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
+  Первая,3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=79 valign=top style='width:59.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>4
+  </span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петрова</span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>4567892</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1985</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
+  Вторая,3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=79 valign=top style='width:59.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>5</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ющенко</span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>5678912</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1996</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
+  Третья,1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=79 valign=top style='width:59.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>6</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Антонов</span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>6789123</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1988</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
+  Первая,23</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoBodyTextIndent style='text-align:justify;text-indent:26.95pt;
+line-height:150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>Эти записи вносятся, в конец таблицы.
+Тогда после упорядочивания записей по фамилии табл. 2 будет выглядеть как
+табл.5.</span></p>
+
+<p class=MsoBodyTextIndent align=right style='margin-right:68.05pt;text-align:
+right;text-indent:35.45pt;line-height:150%'><i><span style='font-family:"Times New Roman"'>Таблица5</span></i></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=56 valign=top style='width:42.05pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>№п/п
+  </span></b></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Индекс
+  исходной таблицы </span></b></p>
+  </td>
+  <td width=123 valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Фамилия</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=56 valign=top style='width:42.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>6</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Антонов</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=56 valign=top style='width:42.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Иванов</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=56 valign=top style='width:42.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петров</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=56 valign=top style='width:42.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>4</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>4</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петрова</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=56 valign=top style='width:42.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>5</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Сидоров</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=56 valign=top style='width:42.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>6</span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>5</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ющенко</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoBodyTextIndent style='text-align:justify;text-indent:26.95pt;
+line-height:150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>Итак, расположение данных в исходной
+таблице, т.е. в табл.1, осталось прежним. Следовательно, удалось снизить
+затраты на их структурирование.</span></p>
+
+<p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>Таблицы является достаточно
+распространенной структурой данных для многих программно–информационных систем.
+Например, их широко используют при разработке компиляторов для создания таблиц
+операций, идентификаторов, ошибок и т.д. </span></p>
+
+<p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>Принцип разделения хранения и
+структурирования информации часто применяется при хранении больших объемов
+информации в файлах, например, для хранения изображений. В этом случае создаются
+реестры (дополнительные массивы записей), содержащие ссылки на изображения,
+играющие роль ключевого значения, и имя файла. </span></p>
+
+<h2>Задание</h2>
+
+<p class=MsoBodyText2 style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-weight:normal;font-style:normal'>Создать таблицу,
+содержащую не менее 40 записей с вариантной частью. Упорядочить ее по
+возрастанию ключей (где ключ – любое невариантное поле по выбору программиста),
+используя : а) исходную таблицу; б) массив ключей.</span></p>
+
+<p class=MsoBodyText2 style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-weight:normal;font-style:normal'>Сравнить время,
+затраченное на упорядочивание информации в таблице, и объем памяти в случаях а)
+и б). Обосновать выбор алгоритма упорядочивания.</span></p>
+
+<p class=MsoBodyText2 style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-weight:normal;font-style:normal'>Примерные варианты
+заданий приведены в приложении.</span></p>
+
+<h2>Указания к выполнению работы</h2>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Интерфейс программы
+должен быть понятен неподготовленному пользователю. При разработке интерфейса
+программы следует предусмотреть:</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание формата
+и диапазона данных при вводе и (или) добавлении записей;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание операций
+производимых программой;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>наличие пояснений
+при выводе результата.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Одним из результатов
+работы программы должна быть количественная информация с указанием времени,
+затраченного на обработку исходной таблицы и таблицы ключей. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При тестировании
+программы необходимо:</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность ввода и вывода данных (в том числе, отследить попытки ввода
+неверных по типу данных в вариантную часть записи); </span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>обеспечить вывод
+сообщений при отсутствии входных данных («пустой ввод»); </span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность выполнения операций;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>отследить
+переполнение таблицы.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При хранении исходных
+данных в файлах необходимо также проверить наличие файла.</span></p>
+
+<h2>Содержание отчета</h2>
+
+<p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>В отчете по лабораторной работе должна
+быть обоснована целесообразность применения типа «запись» с вариантной частью.
+Там же должен быть проведен сравнительный анализ и сделан вывод о том, какие
+преимущества и недостатки (с учетом времени, затрачиваемого на обработку
+данных, и необходимого объема памяти) влечет за собой применение
+дополнительного массива ключей при работе с таблицами. Вывод должен быть
+подтвержден числовыми данными, полученными в процессе тестирования программы на
+таблицах разной размерности. </span></p>
+
+<p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>Кроме того, отчет по лабораторной работе
+должен содержать ответы на следующие вопросы:</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Как выделяется память под вариантную
+часть записи?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Что будет, если в вариантную часть
+ввести данные, несоответствующие описанным?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Кто должен следить за правильностью
+выполнения операций с вариантной частью записи?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Что представляет собой таблица
+ключей, зачем она нужна?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>В каких случаях эффективнее
+обрабатывать данные в самой таблице, а когда – использовать таблицу ключей?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Какие способы сортировки
+предпочтительнее для обработки таблиц и почему?</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Отчет представляется в
+электронном или печатном виде.</span></p>
+
+<h2>Список рекомендуемой литературы</h2>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:11.0pt;line-height:150%'>Вирт Н.&nbsp;</span></i><span
+style='font-size:11.0pt;line-height:150%'>Алгоритмы и структуры данных: Пер. с
+англ. СПб.: Невский диалект, 2001. C. 37</span><span style='font-size:11.0pt;
+line-height:150%'>–44, .67-69.</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:11.0pt;line-height:150%'>Баунси Кен </span></i><span
+style='font-size:11.0pt;line-height:150%'>Основные концепции структур данных и
+реализация в С++: Пер. с англ. М.: Издат. Дом «Вильямс», 2002. C. 37</span><span style='font-size:11.0pt;line-height:150%'>–44.</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:11.0pt;line-height:150%'>Иванова Г.&nbsp;С. </span></i><span
+style='font-size:11.0pt;line-height:150%'>Основы программирования. М.:  Изд-во
+МГТУ им. Н.Э. Баумана, 2001.  C. 140</span><span style='font-size:11.0pt;
+line-height:150%'>–143</span></p>
+
+<p class=MsoNormal align=right style='margin-top:6.0pt;text-align:right;
+text-indent:26.95pt;line-height:150%'><b>Приложение</b></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:26.95pt;line-height:150%'><b>Примерные варианты
+заданий</b></p>
+
+<p class=MsoBodyText3 style='margin-right:3.6pt;text-indent:27.0pt;line-height:
+150%'><span style='font-family:"Times New Roman"'>1    Ввести список
+литературы, содержащий фамилию автора, название книги, год издания,
+издательство, количество страниц, вид литературы (техническая – отечественная,
+переводная; художественная – роман, пьеса, стихи, детская – стихи, сказки,
+рассказы). Вывести список всех детских стихов</span></p>
+
+<p class=MsoBodyText3 style='margin-right:3.6pt;text-indent:27.0pt;line-height:
+150%'><span style='font-family:"Times New Roman"'>2    Ввести список растений,
+содержащий название,  страну произрастания, время жизни (однолетние,
+двухлетние, многолетние), отношение к свету, к воде, вид (дерево – высоту,
+требуемую площадь, цветок – цвет, время цветения, запах, кустарник – цветение,
+размер). Вывести цветущие кустарники меньше указанного размера.</span></p>
+
+<p class=MsoBodyText3 style='margin-right:3.6pt;text-indent:27.0pt;line-height:
+150%'><span style='font-family:"Times New Roman"'>3    Ввести репертуар
+театров, содержащий название театра, дата, спектакль, автор,  тип спектакля
+(детский – для какого возраста; взрослый – пьеса, драма, комедия; музыкальный –
+композитор). Вывести список всех комедий. </span></p>
+
+<p class=MsoBodyText3 style='margin-right:3.6pt;text-indent:27.0pt;line-height:
+150%'><span style='font-family:"Times New Roman"'>4    Ввести список машин, имеющихся
+в автомагазине, содержащий марку автомобиля, страну-производитель, цвет, объем
+двигателя,  модификация кузова, цену и состояние (новый - гарантия; нет – год
+выпуска, пробег). Вывести все марки машин с пробегом меньше 10 тыс. км.</span></p>
+
+<p class=MsoBodyText3 style='margin-right:3.6pt;text-indent:27.0pt;line-height:
+150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:.45pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,766 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Лабораторная работа № 1</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+h1
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:35.4pt;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:-5.4pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h4
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h5
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h6
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:0cm;
+	margin-right:13.85pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:5.65pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.35pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:27.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.85pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:black;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0cm;
+	margin-right:1.1pt;
+	margin-bottom:0cm;
+	margin-left:27.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:windowtext;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#000066;}
+code
+	{font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	color:windowtext;}
+p.a, li.a, div.a
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:51.05pt 73.3pt 45.35pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1>Этап № 3</h1>
+
+<h1>Обработка текста. Массив символов, список символов</h1>
+
+<p class=MsoBodyText style='margin-right:4.8pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><b><span style='font-size:12.0pt;line-height:150%'>Цель
+работы - обработать текст без использования стандартных библиотек для работы с
+данными символьного типа, провести. сравнение эффективности обработки текста с
+использованием символьных массивов и динамических списков, отработать навыки
+работы со списками.</span></b></p>
+
+<h2>Краткие теоретические сведения</h2>
+
+<p class=MsoBodyText style='margin-right:4.8pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>В
+последние годы персональный компьютер все чаще используется не только для
+выполнения вычислений, но и для анализа и обработки текстов. Текст при этом
+представляется как совокупность символьных данных, которые объединяются в
+структуры типа символьного массива или строки (конструкция </span><span
+lang=EN-US style='font-size:12.0pt;line-height:150%'>String</span><span
+style='font-size:12.0pt;line-height:150%'> в Паскале или С++). Чаще всего эти
+структуры различаются формой своего внутреннего представления в памяти ПК. Для
+удобства работы с символьными данными во многих языках программирования
+разработаны специальные процедуры и функции, которые могут быть объединены в
+отдельные библиотеки (например, библиотека </span><span lang=EN-US
+style='font-size:12.0pt;line-height:150%'>String</span><span style='font-size:
+12.0pt;line-height:150%'>.</span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>h</span><span style='font-size:12.0pt;line-height:150%'>  в
+языках  С и С++).</span></p>
+
+<p class=MsoBodyText style='margin-right:4.8pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>При
+работе с текстом программист должен, прежде всего, уметь правильно выбрать
+структуру данных для хранения и обработки символьной информации. </span></p>
+
+<p class=MsoBodyText style='margin-right:4.8pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Текст
+физически можно представить как массивом символов, так и списком символов. При
+этом символьный массив может быть как статическим, так и динамическим.</span></p>
+
+<p class=MsoBodyText style='margin-right:4.8pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>При
+использовании статического массива весь объем требуемой памяти выделяется на
+этапе компиляции. В процессе заполнения массива можно обеспечить запоминание
+количества элементов в нем, организуя тем самым работу только с заполненной
+областью памяти. Оставшаяся часть памяти в этом случае расходуется непроизводительно.</span></p>
+
+<p class=MsoBodyText style='margin-right:4.8pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Для
+оптимизации расходования памяти можно использовать динамический массив. Его
+преимуществом является то, что память под динамический массив выделяется во
+время выполнения программы по соответствующему запросу. Однако следует
+учитывать, что при необходимости добавить в массив один элемент придется каждый
+раз запрашивать память для создания динамического массива новой длины, что потребует
+времени на поиск непрерывного участка памяти (концепция массива требует, чтобы
+соседние элементы располагались в последовательных байтах памяти), и также
+выделение этой памяти, переписи в нее данных из «старого» массива и сохранения
+новой длины. Таким образом, уйдя от непроизводительной потери памяти, мы придем
+к дополнительному расходу времени. Следовательно, изменение размера динамического
+массива на единицу – очень ресурсоемкое и нецелесообразное действие. Память под
+динамический массив необходимо запрашивать «разумными» частями, чтобы минимизировать
+возможные потери ресурсов. Обычно новый массив удваивает используемый объём памяти.</span></p>
+
+<p class=MsoBodyText style='margin-right:4.8pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Физическая
+структура и статического и динамического массива дополняется дескриптором,
+который хранит имя массива, адрес первого элемента, описание элемента, его
+длину и размер массива.</span></p>
+
+<p class=MsoBodyText style='margin-right:4.8pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Список
+– это динамическая структура данных, каждый элемент которой, содержит данные и
+адрес следующего элемента (указатель на следующий элемент). Этот адрес у последнего
+элемента – нулевой. Память под каждый элемент списка выделяется динамически по мере
+необходимости. При этом в статической памяти хранится адрес первого элемента,
+или нулевой указатель, если список пуст. </span></p>
+
+<p class=MsoBodyText style='margin-right:4.8pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Дескриптор
+списка содержит имя списка, адрес первого элемента, количество элементов,
+описание структуры элемента и его длину.</span></p>
+
+<p class=MsoBodyText style='margin-right:4.8pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Для доступа
+к элементу списка необходим просмотр списка с «головы». Такой доступ называется
+последовательным. В элементе списка можно хранить адрес не только последующего,
+но и предыдущего элемента. В этом случае список называется двусвязным. Адрес
+предыдущего у первого элемента и последующего у последнего элемента – нулевой.
+Двусвязные списки можно просматривать в двух направлениях, т.е. доступ к
+элементам двусвязного списка возможен с любого конца. Если сделать список кольцевым
+(то есть в указатель последнего элемента записать адрес первого элемента), то
+начинать просмотр можно с любого элемента, и в дескрипторе можно хранить адрес
+любого элемента. Для односвязного, двусвязного, а также для кольцевого списка
+необходимо хранить в статической памяти хотя бы один указатель, содержащий
+адрес элемента списка.</span></p>
+
+<p class=MsoBodyText3 style='text-indent:27.0pt;line-height:150%'><span
+style='font-family:"Times New Roman"'>Главными операциями над списками являются
+вставка элемента в список, исключение элемента из списка, поиск элемента в
+списке. При этом необходимо обеспечить вывод соответствующих сообщений при
+попытке удаления элемента из пустого списка и не забывать освобождать память
+при удалении элемента из списка.</span></p>
+
+<p class=MsoBodyText3 style='text-indent:27.0pt;line-height:150%'><span
+style='font-family:"Times New Roman"'>Сравнительный анализ реализации структур
+данных в виде массивов и списков показывает следующее:</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>если невозможно
+заранее узнать количество элементов в структуре, то ее лучше реализовать
+посредством списка;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>если необходимо
+реализовать операции включения или исключения элемента по номеру (по позиции),
+то лучше использовать массивы, так как в массивах возможен прямой доступ к
+элементу, а при использовании указателей позиция вообще не отслеживается;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>операции
+включения или исключения элемента из массива выполняются сложнее и дольше, чем
+в списке;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>использование
+массивов подразумевает расточительное выделение памяти (сразу под весь массив),
+зато в списке требуется дополнительная память в каждом элементе для хранения
+указателя на следующий (предыдущий) элемент.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:36.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Таким образом, каждая
+реализация имеет свои достоинства и недостатки, поэтому при решении конкретной
+задачи программист должен уметь соотносить преимущества и потери, чтобы
+осознанно отдать предпочтение одной из реализаций.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:36.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Еще одной проблемой при
+работе с текстами является наличие особенностей реализации алгоритмов их
+обработки, которые чаще всего вызываются спецификой внутреннего представления
+символьных структур данных. Эти особенности зачастую остаются скрытыми от
+программиста, если он пользуется стандартными процедурами и функциями языка
+программирования, предназначенными для работы с данными символьного типа.
+Поэтому в данной лабораторной работе предусматривается разработка студентами
+своих собственных подпрограмм даже в том случае, если имеется их реализованный
+аналог. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:36.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Не следует забывать и о
+том, что для вызова любой подпрограммы требуется время на передачу параметров в
+подпрограмму и на возврат результата в вызывающую программу, а также памяти для
+размещения локальных переменных. Программист должен уметь отказаться от
+излишнего применения и своих, и стандартных подпрограмм в пользу прямого
+алгоритмического решения для оптимизации непроизводительных расходов времени и
+памяти. </span></p>
+
+<h2>Задание</h2>
+
+<p class=MsoList2 style='margin-left:0cm;text-align:justify;text-indent:36.0pt;
+line-height:150%'><span style='color:windowtext'>Слова текста из малых
+латинских букв записаны не менее чем через один пробел; текст оканчивается
+точкой. БЕЗ ИСПОЛЬЗОВАНИЯ конструкции String и стандартных процедур работы со
+строками написать программу ввода такого текста с клавиатуры и его обработки,
+используя: а) массив символов,  б) список символов.</span></p>
+
+<p class=MsoBodyText2 style='text-indent:36.0pt'><span style='font-weight:normal;
+font-style:normal'>В приложении приведены примерные варианты заданий.</span></p>
+
+<h2>Указания к выполнению работы</h2>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:36.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Общий алгоритм решения
+поставленной задачи, как правило, не зависит от конкретной реализации структуры
+данных. Однако все действия над текстом (поиск слов, выделение любого из слов,
+перестановка букв в слове и т.п.) должны быть описаны подпрограммами, 
+«настроенными» на конкретную реализацию посредством формальных параметров.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Интерфейс программы должен
+быть понятен неподготовленному пользователю. При разработке интерфейса
+программы следует предусмотреть:</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание формата
+и диапазона вводимых данных;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>блокирование
+ввода неверных по типу и формату данных; </span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание
+операции, производимой программой;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>наличие пояснений
+при выводе результата.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Нужно также вывести на
+экран информацию о времени выполнения программы при использовании массива и
+списка и об объеме памяти, требующейся в каждом из этих случаев. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При тестировании
+программы необходимо:</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить правильность
+ввода и вывода данных (в том числе, отследить попытки ввода данных, неверных по
+типу и формату); </span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>обеспечить вывод
+сообщений при отсутствии входных данных («пустой ввод»); </span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность выполнения операций, в том числе при полной загрузке системы
+(полностью заполненном массиве); </span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>отследить выход
+за границы массива;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>обеспечить вывод
+соответствующих сообщений при попытке удаления элемента из пустого списка или
+массива;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>отследить
+переполнение массива.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:150%'><span style='font-family:
+"Times New Roman"'>При представлении текста в виде списка необходимо:</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+возможность вставки элемента в начало, в конец и в середину списка; </span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проконтролировать
+правильность удаления элемента из конца, середины, начала списка;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>отследить
+удаление единственного элемента и удаление элемента из пустого списка;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить, как
+освобождается память при удалении элемента из списка.</span></p>
+
+<h2>Содержание отчета</h2>
+
+<p class=MsoBodyTextIndent style='text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>В отчете по лабораторной работе должен
+быть сделан вывод о том, в каких случаях для хранения и обработки текста
+целесообразно применять статический или динамический массив, а в каких случаях
+– список. Кроме того, следует указать, какие преимущества и недостатки имеет та
+или другая реализация. В случае применения динамического массива необходимо
+обосновано продемонстрировать правильность его использования. Все выводы должны
+быть подкреплены численными результатами сравнений объёмов памяти и времён
+выполнения программы при использовании списка и массива. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>В отчете по лабораторной
+работе должны быть даны ответы на следующие вопросы:</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Какой объем памяти выделяется под
+хранение символьных данных при использовании различных языков программирования?
+</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Какие структуры данных эффективнее
+использовать для хранения символьной информации?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Что такое динамический список, как
+выделяется и освобождается память под элемент списка?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Каким образом эффективнее
+обрабатывать символьные данные? От чего зависит эффективность обработки?</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Отчет должен быть
+представлен в электронном или печатном виде.</span></p>
+
+<h2>Список рекомендуемой литературы</h2>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='text-align:justify;line-height:150%'><i><span
+     style='font-size:11.0pt;line-height:150%'>Вирт Н. </span></i><span
+     style='font-size:11.0pt;line-height:150%'>Алгоритмы и структуры данных:
+     Пер. с англ.  СПб.: Невский диалект, 2001. С.<i>&nbsp;</i>69-71, 205–235.</span></li>
+</ol>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:11.0pt;line-height:150%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:11.0pt;line-height:150%'>Ахо А., Хопкрофт Д., Ульман</span></i><span
+style='font-size:11.0pt;line-height:150%'> <i>Д. </i>Структуры данных и
+алгоритмы.: Пер. с англ. М.: Издат. дом «Вильямс», 2000.  С. 45–57. </span></p>
+
+<ol style='margin-top:0cm' start=3 type=1>
+ <li class=MsoNormal style='text-align:justify;line-height:150%;punctuation-wrap:
+     simple;text-autospace:none;vertical-align:baseline'><i><span
+     style='font-size:11.0pt;line-height:150%'>Иванова Г. С.</span></i><span
+     style='font-size:11.0pt;line-height:150%'> Основы программирования. М.:
+     Издательство МГТУ им. Н.Э. Баумана, 2001. С. 84–86, 223–237.  </span></li>
+ <li class=MsoNormal style='text-align:justify;line-height:150%;punctuation-wrap:
+     simple;text-autospace:none;vertical-align:baseline'><i><span
+     style='font-size:11.0pt;line-height:150%'>Керниган Б., Пайк Р. </span></i><span
+     style='font-size:11.0pt;line-height:150%'>Практика программирования.: Пер.
+     с англ. СПб.: Невский диалект, 2001. С. 75–83.</span></li>
+</ol>
+
+<p class=MsoList2 style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%'><span style='font-size:11.0pt;line-height:150%'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:11.0pt;line-height:150%'>Кормен Т.,
+Лейзерсон Ч., Ривест Р</span></i><span style='font-size:11.0pt;line-height:
+150%'>., Алгоритмы: построение и анализ: Пер. с англ. М.: МЦНМО, 2001.
+С.198–202.</span></p>
+
+<p class=MsoBodyText2 align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;line-height:150%'><span
+style='font-style:normal'>Приложение</span></p>
+
+<p class=MsoBodyText2 style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:0cm;text-indent:26.95pt;line-height:150%'><span
+style='font-style:normal'>Примерные варианты заданий</span></p>
+
+<p class=MsoNormal style='margin-right:3.7pt;text-indent:27.0pt;line-height:
+150%'>1    Напечатать все слова, отличающиеся от третьего слова, перед печатью
+удалив центральную букву слова, если оно нечетной длины. Если слов меньше трех
+– выдать сообщение.</p>
+
+<p class=MsoNormal style='margin-right:3.7pt;text-indent:27.0pt;line-height:
+150%'>2    Напечатать все слова, отличающиеся от последнего по алфавиту слова
+текста, перед печатью удалив из слова все гласные буквы.</p>
+
+<p class=MsoNormal style='margin-right:3.6pt;text-indent:27.0pt;line-height:
+150%'>3    Напечатать все слова, отличающиеся от последнего слова, и
+совпадающие с начальным отрезком алфавита (<span lang=EN-US>a</span>, <span
+lang=EN-US>a</span>b, <span lang=EN-US>a</span>bc и т.д.)</p>
+
+<p class=MsoNormal style='margin-right:3.6pt;text-indent:27.0pt;line-height:
+150%'>4    Напечатать все четные по длине слова, отличающиеся от первого слова,
+и в которые каждая буква входит не менее двух раз.</p>
+
+</div>
+
+</body>
+
+</html>

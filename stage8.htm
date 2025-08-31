@@ -1,0 +1,872 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Лабораторная работа № 1</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+h1
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:35.4pt;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:-5.4pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h4
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h5
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h6
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:0cm;
+	margin-right:13.85pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:5.65pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.35pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:27.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.85pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:black;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0cm;
+	margin-right:1.1pt;
+	margin-bottom:0cm;
+	margin-left:27.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:windowtext;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#000066;}
+code
+	{font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	color:windowtext;}
+p.a, li.a, div.a
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:51.05pt 73.3pt 45.35pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1>Этап №8</h1>
+
+<h1>Деревья, хеш-таблицы</h1>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><b><span style='font-size:12.0pt;line-height:150%'>Цель работы –
+построить и обработать хеш-таблицы, сравнить эффективность поиска в
+сбалансированных деревьях, в двоичных деревьях поиска и в хеш-таблицах.</span></b></p>
+
+<h2>Краткие теоретические сведения</h2>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Рассмотрим алгоритм построения двоичного дерева. Если при добавлении узлов
+в дерево мы будем их равномерно располагать слева и справа, то получится дерево,
+у которого число вершин в левом и правом поддеревьях отличается не более, чем
+на единицу. Такое дерево называется <b>идеально сбалансированным</b>. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Для построения идеально сбалансированного дерева<i> </i>используется рекурсия.
+Для дерева из <b>n</b> узлов, где <b>nl</b> - количество узлов в левом
+поддереве, <b> nr</b> - количество узлов в правом поддереве, алгоритм
+построения идеально сбалансированного дерева описывается следующим образом:</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>выбрать одну вершину в качестве корня;</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>рекурсивно построить левое поддерево с <b><span lang=EN-US>nl</span> = </b><b><span
+lang=EN-US>n</span><span lang=EN-US> </span></b><b><span lang=EN-US>div</span>
+2</b> узлами;</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>рекурсивно построить правое поддерево с  <b><span lang=EN-US>n</span>r =
+</b><b><span lang=EN-US>n</span> – </b><b><span lang=EN-US>nl</span> 1</b>
+узлами.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Идеальная балансировка дает наименьшую высоту дерева, а так как высота
+дерева определяет длину пути поиска в нем, то, следовательно, и укорачивает поиск.
+Но поддержание идеальной сбалансированности дерева при включении или исключении
+элемента – это достаточно сложная процедура.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'> Адельсон-Вельский и Ландис сформулировали менее жесткий критерий сбалансированности
+таким образом: двоичное дерево называется сбалансированным, если у каждого узла
+дерева высота двух поддеревьев отличается не более чем на единицу. Такое дерево
+называется <i>АВЛ-деревом.</i></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Использование этого
+критерия приводит к легко выполняемой балансировке. При этом средняя длина
+поиска остается практически такой же, как и у идеально сбалансированного дерева.
+</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При включении узла в
+сбалансированное дерево возможны 3 случая: (рассматриваем включение в левое
+поддерево):</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>левое и правое поддеревья становятся
+неравной высоты, но критерий сбалансированности не нарушается;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>левое и правое поддерево приобретают
+равную высоту и, таким образом, сбалансированность даже улучшается;</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>критерий сбалансированности
+нарушается, и дерево надо перестраивать. </span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Алгоритм включения и балансировки существенно зависит от способа хранения
+информации о сбалансированности дерева. Одно из решений – хранить в каждой вершине
+показатель ее сбалансированности. В этом случае сбалансированность будет определяться
+как разность между высотой правого и левого поддеревьев. Например, <span
+lang=EN-US>Bal</span> =1, если правое поддерево выше левого, <span lang=EN-US>Bal</span>=0,
+если правое и левое поддеревья равной высоты и <span lang=EN-US>Bal</span>= –1,
+если левое поддерево выше правого.</p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Процесс включения узла
+фактически состоит из трех последовательно выполняемых подзадач: </span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>проход по пути поиска (пока не
+убедимся, что элемента с таким ключом в дереве нет);</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>включение нового узла и определение
+показателя сбалансированности (</span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>Bal</span><span style='font-size:12.0pt;line-height:150%'>);</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>«отступление» (возврат) по пути
+поиска, с проверкой показателей сбалансированности для каждой вершины, и если
+необходимо, то проведение балансировки.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Этот метод требует
+некоторой избыточной проверки, но зато его можно реализовать с помощью простого
+расширения алгоритма поиска с включением. На каждом шаге при этом необходима
+информация о высоте дерева. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Операция по балансировке
+состоит только из последовательных переприсваиваний ссылок. Фактически ссылки
+циклически меняются, что приводит к одно- или двукратному повороту двух или
+трех участвующих в процессе балансировки узлов. Кроме вращения, необходимо
+должным образом изменять и показатели сбалансированности этих узлов.[1] </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Алгоритм удаления узла из
+сбалансированного дерева основан на алгоритме удаления из дерева (на замене
+удаляемого узла на самого левого потомка из правого поддерева или на самого
+правого потомка из левого поддерева) с учетом операции балансировки, то есть
+тех же поворотов узлов.[1] </span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Использование деревьев для поиска информации достаточно эффективно (трудоемкость
+– <span lang=EN-US>O</span>(log<sub>2</sub><span lang=EN-US>n</span>)). Можно
+ли создать еще более эффективную структуру или метод, позволяющий лучше
+осуществлять поиск информации? Для этого было бы хорошо по значению ключа сразу
+определять индекс элемента массива, в котором хранится информация. То есть
+необходимо создать такую функцию, по которой можно вычислить этот индекс. Такая
+функция называется <i>хеш-функцией</i><b> </b>(от англ. <span lang=EN-US>to</span><span
+lang=EN-US> </span><span lang=EN-US>hash</span> - крошить, рубить) и она ставит
+в соответствие каждому ключу <span lang=EN-US>k<sub>i</sub></span> индекс
+ячейки <span lang=EN-US>j</span>, где расположен элемент с этим ключом, таким
+образом:</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:27.0pt;
+line-height:150%'><span lang=EN-US>h</span>(<span lang=EN-US>k<sub>i</sub></span>)
+= <span lang=EN-US>j</span>, если  <span lang=EN-US>j</span>=(1,<span
+lang=EN-US>m</span>),</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>где <span lang=EN-US>j</span> принадлежит множеству от 1 до <span
+lang=EN-US>m</span>, а <span lang=EN-US>m</span>. – размерность массива.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Массив, заполненный в порядке, определенным хеш-функцией, называется <i>хеш-таблицей</i>.
+Минимальная трудоемкость поиска в хеш-таблице равна О(1)!</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Принято считать, что хорошей является такая функция, которая удовлетворяет
+следующим условиям:</p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='text-align:justify;line-height:150%'>функция должна
+     быть простой с вычислительной точки зрения;</li>
+ <li class=MsoNormal style='text-align:justify;line-height:150%'>функция должна
+     распределять ключи в хеш-таблице наиболее равномерно.</li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%;punctuation-wrap:simple;text-autospace:none'>Итак, первое свойство хорошей
+хеш-функции зависит от характеристик компьютера, а второе – от значений данных.
+Если бы все данные были случайными, то хеш-функции были бы очень простые
+(несколько битов ключа, например). Однако на практике случайные данные
+встречаются крайне редко, и приходится создавать функцию, которая зависела бы
+от всего ключа. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%;punctuation-wrap:simple;text-autospace:none'>Может возникнуть ситуация,
+когда разным ключам соответствует одно значение хеш-функции, то есть, когда
+h(K1)=h(K2), в то время как K1 &#8800; K2. Такая ситуация называется <i>коллизией</i>.
+В этом случае, очевидно, необходимо найти новое место для хранения ключей,
+претендующих на одну и ту же ячейку хеш-таблицы. Причем количество коллизий необходимо
+минимизировать. Таким образом, хорошая хеш-функция должна удовлетворять еще
+одному требованию, а именно: она должна минимизировать число коллизий.</p>
+
+<p class=MsoBodyTextIndent style='line-height:150%;punctuation-wrap:simple;
+text-autospace:none'><span style='font-family:"Times New Roman"'>Существует два
+основных типа хеширования, один из которых основан на делении, а другой на
+умножении. Впрочем, это не единственные методы, которые существуют, более того,
+они не всегда являются оптимальными.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:150%'><span style='font-family:
+"Times New Roman"'>Если ключей меньше, чем элементов массива, то в качестве
+хеш-функции можно принять вычисление остатка от деления целочисленного ключа на
+размерность массива (</span><span lang=EN-US style='font-family:"Times New Roman"'>m</span><span
+style='font-family:"Times New Roman"'>), то есть:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:27.0pt;
+line-height:150%'><span lang=EN-US>h(k<sub>i</sub>) = (k<sub>i</sub> mod m),</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>при <span lang=EN-US>n</span>&lt;<span lang=EN-US>m</span>, где  n –
+количество ключей.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Данная функция очень проста, хотя и не самая лучшая. Вообще, можно
+использовать любую размерность (константу <span lang=EN-US>m</span>), но она
+должна быть такой, чтобы минимизировать число коллизий. Для этого лучше
+использовать простое число. В большинстве случаев подобный выбор вполне
+удовлетворителен.  Для символьной строки ключом может являться остаток от
+деления, например, суммы кодов символов строки на <span lang=EN-US>m</span>.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%;punctuation-wrap:simple;text-autospace:none'>На практике, метод деления –
+самый распространенный </p>
+
+<p class=MsoBodyTextIndent2 style='margin-left:0cm;text-indent:27.0pt;
+line-height:150%'><span style='font-family:"Times New Roman"'>Существует
+несколько возможных вариантов разрешения коллизий, которые имеют свои
+достоинства и недостатки.</span></p>
+
+<p class=MsoBodyTextIndent2 style='margin-left:0cm;text-indent:27.0pt;
+line-height:150%'><span style='font-family:"Times New Roman"'>Первый метод –
+внешнее (открытое) хеширование (метод цепочек)</span></p>
+
+<p class=MsoBodyTextIndent2 style='margin-left:0cm;text-indent:27.0pt;
+line-height:150%'><span style='font-family:"Times New Roman"'>В случае, когда
+элемент таблицы с индексом, который вернула хеш-функция, уже занят, к нему
+присоединяется связный список. Таким образом, если для нескольких различных
+значений ключа возвращается одинаковое значение хеш-функции, то по этому адресу
+находится указатель на связанный список, который содержит все значения. Поиск в
+этом списке осуществляется простым перебором, так как при грамотном выборе
+хеш-функции любой из списков оказывается достаточно коротким. </span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Другой путь решения проблемы, связанной с коллизиями – внутреннее (закрытое)
+хеширование (открытая адресация). Оно, состоит в том, чтобы полностью отказаться
+от ссылок. В этом случае, если ячейка с вычисленным индексом занята, то можно
+просто просматривать следующие записи таблицы по порядку (с шагом 1), до тех
+пор, пока не будет найден ключ K или пустая позиция в таблице. При этом, если
+индекс следующего просматриваемого элемента определяется добавлением какого-то
+постоянного шага (от 1 до <span lang=EN-US>n</span>), то данный способ
+разрешения коллизий называется линейной адресацией. Для вычисления шага можно
+также применить формулу:</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:26.95pt;
+line-height:150%'><span lang=EN-US>h = h + a<sup>2</sup>,</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:26.95pt;line-height:
+150%'>где a – это номер попытки поиска ключа. Этот вид адресации называется
+квадратичной или произвольной адресацией. </p>
+
+<p class=MsoPlainText style='margin-top:6.0pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman"'>При любом методе разрешения коллизий необходимо
+ограничить длину поиска элемента. Если для поиска элемента необходимо более 3</span>–<span
+style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman"'>4
+сравнений, то эффективность использования такой хеш-таблицы пропадает и ее
+следует реструктуризировать (т.е. найти другую хеш-функцию), чтобы минимизировать
+количество сравнений для поиска элемента </span></p>
+
+<h2>Задание</h2>
+
+<p class=MsoBodyText style='margin-right:4.95pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Построить
+хеш-таблицу по указанным данным. Сравнить эффективность поиска в
+сбалансированном двоичном дереве, в двоичном дереве поиска и в хеш-таблице.
+Вывести на экран деревья и хеш-таблицу. Подсчитать среднее количество сравнений
+для поиска данных в указанных структурах. Произвести реструктуризацию
+хеш-таблицы, если среднее количество сравнений больше указанного. Оценить
+эффективность использования этих структур (по времени и памяти) для  поставленной
+задачи.</span></p>
+
+<p class=MsoBodyText2 style='margin-right:4.95pt;text-indent:27.0pt;line-height:
+150%'><span style='font-weight:normal;font-style:normal'>Примерные варианты
+заданий приведены в приложении.</span></p>
+
+<h2>Указания к выполнению работы</h2>
+
+<p class=MsoBodyText style='margin-right:4.95pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>При
+разработке интерфейса программы следует предусмотреть:</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание типа,
+формата и диапазона вводимых данных;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание
+действий, производимых программой;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>наличие пояснений
+при выводе результата;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>вывод деревьев
+осуществить в графическом виде (или предложить иную визуализацию в виде
+дерева);</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>вывод на экран
+хеш-таблицы;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>возможность
+изменения хеш-функции при необходимости реструктуризации таблицы;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>вывод времени и количества
+сравнений при поиске одних и тех же данных в различных структурах данных.</span></p>
+
+<p class=MsoBodyText style='margin-right:4.95pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>При
+тестировании программы необходимо:</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность ввода и вывода данных (то есть их соответствие требуемому типу и
+формату), обеспечить адекватную реакцию программы на неверный ввод</span><span
+style='font-family:Arial'> </span><span style='font-size:12.0pt;line-height:
+150%'>данных;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>обеспечить вывод
+сообщений при отсутствии входных данных («пустой ввод»); </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность выполнения операций; </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>предусмотреть
+вывод сообщения при необходимости реструктуризации хеш-таблицы;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>проверить
+поиск существующих и поиск несуществующих данных;</p>
+
+<h2>Содержание отчета</h2>
+
+<p class=MsoBodyTextIndent3 style='margin-left:0cm;text-align:justify;
+text-indent:26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:
+150%'>В отчете по лабораторной работе должны быть сделаны выводы о том,  применение
+какой структуры (дерева двоичного поиска, сбалансированного дерева или
+хеш-таблицы) целесообразно для решения  поставленной задачи, какие преимущества
+дает использование той или иной структуры. Выводы следует подтвердить
+результатом числовых сравнений расходования памяти и времени выполнения программы,
+а также количеством сравнений при поиске данных. В отчете также следует
+указать, в каком случае необходима реструктуризация хеш-таблицы и на что нужно
+обратить особое внимание при тестировании программы</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+36.0pt;line-height:150%'>В отчете по лабораторной работе должны быть даны
+ответы на следующие вопросы:</p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='text-align:justify;line-height:150%'><span
+     style='line-height:150%'>Чем отличается идеально сбалансированное дерево
+     от АВЛ дерева?</span></li>
+ <li class=MsoNormal style='text-align:justify;line-height:150%'><span
+     style='line-height:150%'>Чем отличается поиск в АВЛ-дереве от поиска в
+     дереве двоичного поиска? </span></li>
+ <li class=MsoNormal style='text-align:justify;line-height:150%'><span
+     style='line-height:150%'>Что такое хеш-таблица, каков принцип ее
+     построения?</span></li>
+ <li class=MsoNormal style='text-align:justify;line-height:150%'><span
+     style='line-height:150%'>Что такое коллизии? Каковы методы их устранения.</span></li>
+ <li class=MsoNormal style='text-align:justify;line-height:150%'><span
+     style='line-height:150%'>В каком случае поиск в хеш-таблицах становится
+     неэффективен?</span></li>
+ <li class=MsoNormal style='text-align:justify;line-height:150%'><span
+     style='line-height:150%'>Эффективность поиска в АВЛ деревьях, в дереве
+     двоичного поиска и в хеш-таблицах</span></li>
+</ol>
+
+<p class=MsoBodyText2 style='text-indent:27.0pt;line-height:150%'><span
+style='line-height:150%;font-weight:normal;font-style:normal'>Отчет
+представляется в электронном или печатном виде.</span></p>
+
+<h2>Список рекомендуемой литературы</h2>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='margin-right:4.95pt;text-align:justify;line-height:
+     150%'><i><span style='font-size:11.0pt;line-height:150%'>Вирт Н. </span></i><span
+     style='font-size:11.0pt;line-height:150%'>Алгоритмы и структуры данных:
+     Пер. с англ. СПб.: Невский диалект, 2001. С.261 – 274, 324–336.</span></li>
+</ol>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:11.0pt;line-height:150%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:11.0pt;line-height:150%'>Ахо А., Хопкрофт Д., Ульман</span></i><span
+style='font-size:11.0pt;line-height:150%'> <i>Д.</i> Структуры данных и
+алгоритмы: Пер. с англ.  М.: Издат. дом «Вильямс», 2000. С. 77–99.</span></p>
+
+<ol style='margin-top:0cm' start=3 type=1>
+ <li class=MsoNormal style='margin-right:4.95pt;text-align:justify;line-height:
+     150%;punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><i><span
+     style='font-size:11.0pt;line-height:150%'>Кнут Д. </span></i><span
+     style='font-size:11.0pt;line-height:150%'>Искусство программирования, Т.
+     3. Сортировка и поиск: Пер. с англ. М.: Издат. дом «Вильямс», 2001. С.
+     492–507, 549–586.</span></li>
+</ol>
+
+<p class=MsoList2 style='margin-top:0cm;margin-right:4.95pt;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:11.0pt;line-height:150%'>Кормен Т., Лейзерсон
+Ч., Ривест Р.,</span></i><span style='font-size:11.0pt;line-height:150%'>
+Алгоритмы: построение и анализ: Пер. с англ. М.: МЦНМО, 2001. С. 213–235.</span></p>
+
+<p class=MsoBodyText align=right style='margin-top:6.0pt;margin-right:13.9pt;
+margin-bottom:6.0pt;margin-left:0cm;text-align:right;text-indent:26.95pt;
+line-height:150%'><b><span style='font-size:12.0pt;line-height:150%'>Приложение</span></b></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:.55pt;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;text-indent:28.65pt;line-height:150%'><b>Примерные
+варианты заданий</b></p>
+
+<p class=MsoNormal style='text-indent:26.95pt;line-height:150%'>1 Построить
+двоичное дерево поиска из букв вводимой строки. Вывести его на экран в виде
+дерева. Выделить цветом все буквы, встречающиеся более одного раза. Удалить из
+дерева эти буквы. Сбалансировать дерево после удаления повторяющихся букв.
+Вывести его на экран в виде дерева. Составить хеш-таблицу, содержащую буквы и
+количество их вхождений во введенной строке. Вывести таблицу на экран. Осуществить
+поиск введенной буквы в двоичном дереве поиска, в сбалансированном дереве и в
+хеш-таблице. Сравнить время поиска, объем памяти и количество сравнений при использовании
+различных структур данных. </p>
+
+<p class=MsoPlainText style='margin-right:4.95pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman"'>2    </span><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman"'>Построить хеш-таблицу из слов
+произвольного текстового файла, задав ее размерность с экрана. Вывести
+построенную таблицу слов на экран. Осуществить поиск введенного слова.
+Выполнить программу для различных размерностей таблицы и сравнить время поиска
+и количество сравнений. Удалить все слова, начинающиеся на указанную букву,
+вывести таблицу. Сравнить время поиска, объем памяти и количество сравнений при
+использовании сбалансированных деревьев и хеш-таблиц. </span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'>3    Построить хеш-таблицу для зарезервированных слов,
+используемого языка программирования (не менее 20 слов), содержащую HELP для
+каждого слова. Выдать на экран подсказку по введенному слову. Сравнить время
+поиска, объем памяти и количество сравнений при использовании сбалансированных
+деревьев и хеш-таблиц. Добавить подсказку по вновь введенному слову, используя
+при необходимости реструктуризацию таблицы. Сравнить эффективность добавления
+ключа в таблицу или ее реструктуризацию для различной степени заполненности 
+таблицы. </p>
+
+<p class=MsoPlainText style='margin-right:4.95pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman"'>4    В текстовом файле содержатся целые числа.
+Построить двоичное дерево поиска из чисел файла, сбалансировать полученное дерево.
+Вывести его на экран в виде дерева. Построить хеш-таблицу из чисел файла.
+Осуществить поиск введенного целого числа в двоичном дереве поиска, в
+сбалансированном дереве и в хеш-таблице. Сравнить время поиска, объем памяти и
+количество сравнений при использовании различных структур данных.</span></p>
+
+<p class=MsoPlainText style='margin-right:4.95pt;text-align:justify;line-height:
+150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

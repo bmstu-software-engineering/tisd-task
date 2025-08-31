@@ -1,0 +1,935 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Лабораторная работа № 1</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+h1
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:35.4pt;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:-5.4pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h4
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h5
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h6
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:0cm;
+	margin-right:13.85pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:5.65pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.35pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:27.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.85pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:black;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0cm;
+	margin-right:1.1pt;
+	margin-bottom:0cm;
+	margin-left:27.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:windowtext;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#000066;}
+code
+	{font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	color:windowtext;}
+p.a, li.a, div.a
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:51.05pt 73.3pt 45.35pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1>Этап №7</h1>
+
+<h1>Обработка деревьев</h1>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:28.5pt;line-height:
+150%'><b><span style='font-size:12.0pt;line-height:150%'>Цель работы</span></b>
+– <b><span style='font-size:12.0pt;line-height:150%'>получить навыки применения
+двоичных деревьев, реализовать основные операции над деревьями: обход деревьев,
+включение, исключение и поиск узлов. </span></b></p>
+
+<h2>Краткие теоретические сведения</h2>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.5pt;line-height:
+150%'>Дерево – это нелинейная структура данных, используемая для представления
+иерархических связей, имеющих отношение «один ко многим». </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.5pt;line-height:
+150%'>Дерево с базовым типом <i>Т</i> определяется рекурсивно либо как пустая
+структура (пустое дерево), либо как узел типа <i>Т</i> с конечным числом
+древовидных структур этого же типа, называемых поддеревьями. </p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:28.5pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Деревья используются при
+построении организационных диаграмм, анализе электрических цепей, для
+представления синтаксических структур в компиляторах программ, для
+представления структур математических формул, организации информации в СУБД и,
+кроме того, для более эффективного извлечения данных.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:28.5pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>.Самый верхний узел
+дерева называется корнем. Верхний узел для нижнего узла называется предком, а
+нижний  узел для верхнего – потомком. Вершины (узлы), не имеющие потомков,
+называются терминальными вершинами или листьями. Нетерминальные вершины
+называются внутренними. Две вершины дерева соединяются ветвью. Дерево без ветвей
+с одной вершиной – это пустое или нулевое дерево.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.5pt;line-height:
+150%'>Корень дерева лежит на нулевом уровне. Максимальный уровень какой-либо
+вершины дерева называется ее глубиной (от корня до узла) или высотой (от узла
+до максимально удаленного листа ). Отсюда максимальный уровень корня равен
+нулю. Максимальный уровень всех вершин называется глубиной дерева.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.5pt;line-height:
+150%'>Число непосредственных потомков у вершины (узла) дерева называется степенью
+вершины (узла). </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.5pt;line-height:
+150%'>Максимальная степень всех вершин является степенью дерева. Число ветвей
+от корня к вершине есть длина пути к этой вершине.</p>
+
+<p class=MsoBodyTextIndent style='text-align:justify;text-indent:28.5pt;
+line-height:150%'><span style='font-family:"Times New Roman"'>Каждому узлу
+дерева можно сопоставить имя узла и значение узла, то есть собственно данные,
+хранящиеся в этом узле. Причем, если значением являются разнородные данные
+(записи или объединения), то значением узла можно считать значение одного из
+полей этих данных, называемого ключом.</span></p>
+
+<p class=MsoNormal style='margin-left:2.85pt;text-indent:28.5pt;line-height:
+150%'>Например, есть дерево (рис 1), где номер узла может быть как его именем,
+так и его значением (в данном случае все равно) <span style='font-size:14.0pt;
+line-height:150%'>  </span></p>
+
+<p class=MsoBodyTextIndent style='text-align:justify;text-indent:28.5pt;
+line-height:150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-left:2.85pt;text-align:center;
+text-indent:28.5pt;line-height:150%'><span style='position:relative;z-index:
+2'><span style='position:absolute;left:-1px;top:-1px;width:372px;height:260px'><img
+width=372 height=260 src="stage7.files/image001.gif"></span></span><img
+width=366 height=254 src="stage7.files/image002.gif"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:6.6pt;margin-bottom:0cm;
+margin-left:14.2pt;margin-bottom:.0001pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%'>  </span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><b>Рис.
+1</b></p>
+
+<p class=MsoBodyTextIndent style='margin-right:.45pt;text-align:justify;
+line-height:150%'><span style='font-family:"Times New Roman"'>В памяти деревья
+можно представить в виде связей с предками<span style='color:#FF6600'> </span>(еще
+их называют родителями); связного списка потомков (сыновей) или структуры
+данных.</span></p>
+
+<p class=MsoNormal style='margin-right:.45pt;text-align:justify;text-indent:
+27.0pt'>Представление указанного дерева (см. рис 1) в виде связей с предками:</p>
+
+<p class=MsoNormal style='margin-left:14.2pt'>&nbsp;</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:21.0pt'>
+  <td width=102 valign=top style='width:76.65pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:3.15pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>№
+  вершина</span></p>
+  </td>
+  <td width=34 valign=top style='width:25.65pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='text-align:justify;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=34 valign=top style='width:25.65pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:5.05pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=38 valign=top style='width:28.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:4.6pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=38 valign=top style='width:28.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:4.15pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>4</span></p>
+  </td>
+  <td width=38 valign=top style='width:28.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:3.65pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>5</span></p>
+  </td>
+  <td width=38 valign=top style='width:28.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:3.2pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>6</span></p>
+  </td>
+  <td width=34 valign=top style='width:25.65pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:3.9pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>7</span></p>
+  </td>
+  <td width=38 valign=top style='width:28.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:2.4pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>8</span></p>
+  </td>
+  <td width=42 valign=top style='width:31.35pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:2.4pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>9</span></p>
+  </td>
+  <td width=46 valign=top style='width:34.2pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>10</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.0pt'>
+  <td width=102 valign=top style='width:76.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:13.95pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Родитель</span></p>
+  </td>
+  <td width=34 valign=top style='width:25.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='text-align:justify;text-indent:0cm;
+  line-height:150%'><span style='font-family:"Times New Roman"'>0</span></p>
+  </td>
+  <td width=34 valign=top style='width:25.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:5.05pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=38 valign=top style='width:28.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:4.6pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>1</span></p>
+  </td>
+  <td width=38 valign=top style='width:28.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:4.15pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=38 valign=top style='width:28.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:3.65pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>2</span></p>
+  </td>
+  <td width=38 valign=top style='width:28.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:3.2pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=34 valign=top style='width:25.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:3.9pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>3</span></p>
+  </td>
+  <td width=38 valign=top style='width:28.5pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:2.4pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>6</span></p>
+  </td>
+  <td width=42 valign=top style='width:31.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:2.4pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>6</span></p>
+  </td>
+  <td width=46 valign=top style='width:34.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.0pt'>
+  <p class=MsoBodyTextIndent style='margin-right:.3pt;text-align:justify;
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>6</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:14.2pt'>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:28.5pt'>Пример представления этого же
+дерева в виде связного списка сыновей приведен на рис 2:</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:28.5pt'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><span
+style='font-family:"Lucida Console"'><img width=326 height=246
+src="stage7.files/image003.gif"></span></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='margin-left:14.2pt;text-align:center'><b>Рис.
+2</b>.</p>
+
+<p class=MsoHeader style='margin-right:13.9pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'>Если у каждой вершины дерева имеется не более двух
+потомков (левые и правые поддеревья), то такое дерево называется двоичным или
+бинарным. </p>
+
+<p class=MsoHeader style='margin-right:13.9pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'>Двоичные деревья широко используются в
+программировании. </p>
+
+<p class=MsoBodyText style='margin-right:13.9pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Основные
+операции с деревьями: обход дерева, поиск по дереву, включение в дерево,
+исключение из дерева.</span></p>
+
+<p class=MsoBodyText style='margin-right:13.9pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='position:absolute;z-index:3;left:0px;
+margin-left:394px;margin-top:18px;width:202px;height:105px'><img width=202
+height=105 src="stage7.files/image004.gif"></span><span style='font-size:12.0pt;
+line-height:150%'>Обход (посещение) вершин дерева можно осуществить</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:13.9pt;margin-bottom:
+0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:justify;line-height:
+150%'> следующим образом (рис 3):</p>
+
+<ul style='margin-top:0cm' type=square>
+ <li class=MsoNormal style='margin-right:13.9pt;text-align:justify;line-height:
+     150%'>сверху вниз: R,A,B   (префиксный обход)</li>
+ <li class=MsoNormal style='margin-right:13.9pt;text-align:justify;line-height:
+     150%'>слева направо: <span lang=EN-US>A</span>,<span lang=EN-US>R</span>,<span
+     lang=EN-US>B</span>   (инфиксный обход)</li>
+ <li class=MsoNormal style='margin-right:13.9pt;text-align:justify;line-height:
+     150%'>снизу вверх: <span lang=EN-US>A</span>,<span lang=EN-US>B</span>,<span
+     lang=EN-US>R</span>   (постфиксный обход) </li>
+</ul>
+
+<p class=MsoNormal align=right style='margin-top:0cm;margin-right:40.8pt;
+margin-bottom:0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-align:right;
+line-height:150%'><b>Рис. 3</b></p>
+
+<p class=MsoBodyTextIndent style='margin-right:3.3pt;text-align:justify;
+line-height:150%'><span style='font-family:"Times New Roman"'>Для реализации
+алгоритмов поиска используются деревья двоичного поиска. Дерево двоичного
+поиска – это такое дерево, в котором все левые потомки моложе предка, а все
+правые – старше. Это свойство называется характеристическим свойством дерева
+двоичного поиска и выполняется для любого узла, включая корень. С учетом этого
+свойства поиск узла в двоичном дереве поиска можно осуществить, двигаясь от корня
+в левое или правое поддерево в зависимости от значения ключа поддерева. </span></p>
+
+<p class=MsoBodyTextIndent style='margin-right:3.3pt;text-align:justify;
+line-height:150%'><span style='font-family:"Times New Roman"'>Если при
+построении дерева поочередно располагать узлы слева и справа, то получится
+дерево, у которого число вершин в левом и правом поддеревьях отличается не
+более чем на единицу. Такое дерево называется идеально сбалансированным.</span></p>
+
+<p class=MsoBodyText style='margin-right:3.3pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span lang=EN-US style='font-size:12.0pt;line-height:
+150%'>N</span><span style='font-size:12.0pt;line-height:150%'> элементов можно
+организовать в бинарное дерево с высотой не более </span><span lang=EN-US
+style='font-size:12.0pt;line-height:150%'>log</span><sub><span
+style='font-size:12.0pt;line-height:150%'>2</span></sub><span style='font-size:
+12.0pt;line-height:150%'>(</span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>N</span><span style='font-size:12.0pt;line-height:150%'>) ,
+поэтому для поиска среди </span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>N</span><span style='font-size:12.0pt;line-height:150%'>
+элементов может потребоваться не больше </span><span lang=EN-US
+style='font-size:12.0pt;line-height:150%'>log</span><sub><span
+style='font-size:12.0pt;line-height:150%'>2</span></sub><span style='font-size:
+12.0pt;line-height:150%'>(</span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>N</span><span style='font-size:12.0pt;line-height:150%'>) сравнений,
+если дерево идеально сбалансировано. Отсюда следует, что дерево – это более
+подходящая структура для организации поиска, чем, например, линейный список. </span></p>
+
+<p class=MsoBodyText style='margin-right:3.3pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Операция
+включения элемента в дерево разбивается на три этапа: включение узла в пустое
+дерево, поиск корня для добавления нового узла, включение узла в левое или правое
+поддерево.</span></p>
+
+<p class=MsoBodyText style='margin-right:3.3pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Для
+удаления узла с указанным ключом сначала происходит его поиск.  В случае, если
+узел найден, то он удаляется. Если удаляемый узел является концевым, то просто
+удаляется ссылка на него. Если удаляемый узел имеет одного потомка, в этом
+случае переадресуется ссылка на этого потомка. Если удаляемый узел имеет двух
+потомков, то на его место ставится самый правый потомок из левого поддерева или
+самый левый потомок из правого поддерева. </span></p>
+
+<h2>Задание</h2>
+
+<p class=MsoBodyText style='margin-right:.45pt;text-align:justify;text-indent:
+26.95pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Построить
+дерево в соответствии с заданным вариантом задания. Вывести его на экран в виде
+дерева. Реализовать основные операции работы с деревом: обход дерева, включение,
+исключение и поиск узлов. Сравнить эффективность алгоритмов сортировки и поиска
+в зависимости от высоты дерева и степени его ветвления. </span></p>
+
+<p class=MsoBodyText2 style='margin-right:.45pt;text-indent:26.95pt;line-height:
+150%'><span style='font-weight:normal;font-style:normal'>Примерные варианты
+заданий приведены в приложении.</span></p>
+
+<h2>Указания к выполнению работы</h2>
+
+<p class=MsoBodyText style='margin-right:.45pt;text-align:justify;text-indent:
+28.5pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Все
+логически завершенные фрагменты алгоритма (ввод, вывод, обход дерева, включение
+узла, исключение узла и т.п.) необходимо оформить в виде подпрограмм.</span></p>
+
+<p class=MsoBodyText style='margin-right:3.3pt;text-align:justify;text-indent:
+31.35pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>При
+разработке интерфейса программы следует предусмотреть:</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание типа,
+формата и диапазона вводимых данных; </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание
+действий, производимых программой;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>наличие пояснений
+при выводе результата;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>вывод дерева
+осуществить в графическом виде (или предложить иную визуализацию в виде дерева).</span></p>
+
+<p class=MsoBodyText style='margin-right:3.3pt;text-align:justify;text-indent:
+28.5pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>При
+тестировании программы необходимо:</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность ввода и вывода данных (т.е. их соответствие требуемому типу и
+формату). Обеспечить адекватную реакцию программы на неверный ввод</span><span
+style='font-family:Arial'> </span><span style='font-size:12.0pt;line-height:
+150%'>данных;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>обеспечить вывод
+сообщений при отсутствии входных данных («пустой ввод»); </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность выполнения операций; </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>обеспечить
+возможность добавления узла в пустое дерево;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>предусмотреть
+вывод сообщения при попытке удаления узла из пустого дерева;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+различные варианты включения и исключения узла в существующее дерево;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:3.3pt;margin-bottom:0cm;
+margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:-18.0pt;
+line-height:150%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>проверить
+поиск существующего узла и поиск несуществующего узла в дереве;</p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:31.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>создать
+левостороннее или правостороннее дерево, проверить время обработки узла в нем.</span></p>
+
+<h2>Содержание отчета</h2>
+
+<p class=MsoBodyTextIndent2 style='margin-top:0cm;margin-right:3.3pt;
+margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-indent:25.65pt;
+line-height:150%'><span style='font-family:"Times New Roman"'>В отчете по
+лабораторной работе должны быть сделаны выводы о том, в каких случаях удобно
+применять деревья, какую выгоду дает использование этого типа данных, какие
+«узкие места» необходимо протестировать в разработанной программе.</span></p>
+
+<p class=MsoNormal style='margin-right:3.3pt;text-align:justify;text-indent:
+25.65pt;line-height:150%'>В отчете по лабораторной работе должны быть даны
+ответы на следующие вопросы:</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:3.3pt;margin-bottom:0cm;
+margin-left:2.85pt;margin-bottom:.0001pt;text-align:justify;text-indent:25.65pt;
+line-height:150%'><span style='line-height:150%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='line-height:150%'>Что такое дерево?</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:3.3pt;margin-bottom:0cm;
+margin-left:2.85pt;margin-bottom:.0001pt;text-align:justify;text-indent:25.65pt;
+line-height:150%'><span style='line-height:150%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='line-height:150%'>Как выделяется память под
+представление деревьев?</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:3.3pt;margin-bottom:0cm;
+margin-left:2.85pt;margin-bottom:.0001pt;text-align:justify;text-indent:25.65pt;
+line-height:150%'><span style='line-height:150%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='line-height:150%'>Какие бывают типы деревьев?</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:3.3pt;margin-bottom:0cm;
+margin-left:2.85pt;margin-bottom:.0001pt;text-align:justify;text-indent:25.65pt;
+line-height:150%'><span style='line-height:150%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='line-height:150%'>Какие стандартные операции
+возможны над деревьями?</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:3.3pt;margin-bottom:0cm;
+margin-left:2.85pt;margin-bottom:.0001pt;text-align:justify;text-indent:25.65pt;
+line-height:150%'><span style='line-height:150%'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='line-height:150%'>Что такое дерево двоичного поиска?</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:28.5pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Отчет представляется  в
+электронном или печатном виде.</span></p>
+
+<h2 style='margin-right:6.5pt'>Список рекомендуемой литературы</h2>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='margin-right:3.3pt;text-align:justify;line-height:
+     150%'><i><span style='font-size:11.0pt;line-height:150%'>Вирт Н. </span></i><span
+     style='font-size:11.0pt;line-height:150%'>Алгоритмы и структуры данных:
+     Пер. с англ. СПб.: Невский диалект, 2001. С.<i>&nbsp;</i>69–71, 235–258.</span></li>
+</ol>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:3.3pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:11.0pt;line-height:150%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:11.0pt;line-height:150%'>Ахо А., Хопкрофт Д.,. Ульман</span></i><span
+style='font-size:11.0pt;line-height:150%'> <i>Д</i> Структуры данных и
+алгоритмы: Пер. с англ.  М.: Издат. дом «Вильямс», 2000. С. 77–99. </span></p>
+
+<ol style='margin-top:0cm' start=3 type=1>
+ <li class=MsoNormal style='margin-right:3.3pt;text-align:justify;line-height:
+     150%;punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><i><span
+     style='font-size:11.0pt;line-height:150%'>Иванова Г. С.</span></i><span
+     style='font-size:11.0pt;line-height:150%'> Основы программирования.  М.:
+     Издательство МГТУ им. Н.Э. Баумана, 2001. С. 238–253. </span></li>
+ <li class=MsoNormal style='margin-right:3.3pt;text-align:justify;line-height:
+     150%;punctuation-wrap:simple;text-autospace:none;vertical-align:baseline'><i><span
+     style='font-size:11.0pt;line-height:150%'>Керниган Б., Пайк Р. </span></i><span
+     style='font-size:11.0pt;line-height:150%'>Практика программирования: Пер.
+     с англ. СПб.: Невский диалект, 2001. С. 83–90.</span></li>
+</ol>
+
+<p class=MsoList2 style='margin-top:0cm;margin-right:3.3pt;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:11.0pt;line-height:150%'>Кормен Т</span></i><span
+style='font-size:11.0pt;line-height:150%'>., <i>Лейзерсон Ч.,</i> <i>Ривест Р</i>.
+Алгоритмы: построение и анализ, Пер. с англ. М.: МЦНМО, 2001. С. 92–97.</span></p>
+
+<p class=MsoList2 align=right style='margin-top:6.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:28.3pt;text-align:right;line-height:150%'><b>Приложение</b></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:.55pt;margin-bottom:
+6.0pt;margin-left:0cm;text-align:justify;text-indent:28.65pt;line-height:150%'><b>Примерные
+варианты заданий</b></p>
+
+<p class=MsoNormal style='margin-right:.45pt;text-align:justify;text-indent:
+28.5pt;line-height:150%'>1   Построить двоичное дерево поиска из букв вводимой
+строки. Вывести его на экран в виде дерева. Выделить цветом все буквы, встречающиеся
+более одного раза. Удалить из дерева эти буквы. Вывести оставшиеся элементы
+дерева при постфиксном его обходе. Сравнить время удаления повторяющихся букв
+из дерева и из строки.</p>
+
+<p class=MsoPlainText style='margin-right:.45pt;text-align:justify;text-indent:
+28.5pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman"'>2</span><span style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman"'>   </span><span
+style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman"'>Построить
+двоичное дерево поиска, в вершинах которого находятся слова из текстового
+файла. Вывести его на экран в виде дерева. Определить количество вершин дерева,
+содержащих слова, начинающиеся на указанную букву. Выделить эти вершины цветом.
+Сравнить время поиска слов, начинающихся на указанную букву в дереве и в файле.</span></p>
+
+<p class=MsoNormal style='margin-right:.45pt;text-align:justify;text-indent:
+28.5pt;line-height:150%'>3    Построить и  вывести на экран бинарное  дерево
+следующего выражения:   9<i><span style='font-size:11.0pt;line-height:150%'>&nbsp;</span></i>+<i><span
+style='font-size:11.0pt;line-height:150%'>&nbsp;</span></i> 8<i><span
+style='font-size:11.0pt;line-height:150%'>&nbsp;</span></i>*<i><span
+style='font-size:11.0pt;line-height:150%'>&nbsp;</span></i>(7 + (6 * (5 + 4) –
+(3 – 2)) +1)). Написать процедуры постфиксного, инфиксного и префиксного обхода
+дерева и вывести соответствующие выражения на экран. Подсчитать результат.
+Используя «польскую» запись, ввести данное выражение в стек. Сравнить время
+вычисление выражения с использованием дерева и стека.</p>
+
+<p class=MsoNormal style='margin-right:.45pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'>4    Построить частотный словарь из слов текстового
+файла в виде дерева двоичного поиска. Вывести его на экран в виде дерева.
+Осуществить поиск указанного слова в дереве и в файле. Если слова нет, то добавить
+его при необходимости в дерево и соответственно в файл. Сравнить время поиска в
+дереве и в файле.</p>
+
+<h1>&nbsp;</h1>
+
+</div>
+
+</body>
+
+</html>

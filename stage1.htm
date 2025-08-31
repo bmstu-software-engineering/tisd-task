@@ -1,0 +1,882 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Лабораторная работа № 1</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+h1
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:35.4pt;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:-5.4pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h4
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h5
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h6
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:0cm;
+	margin-right:13.85pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:5.65pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.35pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:27.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.85pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:black;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0cm;
+	margin-right:1.1pt;
+	margin-bottom:0cm;
+	margin-left:27.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:windowtext;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#000066;}
+code
+	{font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	color:windowtext;}
+p.a, li.a, div.a
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:51.05pt 73.3pt 45.35pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1>Этап № 1</h1>
+
+<h1>«Длинная» арифметика. Тип данных – массив</h1>
+
+<h3 style='margin-top:6.0pt;margin-right:1.1pt;margin-bottom:6.0pt;margin-left:
+0cm;text-align:justify;text-indent:26.95pt;line-height:150%'><span
+style='font-family:"Times New Roman"'>Цель работы: реализовать арифметические
+операции над числами, выходящими за разрядную сетку персонального компьютера,
+выбрать необходимые типы данных для хранения и обработки указанных чисел.</span></h3>
+
+<h2>Краткие теоретические сведения</h2>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Современный
+персональный компьютер (ПК) часто применяется для выполнения вычислений. При
+этом, для хранения исходных данных и результатов вычислений обычно используются
+стандартные числовые типы данных (целые и вещественные, в том числе, удвоенной
+точности). Каждый тип данных характеризуется определенным диапазоном значений
+чисел, который, в свою очередь, зависит от размера области памяти, выделяемой
+под хранение переменной этого типа, от наличия знака в числе и от типа
+представления числа (целое или вещественное).</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><i><span style='font-size:12.0pt;line-height:150%'>Целое
+число</span></i><span style='font-size:12.0pt;line-height:150%'> Х со знаком
+представляется в ПК следующим образом:</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>если
+X&#8805;0, то число записывается как беззнаковое, </span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>если
+X&lt;0, то число переводится в дополнительный код и записывается как 2<sup>k </sup>–|
+X|, где k – количество разрядов, выделенное под представление числа.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Таким
+образом, если под хранение целого положительного числа выделено 16 разрядов, то
+его максимальное значение не может превышать 2<sup>16</sup>-1=65&nbsp;535, если
+выделено 32 разряда, то максимальное   значение составит 2<sup>32</sup>-1=4&nbsp;294&nbsp;967&nbsp;295.
+Для 64 разрядов максимально возможное значение числа равно 2<sup>64</sup>-1=18&nbsp;446&nbsp;744&nbsp;073&nbsp;709&nbsp;551&nbsp;615.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Для
+64-разрядного процессора принципиально невозможно использовать больше 20
+десятичных разрядов для представления числа, поэтому при необходимости обрабатывать
+числа большей размерности (например, при выполнении астрономических расчетов)
+хранение данных и их обработку должен реализовать программист.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><i><span style='font-size:12.0pt;line-height:150%'>Вещественные
+числа</span></i><span style='font-size:12.0pt;line-height:150%'> обычно
+хранятся и используются в представлении с плавающей точкой в виде: </span></p>
+
+<p class=MsoBodyText align=center style='margin-right:-4.05pt;text-align:center;
+text-indent:27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:
+150%'><img width=81 height=21 src="stage1.files/image001.gif">,</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>где  М
+– мантисса со знаком, Е – основание (10 или 16), р – целый порядок со знаком.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Если
+десятичная точка расположена в мантиссе перед первой значащей цифрой числа, то
+при фиксированном количестве разрядов, отведённых под мантиссу, обеспечивается
+возможность сохранить максимальное количество значащих цифр, то есть обеспечить
+максимальную точность представления числа в ПК. Из сказанного следует, что
+мантисса должна быть <i>правильной дробью,</i> первая цифра которой отлична от
+нуля, т.е. M находится в интервале [0.1,&nbsp;1). Такое представление
+вещественных чисел называется <i>нормализованным</i>. </span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Таким
+образом, длина мантиссы определяет точность представления числа, а длина
+порядка ограничивает диапазон допустимых значений. При этом, если мантисса выходит
+за разрядную сетку ПК, то происходит ее округление. При выходе за заданный
+диапазон величины порядка могут возникнуть проблемы, связанные с переполнением
+порядка (при положительном порядке) или получением машинного нуля (при отрицательном
+порядке).</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Максимально
+под представление мантиссы отводится 52 разряда, а под представление порядка –
+11 разрядов. В этом случае возможные значения чисел находятся в диапазоне от
+3.6&nbsp;E&nbsp;–4951 до 1.1&nbsp;E&nbsp;+4932.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>В том
+случае, если требуется очень высокая точность вычислений (не ниже 20–30 знаков
+после десятичной точки) или необходимо обрабатывать числа с большим порядком,
+например превышает 5000) (в навигационных системах или в системах наведения),
+то задача выбора необходимых структур для хранения и обработки данных и реализации
+необходимых операций над ними также возлагается на программиста.</span></p>
+
+<h2>Задание</h2>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Составить
+программу умножения или деления двух чисел, порядок которых находится в
+диапазоне от –99999 до +99999 (т.е. имеет не более 5 разрядов), а длина мантиссы
+не превышает 30 разрядов.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Программа
+должна осуществлять ввод чисел в указанном диапазоне значений и выдавать
+результат в нормализованной форме  </span><span style='font-size:12.0pt;
+line-height:150%;font-family:Symbol'>±</span><span style='font-size:12.0pt;
+line-height:150%'>0.m1 Е </span><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>±</span><span style='font-size:12.0pt;line-height:150%'>K1,
+где число m1 определено до 30 значащих цифр, число K1 – до 5 цифр. При
+невозможности произвести вычисления должно выдаваться соответствующее
+сообщение.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Примерные
+варианты заданий приведены в приложении.</span></p>
+
+<h2>Указания к выполнению работы</h2>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При выполнении
+лабораторной работы следует обратить внимание, что при хранении чисел в оперативной
+памяти компьютера необходимо обеспечить следующий  формат их представления
+(рис. 1,2):</span></p>
+
+<p class=MsoBodyText style='margin-top:4.0pt;margin-right:44.75pt;margin-bottom:
+4.0pt;margin-left:117.0pt;text-align:justify;line-height:150%'><b><span
+style='font-size:9.0pt;line-height:150%'>    Знак числа                  
+Число            </span></b>      </p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:122.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:12.7pt'>
+  <td width=72 valign=top style='width:54.0pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.7pt'>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+  0cm;margin-left:81.0pt;margin-bottom:.0001pt;text-align:justify;line-height:
+  150%'>&nbsp;</p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.7pt'>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+  0cm;margin-left:81.0pt;margin-bottom:.0001pt;text-align:justify;line-height:
+  150%'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+0cm;margin-left:117.0pt;margin-bottom:.0001pt;line-height:150%'><b><span
+style='font-size:9.0pt;line-height:150%'>                      
+0                                                    30    </span></b></p>
+
+<p class=MsoBodyText align=center style='margin-top:4.0pt;margin-right:44.75pt;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;line-height:150%'><b><span
+style='font-size:11.0pt;line-height:150%'>Рис.1</span></b><span
+style='font-size:11.0pt;line-height:150%'>. Представление целого числа</span></p>
+
+<p class=MsoBodyText align=center style='margin-top:4.0pt;margin-right:44.75pt;
+margin-bottom:4.0pt;margin-left:0cm;text-align:center;line-height:150%'><span
+style='font-size:12.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoBodyText style='margin-top:4.0pt;margin-right:44.75pt;margin-bottom:
+4.0pt;margin-left:9.0pt;text-align:justify;line-height:150%'><b><span
+style='line-height:150%;letter-spacing:1.5pt'>         
+МАНТИССА                   ПОРЯДОК</span></b></p>
+
+<p class=MsoBodyText style='margin-top:4.0pt;margin-right:44.75pt;margin-bottom:
+4.0pt;margin-left:9.0pt;text-align:justify;line-height:150%'><b><span
+style='font-size:9.0pt;line-height:150%'>Знак мантиссы          Поле
+мантиссы             Знак порядка          Поле порядка </span></b>      </p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:14.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:12.7pt'>
+  <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.7pt'>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+  0cm;margin-left:9.0pt;margin-bottom:.0001pt;line-height:150%'>&nbsp;</p>
+  </td>
+  <td width=168 valign=top style='width:126.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.7pt'>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+  0cm;margin-left:9.0pt;margin-bottom:.0001pt;line-height:150%'>&nbsp;</p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.7pt'>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+  0cm;margin-left:9.0pt;margin-bottom:.0001pt;line-height:150%'>&nbsp;</p>
+  </td>
+  <td width=132 valign=top style='width:99.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.7pt'>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+  0cm;margin-left:9.0pt;margin-bottom:.0001pt;line-height:150%'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+0cm;margin-left:9.0pt;margin-bottom:.0001pt;line-height:150%'><b><span
+style='font-size:9.0pt;line-height:150%'>                 0</span></b>                                 
+<b><span style='font-size:9.0pt;line-height:150%'>30                     
+0                                          5</span></b></p>
+
+<p class=MsoBodyText align=center style='margin-right:44.75pt;text-align:center;
+line-height:150%'><b><span style='font-size:11.0pt;line-height:150%'>Рис.2</span></b><span
+style='font-size:11.0pt;line-height:150%'>. Представление  вещественного  числа</span></p>
+
+<p class=MsoBodyText align=center style='margin-right:44.75pt;text-align:center;
+line-height:150%'><span style='font-size:11.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При наличии десятичной
+точки в числе возможны следующие варианты его представления:: <b>.</b>00025,
++123001<b>.</b>, –123<b>.</b>456. Также допускается представление числа в экспоненциальной
+форме: 1234567&nbsp;Е&nbsp;–20 или  1234567&nbsp;Е&nbsp;20. В программе должна
+быть реализована возможность ввода чисел в любом из перечисленных представлений.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Результат при выдаче на
+печать должен быть нормализован в виде: <br>
+знак&nbsp;0.мантисса&nbsp;E&nbsp;знак&nbsp;порядок.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Указанный формат не имеет
+стандартного представления в машине, поэтому программист сам должен выбрать
+типы данных, используя которые возможно осуществить необходимые действия (ввод,
+вывод, обработку) с данными числами. Наиболее предпочтительным типом для этого
+является массив, например, массив символов – для ввода числа, числовой массив –
+для обработки и вывода. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Проще производить
+вычисления, если перед обработкой числа нормализованы, т.е. приведены к такому
+виду, когда после нуля следует значащая цифра. При нормализации порядок входных
+данных может выйти за пределы указанного диапазона, но при правильных исходных
+данных, это не должно приводить к ошибке. Для этого необходимо предусмотреть
+дополнительные разряды в тех структурах данных, которые предназначены для
+хранения и обработки промежуточных результатов вычисления. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Если при умножении или
+делении чисел длина мантиссы стала больше 30 знаков, то необходимо произвести
+округление (если 31-й разряд больше или равен 5, то к 30-му разряду добавляется
+единица, если меньше 5, то 31-й разряд отбрасывается). При этом может
+возникнуть циклический поразрядный перенос из младшего разряда в старший с
+коррекцией порядка. Например, для 5-ти разрядов:</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>99999&nbsp;Е&nbsp;01+00008&nbsp;Е&nbsp;01=100007&nbsp;Е&nbsp;01
+</span><span style='font-size:12.0pt;line-height:150%;font-family:Symbol'>®</span><span
+style='font-size:12.0pt;line-height:150%'>10001&nbsp;Е&nbsp;02 .</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Так же как нет
+стандартных типов для хранения таких больших чисел, так нет и стандартных арифметических
+операций для их обработки, поэтому необходимо разработать эти операции,
+используя алгоритм умножения и деления в «столбик» </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Все логически завершенные
+фрагменты алгоритма (ввод, вывод, обработка и т.п.) необходимо оформить в виде
+подпрограмм.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При разработке интерфейса
+программы следует предусмотреть:</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание формата
+и диапазона вводимых данных; </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание
+операции, производимой программой;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>наличие пояснений
+при выводе результата;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание формата
+выводимых данных.  </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При тестировании
+программы необходимо:</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность ввода и вывода данных (т.е. их соответствие требуемому формату); </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>обеспечить вывод
+сообщений при отсутствии входных данных («пустой ввод»); </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность выполнения операций; </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>реализовать
+округление при превышении разрядности мантиссы; </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>отследить
+возникновение переполнения и/или машинного нуля.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Необходимо также
+протестировать программу на границах допустимых значений данных, задавая самое
+большое и самое маленькое число в заданном диапазоне представления. </span></p>
+
+<h2>Содержание отчета</h2>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>В отчете по лабораторной
+работе должны быть даны ответы на следующие вопросы.</span></p>
+
+<p class=MsoBodyText style='margin-left:0cm;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Каков возможный диапазон чисел,
+представляемых в ПК?</span></p>
+
+<p class=MsoBodyText style='margin-left:0cm;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Какова возможная точность
+представления чисел?</span></p>
+
+<p class=MsoBodyText style='margin-left:0cm;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Какие стандартные операции возможны
+над числами?</span></p>
+
+<p class=MsoBodyText style='margin-left:0cm;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Какой тип данных может выбрать
+программист, если обрабатываемые числа превышают возможный диапазон
+представления чисел в ПК?</span></p>
+
+<p class=MsoBodyText style='margin-left:0cm;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Как можно осуществить операции над
+числами, выходящими за рамки машинного представления?</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Отчет
+представляется в электронном или печатном виде.</span></p>
+
+<h2>Список рекомендуемой литературы</h2>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:11.0pt;line-height:150%'>Баженова И.Ю.</span></i><span
+style='font-size:11.0pt;line-height:150%'>&nbsp; Delphi 6. Самоучитель
+программиста: М.:&nbsp;Кудиц-Образ, 2002. С. 37-38 </span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:11.0pt;line-height:150%'>Савельев А.Я.</span></i><span
+style='font-size:11.0pt;line-height:150%'> Основы информатики: Учеб. для вузов.
+М.: Изд-во МГТУ им.&nbsp;Н.Э.Баумана, 2001. С. 328.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;line-height:150%'><b><span
+style='font-size:11.0pt;line-height:150%'>&nbsp;</span></b></p>
+
+<p class=MsoBodyText align=right style='margin-left:18.0pt;text-align:right;
+line-height:150%'><b><span style='font-size:12.0pt;line-height:150%'>Приложение</span></b></p>
+
+<p class=MsoList2 style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:26.95pt;line-height:150%'><b>Примерные варианты
+заданий </b></p>
+
+<p class=MsoNormal style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'>1.   Смоделировать операцию деления действительного
+числа в форме  <span style='font-family:Symbol'>±</span>m.n Е <span
+style='font-family:Symbol'>±</span>K, где (m+n) – суммарная длина мантиссы до
+30 значащих цифр; K –  величина порядка до 5 цифр – на целое число длиной до 30
+десятичных цифр. Результат выдать в форме  <span style='font-family:Symbol'>±</span>0.m1
+Е <span style='font-family:Symbol'>±</span>K1, где число m1 определено до 30
+значащих цифр, а K1 – до 5 цифр.</p>
+
+<p class=MsoNormal style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'>2.   Смоделировать операцию умножения целого числа со
+знаком  длиной до 30 десятичных цифр на действительное число в форме  <span
+style='font-family:Symbol'>±</span>m.n Е <span style='font-family:Symbol'>±</span>K,
+где (m+n) – суммарная длина мантиссы до 30 значащих цифр, а K – величина
+порядка до 5 цифр. Результат выдать в форме   <span style='font-family:Symbol'>±</span>0.m1
+Е <span style='font-family:Symbol'>±</span>K1, где число  m1 определено до 30
+значащих цифр, а K1 – до 5 цифр.</p>
+
+<p class=MsoNormal style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'>3.   Смоделировать операцию умножения действительного
+числа на действительное число в форме   <span style='font-family:Symbol'>±</span>m.n
+Е <span style='font-family:Symbol'>±</span>K, где (m+n) – суммарная длина
+мантиссы до 30 значащих цифр, а K – величина порядка до 5 цифр. Результат
+выдать в форме   <span style='font-family:Symbol'>±</span>0.m1 Е <span
+style='font-family:Symbol'>±</span>K1, где число m1 определено  до 30 значащих
+цифр, а K1 – до 5 цифр.</p>
+
+<p class=MsoNormal style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'>4.   Смоделировать операцию деления действительного
+числа на действительное число в форме   <span style='font-family:Symbol'>±</span>m.n
+Е <span style='font-family:Symbol'>±</span>K, где (m+n) – суммарная длина
+мантиссы до 30 значащих цифр, а K – величина порядка до 5 цифр. Результат
+выдать в форме   <span style='font-family:Symbol'>±</span>0.m1 Е <span
+style='font-family:Symbol'>±</span>K1, где число m1 определено  до 30 значащих
+цифр, а K1 – до 5 цифр.</p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Дополнительное задание
+(для желающих).</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Представить большое
+число, разбив мантиссу на части, соответствующие стандартному  числовому
+представлениями, например:</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+9.0pt;line-height:150%'><span lang=EN-US style='font-size:11.0pt;line-height:
+150%'>T</span><span style='font-size:11.0pt;line-height:150%'>ype</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+9.0pt;line-height:150%'><span style='font-size:11.0pt;line-height:150%'> 
+TBigNumber=record                       {тип данных для работы с частями числа}</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+9.0pt;line-height:150%'><span style='font-size:11.0pt;line-height:150%'>              
+</span><span lang=EN-US style='font-size:11.0pt;line-height:150%'>Sign:
+Boolean;                                        { </span><span
+style='font-size:11.0pt;line-height:150%'>знак</span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'> (True - &quot;+&quot;, False -
+&quot;-&quot;) }</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+9.0pt;line-height:150%'><span lang=EN-US style='font-size:11.0pt;line-height:
+150%'>               Power:
+Integer;                                                                      
+{ </span><span style='font-size:11.0pt;line-height:150%'>порядок</span><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'> }</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+9.0pt;line-height:150%'><span lang=EN-US style='font-size:11.0pt;line-height:
+150%'>               Part</span><span style='font-size:11.0pt;line-height:150%'>1,                                                                   
+{ первая часть числа }</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+9.0pt;line-height:150%'><span style='font-size:11.0pt;line-height:150%'>              
+Part2,                                                                    {
+вторая часть числа }</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+9.0pt;line-height:150%'><span style='font-size:11.0pt;line-height:150%'>              
+Part3,                                                                    {
+третья часть числа }</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+9.0pt;line-height:150%'><span style='font-size:11.0pt;line-height:150%'>              
+Part4: Int64;                                                    { четвертая
+часть числа }</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+9.0pt;line-height:150%'><span style='font-size:11.0pt;line-height:150%'>  </span><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>E</span><span
+style='font-size:11.0pt;line-height:150%'>nd;</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Сравните эффективность
+использования этого представления  с обычными массивами по времени выполнения
+операций и по объему используемой памяти. Протестируйте программу при
+использовании чисел, имеющих как большую, так  и малую разрядность мантиссы.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;line-height:150%'><b><span
+style='font-size:11.0pt;line-height:150%'>&nbsp;</span></b></p>
+
+</div>
+
+</body>
+
+</html>

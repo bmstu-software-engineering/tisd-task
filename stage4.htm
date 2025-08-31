@@ -1,0 +1,742 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Лабораторная работа № 1</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+h1
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:35.4pt;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:-5.4pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h4
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h5
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+h6
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:0cm;
+	margin-right:13.85pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Comic Sans MS";
+	color:windowtext;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:5.65pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.35pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:27.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:windowtext;
+	font-weight:bold;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.85pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:black;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0cm;
+	margin-right:1.1pt;
+	margin-bottom:0cm;
+	margin-left:27.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:windowtext;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#000066;}
+code
+	{font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	color:windowtext;}
+p.a, li.a, div.a
+	{margin-top:6.0pt;
+	margin-right:1.15pt;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:51.05pt 73.3pt 45.35pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1>Этап № 4</h1>
+
+<h1>Работа со стеком</h1>
+
+<h3 style='margin-top:6.0pt;margin-right:4.95pt;margin-bottom:6.0pt;margin-left:
+0cm;text-align:justify;text-indent:27.0pt;line-height:150%'><span
+style='font-family:"Times New Roman"'>Цель работы: реализовать операции работы
+со стеком, который представлен в виде массива (статического или динамического)
+и в виде односвязного списка, оценить преимущества и недостатки каждой
+реализации, получить представление о механизмах выделения и освобождения памяти
+при работе с динамическими структурами данных.</span></h3>
+
+<h2>Краткие теоретические сведения</h2>
+
+<p class=MsoBodyText style='margin-right:4.95pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Стек –
+это последовательный список с переменной длиной, в котором включение и исключение
+элементов происходит только с одной стороны – с его вершины. Стек функционирует
+по принципу: последним пришел – первым ушел, Last </span><span lang=EN-US
+style='font-size:12.0pt;line-height:150%'>In</span><span style='font-size:12.0pt;
+line-height:150%'> – </span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>First</span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'> </span><span lang=EN-US style='font-size:12.0pt;line-height:
+150%'>Out</span><span style='font-size:12.0pt;line-height:150%'> (</span><span
+lang=EN-US style='font-size:12.0pt;line-height:150%'>LIFO</span><span
+style='font-size:12.0pt;line-height:150%'>).</span></p>
+
+<p class=MsoNormal style='margin-right:4.95pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'>Программная реализация стека возможна на основе
+различных структур данных, например, с использованием статических или
+динамических одномерных массивов (векторов) и линейных списков. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt;line-height:
+150%'>При работе со стеком доступен только его верхний элемент, который адресуется
+специальным указателем стека <span lang=EN-US>PS</span> (<span lang=EN-US>Pointer</span><span
+lang=EN-US> </span><span lang=EN-US>Stack</span>). Причем классическая реализация
+стека предполагает, что просмотреть содержимое стека без извлечения (удаления)
+его элементов невозможно. </p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:36.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При работе со стеком
+необходимо отслеживать возникновение таких аварийных ситуаций, как попытки
+исключения элемента из пустого стека и переполнения стека. При реализации стека
+в виде вектора переполнение возникает вследствие ограниченности объема памяти,
+выделяемой под размещение массива. Однако даже если стек реализован на основе
+динамического списка, его размер также не безграничен, он ограничен объемом
+доступной программе оперативной памяти. Для отработки указанных аварийных
+ситуаций в программе должны быть предусмотрены дополнительные проверки на
+пустоту и переполнение стека и выдача соответствующих сообщений</span>. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Любой тип данных в языке программирования определяет множество допустимых
+значений переменных и множество допустимых операций над ними, поэтому можно определить
+стек как некий <b>абстрактный тип</b> <b>данных (АТД). </b>Преимущество
+использования АТД заключается в том, что в этом случае описание данных и операций,
+выполняемых над ними, отделено от их представления и реализации. Таким образом,
+АТД специфицирует данные и операции, которые могут быть применены к этим
+данным. </p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>К основным операциям,
+выполняемым над стеком, относятся: включение элемента в стек и исключение
+элемента из стека. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><b><span style='font-size:12.0pt;line-height:150%'>Реализация стека в
+виде массива. </span></b><span style='font-size:12.0pt;line-height:150%'>Если
+стек реализован в виде статического или динамического массива (вектора), то для
+его хранения обычно отводится непрерывная область памяти ограниченного размера,
+имеющая нижнюю и верхнюю границу. Перед началом работы указатель стека </span><span
+lang=EN-US style='font-size:12.0pt;line-height:150%'>PS</span><span
+style='font-size:12.0pt;line-height:150%'> находится ниже левой (нижней) границы
+массива. При включении первого элемента в стек указатель </span><span
+lang=EN-US style='font-size:12.0pt;line-height:150%'>PS</span><span
+style='font-size:12.0pt;line-height:150%'> устанавливается на начало массива и
+по адресу первого элемента размещается записываемое значение. При попытке
+добавить в стек каждый последующий элемент сначала происходит смещение указателя
+на длину типа данных (т.е. он перемещается к следующему элементу массива), а затем
+– размещение значений элементов по этим адресам. Если указатель выходит за
+верхнюю границу массива, то это признак того, что стек переполнен. При
+исключении элемента из стека сначала считываются данные, а затем происходит
+перемещение указателя </span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>PS</span><span style='font-size:12.0pt;line-height:150%'> к
+предыдущему элементу. Если указатель стека выходит за нижнюю границу массива,
+то стек пуст. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Принцип организации стека
+предполагает, что в текущий момент времени доступен элемент, индекс которого
+хранится в указателе стека </span><span lang=EN-US style='font-size:12.0pt;
+line-height:150%'>PS</span><span style='font-size:12.0pt;line-height:150%'>.
+Граничные адреса стека – это параметры физической структуры. Физическая
+структура обычно дополняется<span style='color:blue'> </span>дескриптором
+стека, в котором хранится имя стека, адрес нижней границы стека, адрес верхней
+границы стека (или максимальное количество элементов в нем), указатель стека
+(номер последнего записанного элемента) и описание (тип) элемента стека.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><b><span style='font-size:12.0pt;line-height:150%'>Реализация стека в
+виде списка. </span></b><span style='font-size:12.0pt;line-height:150%'>До
+начала работы указатель стека показывает  на нулевой, физически отсутствующий
+адрес (т. е. указатель - пустой). При включении<b><i> </i></b>элемента в стек
+сначала происходит выделение области памяти, адрес которой записывается в
+указатель стека, а затем по значению этого указателя в стек помещается информация.
+</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При исключении<b><i> </i></b>элемента
+сначала по указателю стека считывается информация об исключаемом элементе, а
+затем указатель смещается к предыдущему элементу. После чего освобождается
+память, выделенная под элемент. Если указатель имеет значение нулевого адреса,
+то стек пуст. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:26.95pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При физической реализации
+стека в виде односвязного линейного списка дескриптор будет отличаться
+отсутствием верхней границы стека. В этом случае объем стека ограничивается
+только объемом доступной оперативной памяти. </span></p>
+
+<p class=MsoBodyTextIndent style='text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>Преимущество использования АТД
+заключается в том, что в программе общий алгоритм программы по работе со стеком
+не зависит от конкретной реализации самого стека. Однако для реализации каждой
+операции (включения элемента, исключения элемента, проверки на пустоту,
+проверки на переполнение) должна быть написана подпрограмма, зависящая от
+конкретной реализации структуры данных.</span></p>
+
+<h2>Задание</h2>
+
+<p class=MsoBodyTextIndent style='text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>Разработать программу работы со стеком,
+реализующую операции добавления и удаления элементов из стека и отображения
+текущего состояния стека. Реализовать стек: а) массивом; б) списком.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:26.95pt;line-height:
+150%'>Все стандартные операции со стеком должны быть оформлены отдельными подпрограммами.
+В случае реализации стека в виде списка при отображении текущего состояния
+стека предусмотреть возможность просмотра адресов элементов стека и создания
+дополнительного собственного списка свободных областей (адресов освобождаемой
+памяти при удалении элемента) с выводом его на экран. Список свободных областей
+необходим для того, чтобы проследить, каким образом происходит выделение памяти
+при запросах на нее.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:26.95pt;line-height:
+150%'>В приложении приведены примерные варианты заданий, а также дополнительное
+задание для желающих.</p>
+
+<h2>Указания к выполнению работы</h2>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Интерфейс программы
+должен быть понятен неподготовленному пользователю. При разработке интерфейса
+программы следует предусмотреть:</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание формата
+и диапазона вводимых данных;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>блокирование
+ввода данных, неверных по типу; </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>указание
+операции, производимой программой;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:44.75pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>наличие пояснений
+при выводе результата.</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Кроме того, нужно вывести
+на экран время выполнения программы при реализации стека списком и массивом, а
+также указать требуемый объем памяти. </span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>При тестировании
+программы необходимо:</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:1.1pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность ввода и вывода данных (в том числе, отследить попытки ввода
+данных, неверных по типу); </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:1.1pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>обеспечить вывод
+сообщений при отсутствии входных данных («пустой ввод»); </span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:1.1pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
+правильность выполнения операций;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:1.1pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>обеспечить вывод
+соответствующих сообщений при попытке удаления элемента из пустого стека;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:1.1pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>отследить
+переполнение стека.</span></p>
+
+<p class=MsoBodyTextIndent style='margin-right:4.95pt;line-height:150%'><span
+style='font-family:"Times New Roman"'>При реализации стека в виде списка
+необходимо:</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>ограничить
+доступный объем оперативной памяти путем указания:</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:45.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>максимального
+количества элементов в стеке;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:45.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>максимального
+адреса памяти, превышение которого будет свидетельствовать о переполнении
+стека;</span></p>
+
+<p class=MsoBodyText style='margin-top:0cm;margin-right:4.95pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>следить за
+освобождением памяти при удалении элемента из стека.</span></p>
+
+<h2>Содержание отчета</h2>
+
+<p class=MsoBodyTextIndent style='text-align:justify;line-height:150%'><span
+style='font-family:"Times New Roman"'>В отчете по лабораторной работе должен
+быть сделан вывод о том, в каких случаях для реализации стека целесообразно
+использовать массив, а в каких список. Кроме того, следует указать, какие
+преимущества дает та или иная реализация. Выводы должны быть подкреплены </span><span
+style='font-family:"Times New Roman"'>результатами сравнений объёмов памяти и
+времён выполнения программы при использовании списка и массива. </span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:26.95pt;line-height:
+150%'>В отчете по лабораторной работе должны быть даны ответы на следующие вопросы:</p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Что такое стек?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Каким образом и сколько памяти
+выделяется под хранение стека при различной его реализации?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Каким образом освобождается память
+при удалении элемента стека при различной реализации стека?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Что происходит с элементами стека при
+его просмотре?</span></p>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:150%'>Каким образом эффективнее
+реализовывать стек? От чего это зависит?</span></p>
+
+<p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
+150%'><span style='font-size:12.0pt;line-height:150%'>Отчет должен быть
+представлен в электронном или печатном виде.</span></p>
+
+<h2>Список рекомендуемой литературы</h2>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='line-height:150%'><i><span style='font-size:11.0pt;
+     line-height:150%'>Вирт  Н. </span></i><span style='font-size:11.0pt;
+     line-height:150%'>Алгоритмы и структуры данных:  Пер. с англ. СПб.:
+     Невский диалект, 2001. С. 69–71, 205–235</span></li>
+</ol>
+
+<p class=MsoBodyText style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%'><span style='font-size:11.0pt;line-height:150%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:11.0pt;line-height:150%'>Ахо А.,
+Хопкрофт Д., Ульман</span></i><span style='font-size:11.0pt;line-height:150%'> <i>Д.
+</i>Структуры данных и алгоритмы.: Пер. с англ. М.: Издат. дом «Вильямс»,
+2000.  С. 58–76 </span></p>
+
+<p class=MsoList2 style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%'><span style='font-size:11.0pt;line-height:150%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:11.0pt;line-height:150%'>Кормен Т.,
+Лейзерсон Ч., Ривест Р.,</span></i><span style='font-size:11.0pt;line-height:
+150%'> Алгоритмы: построение и анализ: Пер. с англ. М.: МЦНМО, 2001. С. 194–198</span></p>
+
+<p class=MsoList2 style='margin-left:0cm;text-indent:0cm;line-height:150%'><span
+style='font-size:11.0pt;line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style='text-align:right;text-indent:27.0pt;
+line-height:150%'><b>Приложение</b></p>
+
+<p class=MsoNormal style='text-indent:27.0pt;line-height:150%'><b>Примерные
+варианты заданий </b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>1    Считая, что элементами стека являются целые числа, распечатать 
+возрастающие последовательности этих чисел в обратном порядке.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>2    При реализации стека массивом обеспечить размещение двух стеков в одном
+массиве. Один стек располагается в начале массива и растет к концу, а другой
+располагается в конце массива и растет к началу. Заполнить и освободить стеки
+произвольным образом, вводя значения с клавиатуры. Элементами стека являются 
+вещественные числа. В виде списка реализовать один стек.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>3    Элементами стека являются символы. Определить, является ли получившаяся
+строка палиндромом (зеркально-симметричной), т. е. одинаково читающейся слева направо
+и справа налево.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>4    Элементами стека являются адреса памяти. При реализации стека в виде
+массивов предусмотреть возможность их ввода, при реализации в виде списка –
+использовать адреса памяти, выделяемой под размещение элементов.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Дополнительное задание (для желающих)</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:27.0pt;line-height:
+150%'>Попробуйте провести простой эксперимент<b>. </b>При реализации стека
+списком в одном случае выделяйте и освобождайте память каждый раз, когда будете
+добавлять или удалять элемент из стека. В другом случае сразу выделите память
+под заявленное количество элементов стека. Сравнивая адреса памяти, которые
+выделяются при очередном включении элемента в стек и исключении из него,
+сделайте вывод о том, как на практике реализован механизм работы с динамической
+памятью. Обратите внимание на группировку адресов статических переменных в
+одной области памяти, а динамических – в другой.</p>
+
+</div>
+
+</body>
+
+</html>
