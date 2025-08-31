@@ -1,5 +1,7 @@
 # Ку) примерные задания ТиСДов подъехали
 
+[лапкой жмак](https://bmstu-software-engineering.github.io/tisd-task/)
+
 - [делай раз](./stage1.htm)
 - [делай два](./stage2.htm)
 - [делай три](./stage3.htm)
