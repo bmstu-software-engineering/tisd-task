@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1251">
 <meta name=Generator content="Microsoft Word 11 (filtered)">
-<title>Лабораторная работа № 1</title>
+<title>Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° в„– 1</title>
 
 <style>
 <!--
@@ -365,345 +365,345 @@ ul
 
 <div class=Section1>
 
-<h1>Этап № 2</h1>
+<h1>Р­С‚Р°Рї в„– 2</h1>
 
-<h1>Записи с вариантами. Обработка таблиц</h1>
+<h1>Р—Р°РїРёСЃРё СЃ РІР°СЂРёР°РЅС‚Р°РјРё. РћР±СЂР°Р±РѕС‚РєР° С‚Р°Р±Р»РёС†</h1>
 
 <h3 style='margin-top:6.0pt;margin-right:-4.05pt;margin-bottom:6.0pt;
 margin-left:0cm;text-align:justify;text-indent:27.0pt;line-height:150%'><span
-style='line-height:150%;font-family:"Times New Roman"'>Цель работы </span><span
-style='font-family:"Times New Roman"'>–</span><span style='line-height:150%;
-font-family:"Times New Roman"'> приобрести навыки работы с типом данных
-«запись», содержащим вариантную часть, и с данными, хранящимися в таблицах,
-произвести сравнительный анализ реализации алгоритма сортировки и поиска информации
-в таблицах при использовании записей с большим числом полей и таблицы ключей,
-оценить эффективности программы по времени и по используемому объему памяти.</span></h3>
+style='line-height:150%;font-family:"Times New Roman"'>Р¦РµР»СЊ СЂР°Р±РѕС‚С‹ </span><span
+style='font-family:"Times New Roman"'>вЂ“</span><span style='line-height:150%;
+font-family:"Times New Roman"'> РїСЂРёРѕР±СЂРµСЃС‚Рё РЅР°РІС‹РєРё СЂР°Р±РѕС‚С‹ СЃ С‚РёРїРѕРј РґР°РЅРЅС‹С…
+В«Р·Р°РїРёСЃСЊВ», СЃРѕРґРµСЂР¶Р°С‰РёРј РІР°СЂРёР°РЅС‚РЅСѓСЋ С‡Р°СЃС‚СЊ, Рё СЃ РґР°РЅРЅС‹РјРё, С…СЂР°РЅСЏС‰РёРјРёСЃСЏ РІ С‚Р°Р±Р»РёС†Р°С…,
+РїСЂРѕРёР·РІРµСЃС‚Рё СЃСЂР°РІРЅРёС‚РµР»СЊРЅС‹Р№ Р°РЅР°Р»РёР· СЂРµР°Р»РёР·Р°С†РёРё Р°Р»РіРѕСЂРёС‚РјР° СЃРѕСЂС‚РёСЂРѕРІРєРё Рё РїРѕРёСЃРєР° РёРЅС„РѕСЂРјР°С†РёРё
+РІ С‚Р°Р±Р»РёС†Р°С… РїСЂРё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё Р·Р°РїРёСЃРµР№ СЃ Р±РѕР»СЊС€РёРј С‡РёСЃР»РѕРј РїРѕР»РµР№ Рё С‚Р°Р±Р»РёС†С‹ РєР»СЋС‡РµР№,
+РѕС†РµРЅРёС‚СЊ СЌС„С„РµРєС‚РёРІРЅРѕСЃС‚Рё РїСЂРѕРіСЂР°РјРјС‹ РїРѕ РІСЂРµРјРµРЅРё Рё РїРѕ РёСЃРїРѕР»СЊР·СѓРµРјРѕРјСѓ РѕР±СЉРµРјСѓ РїР°РјСЏС‚Рё.</span></h3>
 
-<h2>Краткие теоретические сведения</h2>
-
-<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
-27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Параметры
-реальных объектов бывает сложно описать, используя  только числовые, либо
-только символьные типы данных. Часто требуется комбинация разных типов. Для
-этого используется тип «запись». Запись </span>–<span style='font-size:12.0pt;
-line-height:150%'> это структурированный тип, состоящий из фиксированного числа
-компонентов различного типа. Компоненты записи называются полями записи. Каждое
-поле имеет свое собственное имя и тип. Тип поля может быть любым, кроме
-файлового. Обращение к полю записи осуществляется с помощью идентификатора переменной
-и идентификатора поля, разделенных точкой. Такая структура называется составным
-именем.</span></p>
+<h2>РљСЂР°С‚РєРёРµ С‚РµРѕСЂРµС‚РёС‡РµСЃРєРёРµ СЃРІРµРґРµРЅРёСЏ</h2>
 
 <p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
-27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Объем
-памяти, необходимый для размещения записи, складывается из размера памяти под
-каждое из ее полей.</span></p>
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>РџР°СЂР°РјРµС‚СЂС‹
+СЂРµР°Р»СЊРЅС‹С… РѕР±СЉРµРєС‚РѕРІ Р±С‹РІР°РµС‚ СЃР»РѕР¶РЅРѕ РѕРїРёСЃР°С‚СЊ, РёСЃРїРѕР»СЊР·СѓСЏВ  С‚РѕР»СЊРєРѕ С‡РёСЃР»РѕРІС‹Рµ, Р»РёР±Рѕ
+С‚РѕР»СЊРєРѕ СЃРёРјРІРѕР»СЊРЅС‹Рµ С‚РёРїС‹ РґР°РЅРЅС‹С…. Р§Р°СЃС‚Рѕ С‚СЂРµР±СѓРµС‚СЃСЏ РєРѕРјР±РёРЅР°С†РёСЏ СЂР°Р·РЅС‹С… С‚РёРїРѕРІ. Р”Р»СЏ
+СЌС‚РѕРіРѕ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ С‚РёРї В«Р·Р°РїРёСЃСЊВ». Р—Р°РїРёСЃСЊ </span>вЂ“<span style='font-size:12.0pt;
+line-height:150%'> СЌС‚Рѕ СЃС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ С‚РёРї, СЃРѕСЃС‚РѕСЏС‰РёР№ РёР· С„РёРєСЃРёСЂРѕРІР°РЅРЅРѕРіРѕ С‡РёСЃР»Р°
+РєРѕРјРїРѕРЅРµРЅС‚РѕРІ СЂР°Р·Р»РёС‡РЅРѕРіРѕ С‚РёРїР°. РљРѕРјРїРѕРЅРµРЅС‚С‹ Р·Р°РїРёСЃРё РЅР°Р·С‹РІР°СЋС‚СЃСЏ РїРѕР»СЏРјРё Р·Р°РїРёСЃРё. РљР°Р¶РґРѕРµ
+РїРѕР»Рµ РёРјРµРµС‚ СЃРІРѕРµ СЃРѕР±СЃС‚РІРµРЅРЅРѕРµ РёРјСЏ Рё С‚РёРї. РўРёРї РїРѕР»СЏ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р»СЋР±С‹Рј, РєСЂРѕРјРµ
+С„Р°Р№Р»РѕРІРѕРіРѕ. РћР±СЂР°С‰РµРЅРёРµ Рє РїРѕР»СЋ Р·Р°РїРёСЃРё РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ СЃ РїРѕРјРѕС‰СЊСЋ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РїРµСЂРµРјРµРЅРЅРѕР№
+Рё РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РїРѕР»СЏ, СЂР°Р·РґРµР»РµРЅРЅС‹С… С‚РѕС‡РєРѕР№. РўР°РєР°СЏ СЃС‚СЂСѓРєС‚СѓСЂР° РЅР°Р·С‹РІР°РµС‚СЃСЏ СЃРѕСЃС‚Р°РІРЅС‹Рј
+РёРјРµРЅРµРј.</span></p>
 
 <p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
-27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Запись
-может содержать поля, которые, в свою очередь, также являются записями, то
-есть, возможна структура вложенных записей.</span></p>
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>РћР±СЉРµРј
+РїР°РјСЏС‚Рё, РЅРµРѕР±С…РѕРґРёРјС‹Р№ РґР»СЏ СЂР°Р·РјРµС‰РµРЅРёСЏ Р·Р°РїРёСЃРё, СЃРєР»Р°РґС‹РІР°РµС‚СЃСЏ РёР· СЂР°Р·РјРµСЂР° РїР°РјСЏС‚Рё РїРѕРґ
+РєР°Р¶РґРѕРµ РёР· РµРµ РїРѕР»РµР№.</span></p>
 
 <p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
-27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Тип
-«запись» объявляется следующим образом:</span></p>
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Р—Р°РїРёСЃСЊ
+РјРѕР¶РµС‚ СЃРѕРґРµСЂР¶Р°С‚СЊ РїРѕР»СЏ, РєРѕС‚РѕСЂС‹Рµ, РІ СЃРІРѕСЋ РѕС‡РµСЂРµРґСЊ, С‚Р°РєР¶Рµ СЏРІР»СЏСЋС‚СЃСЏ Р·Р°РїРёСЃСЏРјРё, С‚Рѕ
+РµСЃС‚СЊ, РІРѕР·РјРѕР¶РЅР° СЃС‚СЂСѓРєС‚СѓСЂР° РІР»РѕР¶РµРЅРЅС‹С… Р·Р°РїРёСЃРµР№.</span></p>
+
+<p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>РўРёРї
+В«Р·Р°РїРёСЃСЊВ» РѕР±СЉСЏРІР»СЏРµС‚СЃСЏ СЃР»РµРґСѓСЋС‰РёРј РѕР±СЂР°Р·РѕРј:</span></p>
 
 <p class=MsoNormal style='line-height:150%'><strong><span style='font-size:
-11.0pt;line-height:150%'>Type                                          </span></strong><br>
-   <code><span style='font-size:11.0pt;line-height:150%;font-family:"Times New Roman"'>&quot;имя
-записи1&quot; = </span></code><strong><span style='font-size:11.0pt;line-height:
-150%'>Record       </span></strong><br>
-<span style='font-size:11.0pt;line-height:150%'>       &quot;поле 1&quot; :
-&quot;тип 1&quot;;             <br>
-       &quot;поле 2&quot; : &quot;тип 2&quot;;             <br>
-</span>    <strong><span style='font-size:11.0pt;line-height:150%'>…                                         
+11.0pt;line-height:150%'>TypeВ В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  </span></strong><br>
+В В  <code><span style='font-size:11.0pt;line-height:150%;font-family:"Times New Roman"'>&quot;РёРјСЏ
+Р·Р°РїРёСЃРё1&quot; = </span></code><strong><span style='font-size:11.0pt;line-height:
+150%'>RecordВ В В В В В  </span></strong><br>
+<span style='font-size:11.0pt;line-height:150%'>В В В В В В  &quot;РїРѕР»Рµ 1&quot; :
+&quot;С‚РёРї 1&quot;;В В В В В В В В В В В В  <br>
+В В В В В В  &quot;РїРѕР»Рµ 2&quot; : &quot;С‚РёРї 2&quot;;В В В В В В В В В В В В  <br>
+</span>В В В  <strong><span style='font-size:11.0pt;line-height:150%'>вЂ¦В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В 
 </span></strong><br>
-<span style='font-size:11.0pt;line-height:150%'>       </span><span lang=EN-US
+<span style='font-size:11.0pt;line-height:150%'>В В В В В В  </span><span lang=EN-US
 style='font-size:11.0pt;line-height:150%'>&quot;</span><span style='font-size:
-11.0pt;line-height:150%'>поле</span><span lang=EN-US style='font-size:11.0pt;
+11.0pt;line-height:150%'>РїРѕР»Рµ</span><span lang=EN-US style='font-size:11.0pt;
 line-height:150%'> n&quot; : &quot;</span><span style='font-size:11.0pt;
-line-height:150%'>тип</span><span lang=EN-US style='font-size:11.0pt;
-line-height:150%'> n&quot;<b>             </b><br>
-</span><span lang=EN-US>   </span><strong><span lang=EN-US style='font-size:
+line-height:150%'>С‚РёРї</span><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'> n&quot;<b>В В В В В В В В В В В В  </b><br>
+</span><span lang=EN-US>В В  </span><strong><span lang=EN-US style='font-size:
 11.0pt;line-height:150%'>End</span></strong><code><span lang=EN-US
 style='font-size:11.0pt;line-height:150%;font-family:"Times New Roman"'>;</span></code></p>
 
 <p style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;margin-left:
 0cm;text-indent:27.0pt;line-height:150%'><strong><span style='color:windowtext;
-font-weight:normal'>Пример вложенной записи:</span></strong></p>
+font-weight:normal'>РџСЂРёРјРµСЂ РІР»РѕР¶РµРЅРЅРѕР№ Р·Р°РїРёСЃРё:</span></strong></p>
 
 <p class=MsoNormal style='line-height:150%'><code><span style='font-size:11.0pt;
-line-height:150%;font-family:"Times New Roman"'>   &quot;имя записи2&quot; = </span></code><strong><span
+line-height:150%;font-family:"Times New Roman"'>В В  &quot;РёРјСЏ Р·Р°РїРёСЃРё2&quot; = </span></code><strong><span
 style='font-size:11.0pt;line-height:150%'>Record</span></strong></p>
 
 <p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
-line-height:150%'>       &quot;поле 1&quot; : &quot;тип 1&quot;;</span></p>
+line-height:150%'>В В В В В В  &quot;РїРѕР»Рµ 1&quot; : &quot;С‚РёРї 1&quot;;</span></p>
 
 <p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
-line-height:150%'>       &quot;поле 2&quot; : &quot;тип 2&quot;;</span></p>
+line-height:150%'>В В В В В В  &quot;РїРѕР»Рµ 2&quot; : &quot;С‚РёРї 2&quot;;</span></p>
 
 <p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
-line-height:150%'>       &quot;поле 3&quot; : &quot;&quot;имя записи1&quot;</span></p>
+line-height:150%'>В В В В В В  &quot;РїРѕР»Рµ 3&quot; : &quot;&quot;РёРјСЏ Р·Р°РїРёСЃРё1&quot;</span></p>
 
 <p class=MsoNormal style='line-height:150%'><b><span style='font-size:11.0pt;
-line-height:150%'>   End;</span></b></p>
+line-height:150%'>В В  End;</span></b></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>Запись может включать в
-себя вариантную часть, которая позволяет определить тип, содержащий описания
-нескольких вариантов структуры. Вариантное поле в записи может быть только одно
-и оно всегда последнее. В свою очередь последнее поле в вариантной части может
-быть вариантным, то есть вариантное поле так же может быть вложенным. </span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>Р—Р°РїРёСЃСЊ РјРѕР¶РµС‚ РІРєР»СЋС‡Р°С‚СЊ РІ
+СЃРµР±СЏ РІР°СЂРёР°РЅС‚РЅСѓСЋ С‡Р°СЃС‚СЊ, РєРѕС‚РѕСЂР°СЏ РїРѕР·РІРѕР»СЏРµС‚ РѕРїСЂРµРґРµР»РёС‚СЊ С‚РёРї, СЃРѕРґРµСЂР¶Р°С‰РёР№ РѕРїРёСЃР°РЅРёСЏ
+РЅРµСЃРєРѕР»СЊРєРёС… РІР°СЂРёР°РЅС‚РѕРІ СЃС‚СЂСѓРєС‚СѓСЂС‹. Р’Р°СЂРёР°РЅС‚РЅРѕРµ РїРѕР»Рµ РІ Р·Р°РїРёСЃРё РјРѕР¶РµС‚ Р±С‹С‚СЊ С‚РѕР»СЊРєРѕ РѕРґРЅРѕ
+Рё РѕРЅРѕ РІСЃРµРіРґР° РїРѕСЃР»РµРґРЅРµРµ. Р’ СЃРІРѕСЋ РѕС‡РµСЂРµРґСЊ РїРѕСЃР»РµРґРЅРµРµ РїРѕР»Рµ РІ РІР°СЂРёР°РЅС‚РЅРѕР№ С‡Р°СЃС‚Рё РјРѕР¶РµС‚
+Р±С‹С‚СЊ РІР°СЂРёР°РЅС‚РЅС‹Рј, С‚Рѕ РµСЃС‚СЊ РІР°СЂРёР°РЅС‚РЅРѕРµ РїРѕР»Рµ С‚Р°Рє Р¶Рµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РІР»РѕР¶РµРЅРЅС‹Рј. </span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>Таким образом, записи с
-вариантами обеспечивают средства объединения записей, которые похожи, но не
-идентичны по форме. Объем памяти, необходимый для записи с вариантами
-складывается из длин полей фиксированной части и максимального по длине поля
-вариантной части. Тип данных в вариантной части при компиляции не проверяется,
-поэтому, контроль за правильностью ее использования возлагается на
-программиста.</span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РўР°РєРёРј РѕР±СЂР°Р·РѕРј, Р·Р°РїРёСЃРё СЃ
+РІР°СЂРёР°РЅС‚Р°РјРё РѕР±РµСЃРїРµС‡РёРІР°СЋС‚ СЃСЂРµРґСЃС‚РІР° РѕР±СЉРµРґРёРЅРµРЅРёСЏ Р·Р°РїРёСЃРµР№, РєРѕС‚РѕСЂС‹Рµ РїРѕС…РѕР¶Рё, РЅРѕ РЅРµ
+РёРґРµРЅС‚РёС‡РЅС‹ РїРѕ С„РѕСЂРјРµ. РћР±СЉРµРј РїР°РјСЏС‚Рё, РЅРµРѕР±С…РѕРґРёРјС‹Р№ РґР»СЏ Р·Р°РїРёСЃРё СЃ РІР°СЂРёР°РЅС‚Р°РјРё
+СЃРєР»Р°РґС‹РІР°РµС‚СЃСЏ РёР· РґР»РёРЅ РїРѕР»РµР№ С„РёРєСЃРёСЂРѕРІР°РЅРЅРѕР№ С‡Р°СЃС‚Рё Рё РјР°РєСЃРёРјР°Р»СЊРЅРѕРіРѕ РїРѕ РґР»РёРЅРµ РїРѕР»СЏ
+РІР°СЂРёР°РЅС‚РЅРѕР№ С‡Р°СЃС‚Рё. РўРёРї РґР°РЅРЅС‹С… РІ РІР°СЂРёР°РЅС‚РЅРѕР№ С‡Р°СЃС‚Рё РїСЂРё РєРѕРјРїРёР»СЏС†РёРё РЅРµ РїСЂРѕРІРµСЂСЏРµС‚СЃСЏ,
+РїРѕСЌС‚РѕРјСѓ, РєРѕРЅС‚СЂРѕР»СЊ Р·Р° РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊСЋ РµРµ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РІРѕР·Р»Р°РіР°РµС‚СЃСЏ РЅР°
+РїСЂРѕРіСЂР°РјРјРёСЃС‚Р°.</span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
 150%'><span style='font-size:12.0pt;line-height:150%'>&nbsp;</span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>Объявление вариантной
-записи:</span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РћР±СЉСЏРІР»РµРЅРёРµ РІР°СЂРёР°РЅС‚РЅРѕР№
+Р·Р°РїРёСЃРё:</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><b><span
-style='font-size:11.0pt;line-height:150%'>Т</span></b><b><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'>Рў</span></b><b><span lang=EN-US
 style='font-size:11.0pt;line-height:150%'>ype</span></b></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
-style='font-size:11.0pt;line-height:150%'>   &quot;имя записи1&quot; = <b>Record                         
+style='font-size:11.0pt;line-height:150%'>В В  &quot;РёРјСЏ Р·Р°РїРёСЃРё1&quot; = <b>RecordВ В В В В В В В В В В В В В В В В В В В В В В В В 
 </b><br>
-       &quot;поле 1&quot;: &quot;тип 1&quot;;                                 <br>
-       &quot;поле 2&quot;: &quot;тип 2&quot;;</span>                                
+В В В В В В  &quot;РїРѕР»Рµ 1&quot;: &quot;С‚РёРї 1&quot;;В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  <br>
+В В В В В В  &quot;РїРѕР»Рµ 2&quot;: &quot;С‚РёРї 2&quot;;</span>В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В 
 <span style='font-size:11.0pt;line-height:150%'><br>
-    …                                                              <br>
-       &quot;поле n-1&quot;: &quot;тип
-n-1&quot;;                                 </span></p>
+В В В  вЂ¦В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  <br>
+В В В В В В  &quot;РїРѕР»Рµ n-1&quot;: &quot;С‚РёРї
+n-1&quot;;В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  </span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
-style='font-size:11.0pt;line-height:150%'>        </span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'>В В В В В В В  </span><span lang=EN-US
 style='font-size:11.0pt;line-height:150%'>C</span><span style='font-size:11.0pt;
-line-height:150%'>ase &quot;вариант&quot;  </span><span lang=EN-US
+line-height:150%'>ase &quot;РІР°СЂРёР°РЅС‚&quot;В  </span><span lang=EN-US
 style='font-size:11.0pt;line-height:150%'>O</span><span style='font-size:11.0pt;
 line-height:150%'>f</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
-style='font-size:11.0pt;line-height:150%'>          &quot;вариант 1&quot;:
-(&quot;поле 11&quot;: &quot;тип 11&quot;, …, &quot;поле 1n&quot;:&quot;тип
+style='font-size:11.0pt;line-height:150%'>В В В В В В В В В  &quot;РІР°СЂРёР°РЅС‚ 1&quot;:
+(&quot;РїРѕР»Рµ 11&quot;: &quot;С‚РёРї 11&quot;, вЂ¦, &quot;РїРѕР»Рµ 1n&quot;:&quot;С‚РёРї
 1n&quot;)</span><code><span style='font-size:10.0pt;line-height:150%'> </span></code><br>
-<span style='font-size:11.0pt;line-height:150%'>          &quot;вариант
-2&quot;: (&quot;поле 21&quot;: &quot;тип 21&quot;, …, &quot;поле
-2n&quot;:&quot;тип 2n&quot;) <br>
-….</span></p>
+<span style='font-size:11.0pt;line-height:150%'>В В В В В В В В В  &quot;РІР°СЂРёР°РЅС‚
+2&quot;: (&quot;РїРѕР»Рµ 21&quot;: &quot;С‚РёРї 21&quot;, вЂ¦, &quot;РїРѕР»Рµ
+2n&quot;:&quot;С‚РёРї 2n&quot;) <br>
+вЂ¦.</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
-style='font-size:11.0pt;line-height:150%'>          &quot;вариант k&quot;:
-(&quot;поле k1&quot;: &quot;тип k1&quot;, …, &quot;поле kn&quot;:&quot;тип
+style='font-size:11.0pt;line-height:150%'>В В В В В В В В В  &quot;РІР°СЂРёР°РЅС‚ k&quot;:
+(&quot;РїРѕР»Рµ k1&quot;: &quot;С‚РёРї k1&quot;, вЂ¦, &quot;РїРѕР»Рµ kn&quot;:&quot;С‚РёРї
 kn&quot;) <br>
-<b>Е</b></span><b><span lang=EN-US style='font-size:11.0pt;line-height:150%'>nd</span></b><b><span
+<b>Р•</b></span><b><span lang=EN-US style='font-size:11.0pt;line-height:150%'>nd</span></b><b><span
 style='font-size:11.0pt;line-height:150%'>;</span></b></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:27.0pt;line-height:
-150%'>Объявление записи с вложенной вариантной частью:</p>
+150%'>РћР±СЉСЏРІР»РµРЅРёРµ Р·Р°РїРёСЃРё СЃ РІР»РѕР¶РµРЅРЅРѕР№ РІР°СЂРёР°РЅС‚РЅРѕР№ С‡Р°СЃС‚СЊСЋ:</p>
 
-<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'>   <code><span
-style='font-size:11.0pt;line-height:150%;font-family:"Times New Roman"'>&quot;имя
-записи1&quot; = </span></code><strong><span style='font-size:11.0pt;line-height:
-150%'>Record                          </span></strong><br>
-<span style='font-size:11.0pt;line-height:150%'>      &quot;поле 1&quot; :
-&quot;тип 1&quot;;</span>                                 <br>
-<span style='font-size:11.0pt;line-height:150%'>      &quot;поле 2&quot; :
-&quot;тип 2&quot;;                                </span> <span
+<p class=MsoNormal style='margin-right:1.1pt;line-height:150%'>В В  <code><span
+style='font-size:11.0pt;line-height:150%;font-family:"Times New Roman"'>&quot;РёРјСЏ
+Р·Р°РїРёСЃРё1&quot; = </span></code><strong><span style='font-size:11.0pt;line-height:
+150%'>RecordВ В В В В В В В В В В В В В В В В В В В В В В В В  </span></strong><br>
+<span style='font-size:11.0pt;line-height:150%'>В В В В В  &quot;РїРѕР»Рµ 1&quot; :
+&quot;С‚РёРї 1&quot;;</span>В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  <br>
+<span style='font-size:11.0pt;line-height:150%'>В В В В В  &quot;РїРѕР»Рµ 2&quot; :
+&quot;С‚РёРї 2&quot;;В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  </span>В <span
 style='font-size:11.0pt;line-height:150%'><br>
-    …                                                              <br>
-      &quot;поле n-1&quot; : &quot;тип
-n-1&quot;;                                 </span></p>
+В В В  вЂ¦В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  <br>
+В В В В В  &quot;РїРѕР»Рµ n-1&quot; : &quot;С‚РёРї
+n-1&quot;;В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  </span></p>
 
 <p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
-line-height:150%'>     </span><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'>В В В В  </span><span lang=EN-US style='font-size:11.0pt;
 line-height:150%'>Case</span><span style='font-size:11.0pt;line-height:150%'>
-&quot;вар.&quot;  </span><span lang=EN-US style='font-size:11.0pt;line-height:
+&quot;РІР°СЂ.&quot;В  </span><span lang=EN-US style='font-size:11.0pt;line-height:
 150%'>Of</span></p>
 
 <p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
-line-height:150%'>       &quot;вар.1&quot; : (&quot;поле11&quot;:
-&quot;тип11&quot;, …, &quot;поле1n&quot;:&quot;тип1n&quot;) <br>
-       &quot;вар.2&quot; : (&quot;поле21&quot;: &quot;тип21&quot;, …,
-&quot;поле n&quot;:&quot;тип2n&quot;) <br>
-….</span></p>
+line-height:150%'>В В В В В В  &quot;РІР°СЂ.1&quot; : (&quot;РїРѕР»Рµ11&quot;:
+&quot;С‚РёРї11&quot;, вЂ¦, &quot;РїРѕР»Рµ1n&quot;:&quot;С‚РёРї1n&quot;) <br>
+В В В В В В  &quot;РІР°СЂ.2&quot; : (&quot;РїРѕР»Рµ21&quot;: &quot;С‚РёРї21&quot;, вЂ¦,
+&quot;РїРѕР»Рµ n&quot;:&quot;С‚РёРї2n&quot;) <br>
+вЂ¦.</span></p>
 
 <p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
-line-height:150%'>       &quot;вар.k-1&quot; : (&quot;полеk-11&quot;:
-&quot;типk-11&quot;, …, &quot;полеk-1n&quot;:&quot;типk-1n&quot;)</span></p>
+line-height:150%'>В В В В В В  &quot;РІР°СЂ.k-1&quot; : (&quot;РїРѕР»Рµk-11&quot;:
+&quot;С‚РёРїk-11&quot;, вЂ¦, &quot;РїРѕР»Рµk-1n&quot;:&quot;С‚РёРїk-1n&quot;)</span></p>
 
 <p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
-line-height:150%'>       </span><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'>В В В В В В  </span><span lang=EN-US style='font-size:11.0pt;
 line-height:150%'>C</span><span style='font-size:11.0pt;line-height:150%'>ase
-&quot;вариант&quot;<b> </b> </span><span lang=EN-US style='font-size:11.0pt;
+&quot;РІР°СЂРёР°РЅС‚&quot;<b> </b>В </span><span lang=EN-US style='font-size:11.0pt;
 line-height:150%'>O</span><span style='font-size:11.0pt;line-height:150%'>f</span></p>
 
 <p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
-line-height:150%'>          &quot;вариант1&quot; : (&quot;поле11&quot;:
-&quot;тип11&quot;, …, &quot;поле1n&quot;:&quot;тип1n&quot;) <br>
-          &quot;вариант2&quot; : (&quot;поле21&quot;: &quot;тип21&quot;, …,
-&quot;поле2n&quot;:&quot;тип2n&quot;) <br>
-….</span></p>
+line-height:150%'>В В В В В В В В В  &quot;РІР°СЂРёР°РЅС‚1&quot; : (&quot;РїРѕР»Рµ11&quot;:
+&quot;С‚РёРї11&quot;, вЂ¦, &quot;РїРѕР»Рµ1n&quot;:&quot;С‚РёРї1n&quot;) <br>
+В В В В В В В В В  &quot;РІР°СЂРёР°РЅС‚2&quot; : (&quot;РїРѕР»Рµ21&quot;: &quot;С‚РёРї21&quot;, вЂ¦,
+&quot;РїРѕР»Рµ2n&quot;:&quot;С‚РёРї2n&quot;) <br>
+вЂ¦.</span></p>
 
 <p class=MsoNormal style='line-height:150%'><span style='font-size:11.0pt;
-line-height:150%'>         &quot;вариантk&quot; : (&quot;полеk1&quot;:
-&quot;типk1&quot;, …, &quot;полеkn&quot;:&quot;типkn&quot;) </span></p>
+line-height:150%'>В В В В В В В В  &quot;РІР°СЂРёР°РЅС‚k&quot; : (&quot;РїРѕР»Рµk1&quot;:
+&quot;С‚РёРїk1&quot;, вЂ¦, &quot;РїРѕР»Рµkn&quot;:&quot;С‚РёРїkn&quot;) </span></p>
 
-<p class=MsoNormal><b><span style='font-size:11.0pt'>Е</span></b><b><span
+<p class=MsoNormal><b><span style='font-size:11.0pt'>Р•</span></b><b><span
 lang=EN-US style='font-size:11.0pt'>nd</span></b><b><span style='font-size:
 11.0pt'>;</span></b></p>
 
 <p class=MsoNormal><b><span style='font-size:11.0pt'>&nbsp;</span></b></p>
 
 <p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
-27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>Приведем
-пример. Пусть необходимо обеспечить вывод в заданную точку экрана монитора с
-координатами x и y следующих геометрических фигур: квадрата, прямоугольника,
-окружности и точки. При этом квадрат задается длиной своей стороны, прямоугольник
-– длинами двух сторон, окружность – координатами центра, которые совпадают с
-точкой (x,y) и радиусом. При желании мы можем еще закрасить окружность, что
-потребует дополнительно указания стиля и цвета закраски. Тогда можно определить
-следующий тип:</span></p>
+27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>РџСЂРёРІРµРґРµРј
+РїСЂРёРјРµСЂ. РџСѓСЃС‚СЊ РЅРµРѕР±С…РѕРґРёРјРѕ РѕР±РµСЃРїРµС‡РёС‚СЊ РІС‹РІРѕРґ РІ Р·Р°РґР°РЅРЅСѓСЋ С‚РѕС‡РєСѓ СЌРєСЂР°РЅР° РјРѕРЅРёС‚РѕСЂР° СЃ
+РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё x Рё y СЃР»РµРґСѓСЋС‰РёС… РіРµРѕРјРµС‚СЂРёС‡РµСЃРєРёС… С„РёРіСѓСЂ: РєРІР°РґСЂР°С‚Р°, РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°,
+РѕРєСЂСѓР¶РЅРѕСЃС‚Рё Рё С‚РѕС‡РєРё. РџСЂРё СЌС‚РѕРј РєРІР°РґСЂР°С‚ Р·Р°РґР°РµС‚СЃСЏ РґР»РёРЅРѕР№ СЃРІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹, РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє
+вЂ“ РґР»РёРЅР°РјРё РґРІСѓС… СЃС‚РѕСЂРѕРЅ, РѕРєСЂСѓР¶РЅРѕСЃС‚СЊ вЂ“ РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё С†РµРЅС‚СЂР°, РєРѕС‚РѕСЂС‹Рµ СЃРѕРІРїР°РґР°СЋС‚ СЃ
+С‚РѕС‡РєРѕР№ (x,y) Рё СЂР°РґРёСѓСЃРѕРј. РџСЂРё Р¶РµР»Р°РЅРёРё РјС‹ РјРѕР¶РµРј РµС‰Рµ Р·Р°РєСЂР°СЃРёС‚СЊ РѕРєСЂСѓР¶РЅРѕСЃС‚СЊ, С‡С‚Рѕ
+РїРѕС‚СЂРµР±СѓРµС‚ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕ СѓРєР°Р·Р°РЅРёСЏ СЃС‚РёР»СЏ Рё С†РІРµС‚Р° Р·Р°РєСЂР°СЃРєРё. РўРѕРіРґР° РјРѕР¶РЅРѕ РѕРїСЂРµРґРµР»РёС‚СЊ
+СЃР»РµРґСѓСЋС‰РёР№ С‚РёРї:</span></p>
 
 <p class=MsoBodyText style='margin-right:-4.05pt;text-align:justify;text-indent:
 27.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>&nbsp;</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
-style='font-size:11.0pt;line-height:150%'>Т</span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'>Рў</span><span lang=EN-US
 style='font-size:11.0pt;line-height:150%'>ype</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
-lang=EN-US style='font-size:11.0pt;line-height:150%'>      
-figure=(sq,rec,cir,pix);                                                       {</span><span
-style='font-size:11.0pt;line-height:150%'>тип</span><span style='font-size:
+lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В 
+figure=(sq,rec,cir,pix);В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  В В В В В В В В В В В В В В В В В В В В В В В  {</span><span
+style='font-size:11.0pt;line-height:150%'>С‚РёРї</span><span style='font-size:
 11.0pt;line-height:150%'> </span><span style='font-size:11.0pt;line-height:
-150%'>фигуры</span><span lang=EN-US style='font-size:11.0pt;line-height:150%'>}</span></p>
+150%'>С„РёРіСѓСЂС‹</span><span lang=EN-US style='font-size:11.0pt;line-height:150%'>}</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
-lang=EN-US style='font-size:11.0pt;line-height:150%'>       param = record                                                     {</span><span
-style='font-size:11.0pt;line-height:150%'>параметры</span><span
+lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В  param = recordВ В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  {</span><span
+style='font-size:11.0pt;line-height:150%'>РїР°СЂР°РјРµС‚СЂС‹</span><span
 style='font-size:11.0pt;line-height:150%'> </span><span style='font-size:11.0pt;
-line-height:150%'>вывода</span><span lang=EN-US style='font-size:11.0pt;
+line-height:150%'>РІС‹РІРѕРґР°</span><span lang=EN-US style='font-size:11.0pt;
 line-height:150%'>}</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
-lang=EN-US style='font-size:11.0pt;line-height:150%'>               x,y:
+lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В  В В  x,y:
 integer;</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
-lang=EN-US style='font-size:11.0pt;line-height:150%'>               fig:
+lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В  В В  fig:
 figure;</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
-150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>Case figure Of                                                 {</span><span
-style='font-size:11.0pt;line-height:150%'>в</span><span style='font-size:11.0pt;
-line-height:150%'> </span><span style='font-size:11.0pt;line-height:150%'>зависимости</span><span
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>Case figure OfВ В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  {</span><span
+style='font-size:11.0pt;line-height:150%'>РІ</span><span style='font-size:11.0pt;
+line-height:150%'> </span><span style='font-size:11.0pt;line-height:150%'>Р·Р°РІРёСЃРёРјРѕСЃС‚Рё</span><span
 style='font-size:11.0pt;line-height:150%'> </span><span style='font-size:11.0pt;
-line-height:150%'>от</span><span style='font-size:11.0pt;line-height:150%'> </span><span
-style='font-size:11.0pt;line-height:150%'>типа</span><span style='font-size:
+line-height:150%'>РѕС‚</span><span style='font-size:11.0pt;line-height:150%'> </span><span
+style='font-size:11.0pt;line-height:150%'>С‚РёРїР°</span><span style='font-size:
 11.0pt;line-height:150%'> </span><span style='font-size:11.0pt;line-height:
-150%'>фигуры</span><span lang=EN-US style='font-size:11.0pt;line-height:150%'>:}</span></p>
+150%'>С„РёРіСѓСЂС‹</span><span lang=EN-US style='font-size:11.0pt;line-height:150%'>:}</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
-150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>             sq:(side:
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В  В sq:(side:
 word);</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
-150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>             rec:(side1,
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В  В rec:(side1,
 side2:word);</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
-150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>             pix:();</span></p>
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В  В pix:();</span></p>
 
 <p class=MsoNormal style='margin-top:0cm;margin-right:1.1pt;margin-bottom:0cm;
 margin-left:35.4pt;margin-bottom:.0001pt;text-indent:35.4pt;line-height:150%'><span
-lang=EN-US style='font-size:11.0pt;line-height:150%'> cir:(pc:record</span></p>
+lang=EN-US style='font-size:11.0pt;line-height:150%'>В cir:(pc:record</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
-150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                    
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В  В В В В В В В В 
 radius:word;</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
-150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                   
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В  В В В В В В В 
 stl:boolean;</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
-150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                   
-Case boolean Of                                      {</span><span
-style='font-size:11.0pt;line-height:150%'>закраска</span><span lang=EN-US
-style='font-size:11.0pt;line-height:150%'> – </span><span style='font-size:
-11.0pt;line-height:150%'>по</span><span style='font-size:11.0pt;line-height:
-150%'> </span><span style='font-size:11.0pt;line-height:150%'>желанию</span><span
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В  В В В В В В В 
+Case boolean OfВ В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  {</span><span
+style='font-size:11.0pt;line-height:150%'>Р·Р°РєСЂР°СЃРєР°</span><span lang=EN-US
+style='font-size:11.0pt;line-height:150%'> вЂ“ </span><span style='font-size:
+11.0pt;line-height:150%'>РїРѕ</span><span style='font-size:11.0pt;line-height:
+150%'> </span><span style='font-size:11.0pt;line-height:150%'>Р¶РµР»Р°РЅРёСЋ</span><span
 lang=EN-US style='font-size:11.0pt;line-height:150%'>}</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
-150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                         true:
-(st,cl:word);                                 {</span><span style='font-size:
-11.0pt;line-height:150%'>стиль</span><span style='font-size:11.0pt;line-height:
-150%'> </span><span style='font-size:11.0pt;line-height:150%'>и</span><span
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В В В В В В В В В В В В В  В true:
+(st,cl:word); В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В В  {</span><span style='font-size:
+11.0pt;line-height:150%'>СЃС‚РёР»СЊ</span><span style='font-size:11.0pt;line-height:
+150%'> </span><span style='font-size:11.0pt;line-height:150%'>Рё</span><span
 style='font-size:11.0pt;line-height:150%'> </span><span style='font-size:11.0pt;
-line-height:150%'>цвет</span><span style='font-size:11.0pt;line-height:150%'> </span><span
-style='font-size:11.0pt;line-height:150%'>закраски</span><span lang=EN-US
+line-height:150%'>С†РІРµС‚</span><span style='font-size:11.0pt;line-height:150%'> </span><span
+style='font-size:11.0pt;line-height:150%'>Р·Р°РєСЂР°СЃРєРё</span><span lang=EN-US
 style='font-size:11.0pt;line-height:150%'>}</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
-150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                         false:();</span></p>
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В В В В В В В В В В В В В  В false:();</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;text-indent:35.4pt;line-height:
-150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>                   
-</span><span style='font-size:11.0pt;line-height:150%'>Е</span><span
+150%'><span lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В В В В В В  В В В В В В В 
+</span><span style='font-size:11.0pt;line-height:150%'>Р•</span><span
 lang=EN-US style='font-size:11.0pt;line-height:150%'>nd;)</span></p>
 
 <p class=MsoNormal style='margin-right:1.1pt;line-height:150%'><span
-lang=EN-US style='font-size:11.0pt;line-height:150%'>       </span><span
-style='font-size:11.0pt;line-height:150%'>Е</span><span lang=EN-US
+lang=EN-US style='font-size:11.0pt;line-height:150%'>В В В В В В  </span><span
+style='font-size:11.0pt;line-height:150%'>Р•</span><span lang=EN-US
 style='font-size:11.0pt;line-height:150%'>nd;</span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>На физическом уровне
-информация о переменной типа «запись» содержится в <i>дескрипторе</i> или <i>заголовке
-записи</i>. Дескриптор записи может содержать имя записи, количество полей, их
-имена, а также указатели значений элементов. Поля записи занимают в памяти непрерывную
-область, поэтому в дескрипторе достаточно иметь один указатель на начало
-записи, а в описании полей – смещение относительно начала. Смещение вычисляется
-при компиляции программы, что повышает эффективность доступа к полям записи. </span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РќР° С„РёР·РёС‡РµСЃРєРѕРј СѓСЂРѕРІРЅРµ
+РёРЅС„РѕСЂРјР°С†РёСЏ Рѕ РїРµСЂРµРјРµРЅРЅРѕР№ С‚РёРїР° В«Р·Р°РїРёСЃСЊВ» СЃРѕРґРµСЂР¶РёС‚СЃСЏ РІ <i>РґРµСЃРєСЂРёРїС‚РѕСЂРµ</i> РёР»Рё <i>Р·Р°РіРѕР»РѕРІРєРµ
+Р·Р°РїРёСЃРё</i>. Р”РµСЃРєСЂРёРїС‚РѕСЂ Р·Р°РїРёСЃРё РјРѕР¶РµС‚ СЃРѕРґРµСЂР¶Р°С‚СЊ РёРјСЏ Р·Р°РїРёСЃРё, РєРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РµР№, РёС…
+РёРјРµРЅР°, Р° С‚Р°РєР¶Рµ СѓРєР°Р·Р°С‚РµР»Рё Р·РЅР°С‡РµРЅРёР№ СЌР»РµРјРµРЅС‚РѕРІ. РџРѕР»СЏ Р·Р°РїРёСЃРё Р·Р°РЅРёРјР°СЋС‚ РІ РїР°РјСЏС‚Рё РЅРµРїСЂРµСЂС‹РІРЅСѓСЋ
+РѕР±Р»Р°СЃС‚СЊ, РїРѕСЌС‚РѕРјСѓ РІ РґРµСЃРєСЂРёРїС‚РѕСЂРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РёРјРµС‚СЊ РѕРґРёРЅ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РЅР°С‡Р°Р»Рѕ
+Р·Р°РїРёСЃРё, Р° РІ РѕРїРёСЃР°РЅРёРё РїРѕР»РµР№ вЂ“ СЃРјРµС‰РµРЅРёРµ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕ РЅР°С‡Р°Р»Р°. РЎРјРµС‰РµРЅРёРµ РІС‹С‡РёСЃР»СЏРµС‚СЃСЏ
+РїСЂРё РєРѕРјРїРёР»СЏС†РёРё РїСЂРѕРіСЂР°РјРјС‹, С‡С‚Рѕ РїРѕРІС‹С€Р°РµС‚ СЌС„С„РµРєС‚РёРІРЅРѕСЃС‚СЊ РґРѕСЃС‚СѓРїР° Рє РїРѕР»СЏРј Р·Р°РїРёСЃРё. </span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>При обработке записей с
-вариантами программисту необходимо следить за правильностью хранения и
-обработки данных, содержащихся в вариантной части. </span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РџСЂРё РѕР±СЂР°Р±РѕС‚РєРµ Р·Р°РїРёСЃРµР№ СЃ
+РІР°СЂРёР°РЅС‚Р°РјРё РїСЂРѕРіСЂР°РјРјРёСЃС‚Сѓ РЅРµРѕР±С…РѕРґРёРјРѕ СЃР»РµРґРёС‚СЊ Р·Р° РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊСЋ С…СЂР°РЅРµРЅРёСЏ Рё
+РѕР±СЂР°Р±РѕС‚РєРё РґР°РЅРЅС‹С…, СЃРѕРґРµСЂР¶Р°С‰РёС…СЃСЏ РІ РІР°СЂРёР°РЅС‚РЅРѕР№ С‡Р°СЃС‚Рё. </span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>Тип «запись» очень часто
-используется в информационно-поисковых системах, когда приходится хранить и
-обрабатывать большие объемы данных. Очень часто эти данные группируются в
-таблицы.</span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РўРёРї В«Р·Р°РїРёСЃСЊВ» РѕС‡РµРЅСЊ С‡Р°СЃС‚Рѕ
+РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕ-РїРѕРёСЃРєРѕРІС‹С… СЃРёСЃС‚РµРјР°С…, РєРѕРіРґР° РїСЂРёС…РѕРґРёС‚СЃСЏ С…СЂР°РЅРёС‚СЊ Рё
+РѕР±СЂР°Р±Р°С‚С‹РІР°С‚СЊ Р±РѕР»СЊС€РёРµ РѕР±СЉРµРјС‹ РґР°РЅРЅС‹С…. РћС‡РµРЅСЊ С‡Р°СЃС‚Рѕ СЌС‚Рё РґР°РЅРЅС‹Рµ РіСЂСѓРїРїРёСЂСѓСЋС‚СЃСЏ РІ
+С‚Р°Р±Р»РёС†С‹.</span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><i><span style='font-size:12.0pt;line-height:150%'>Таблица</span></i><span
-style='font-size:12.0pt;line-height:150%'> – это конечное множество элементов,
-имеющих одну и ту же организацию. Таблица в оперативной памяти обычно
-представляется в виде массива (в том числе, массива записей). Доступ к элементу
-таблицы осуществляется по его номеру (индексу). Часто для поиска или обработки
-данных в таблице используется одно (или несколько) полей записи. В этом случае
-такое поле называется ключевым полем или ключом записи. </span></p>
+150%'><i><span style='font-size:12.0pt;line-height:150%'>РўР°Р±Р»РёС†Р°</span></i><span
+style='font-size:12.0pt;line-height:150%'> вЂ“ СЌС‚Рѕ РєРѕРЅРµС‡РЅРѕРµ РјРЅРѕР¶РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ,
+РёРјРµСЋС‰РёС… РѕРґРЅСѓ Рё С‚Сѓ Р¶Рµ РѕСЂРіР°РЅРёР·Р°С†РёСЋ. РўР°Р±Р»РёС†Р° РІ РѕРїРµСЂР°С‚РёРІРЅРѕР№ РїР°РјСЏС‚Рё РѕР±С‹С‡РЅРѕ
+РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚СЃСЏ РІ РІРёРґРµ РјР°СЃСЃРёРІР° (РІ С‚РѕРј С‡РёСЃР»Рµ, РјР°СЃСЃРёРІР° Р·Р°РїРёСЃРµР№). Р”РѕСЃС‚СѓРї Рє СЌР»РµРјРµРЅС‚Сѓ
+С‚Р°Р±Р»РёС†С‹ РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ РїРѕ РµРіРѕ РЅРѕРјРµСЂСѓ (РёРЅРґРµРєСЃСѓ). Р§Р°СЃС‚Рѕ РґР»СЏ РїРѕРёСЃРєР° РёР»Рё РѕР±СЂР°Р±РѕС‚РєРё
+РґР°РЅРЅС‹С… РІ С‚Р°Р±Р»РёС†Рµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РѕРґРЅРѕ (РёР»Рё РЅРµСЃРєРѕР»СЊРєРѕ) РїРѕР»РµР№ Р·Р°РїРёСЃРё. Р’ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ
+С‚Р°РєРѕРµ РїРѕР»Рµ РЅР°Р·С‹РІР°РµС‚СЃСЏ РєР»СЋС‡РµРІС‹Рј РїРѕР»РµРј РёР»Рё РєР»СЋС‡РѕРј Р·Р°РїРёСЃРё. </span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>Пусть, имеется таблица,
-содержащая данные из адресной книги: фамилию,  год рождения, адрес и телефон
-человека (табл.1). Назовем ее исходной или основной.</span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РџСѓСЃС‚СЊ, РёРјРµРµС‚СЃСЏ С‚Р°Р±Р»РёС†Р°,
+СЃРѕРґРµСЂР¶Р°С‰Р°СЏ РґР°РЅРЅС‹Рµ РёР· Р°РґСЂРµСЃРЅРѕР№ РєРЅРёРіРё: С„Р°РјРёР»РёСЋ,В  РіРѕРґ СЂРѕР¶РґРµРЅРёСЏ, Р°РґСЂРµСЃ Рё С‚РµР»РµС„РѕРЅ
+С‡РµР»РѕРІРµРєР° (С‚Р°Р±Р».1). РќР°Р·РѕРІРµРј РµРµ РёСЃС…РѕРґРЅРѕР№ РёР»Рё РѕСЃРЅРѕРІРЅРѕР№.</span></p>
 
 <p class=MsoBodyText align=right style='margin-right:13.95pt;text-align:right;
 text-indent:35.45pt;line-height:150%'><i><span style='font-size:12.0pt;
-line-height:150%'>Таблица1</span></i></p>
+line-height:150%'>РўР°Р±Р»РёС†Р°1</span></i></p>
 
 <div align=center>
 
@@ -713,27 +713,27 @@ line-height:150%'>Таблица1</span></i></p>
   <td width=67 valign=top style='width:50.4pt;border:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
-  line-height:150%'><b><span style='font-family:"Times New Roman"'>Индекс</span></b></p>
+  line-height:150%'><b><span style='font-family:"Times New Roman"'>РРЅРґРµРєСЃ</span></b></p>
   </td>
   <td width=123 valign=top style='width:92.15pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-5.4pt;text-indent:0cm;
-  line-height:150%'><b><span style='font-family:"Times New Roman"'>Фамилия</span></b></p>
+  line-height:150%'><b><span style='font-family:"Times New Roman"'>Р¤Р°РјРёР»РёСЏ</span></b></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
-  line-height:150%'><b><span style='font-family:"Times New Roman"'>Год рождения</span></b></p>
+  line-height:150%'><b><span style='font-family:"Times New Roman"'>Р“РѕРґ СЂРѕР¶РґРµРЅРёСЏ</span></b></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
-  line-height:150%'><b><span style='font-family:"Times New Roman"'>Адрес</span></b></p>
+  line-height:150%'><b><span style='font-family:"Times New Roman"'>РђРґСЂРµСЃ</span></b></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
-  line-height:150%'><b><span style='font-family:"Times New Roman"'>Телефон</span></b></p>
+  line-height:150%'><b><span style='font-family:"Times New Roman"'>РўРµР»РµС„РѕРЅ</span></b></p>
   </td>
  </tr>
  <tr>
@@ -746,7 +746,7 @@ line-height:150%'>Таблица1</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
-  line-height:150%'><span style='font-family:"Times New Roman"'>Сидоров</span></p>
+  line-height:150%'><span style='font-family:"Times New Roman"'>РЎРёРґРѕСЂРѕРІ</span></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -758,7 +758,7 @@ line-height:150%'>Таблица1</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
-  line-height:150%'><span style='font-family:"Times New Roman"'>Ул. Первая, 1</span></p>
+  line-height:150%'><span style='font-family:"Times New Roman"'>РЈР». РџРµСЂРІР°СЏ, 1</span></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -777,7 +777,7 @@ line-height:150%'>Таблица1</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
-  line-height:150%'><span style='font-family:"Times New Roman"'>Петров</span></p>
+  line-height:150%'><span style='font-family:"Times New Roman"'>РџРµС‚СЂРѕРІ</span></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -789,7 +789,7 @@ line-height:150%'>Таблица1</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
-  line-height:150%'><span style='font-family:"Times New Roman"'>Ул. Вторая, 2</span></p>
+  line-height:150%'><span style='font-family:"Times New Roman"'>РЈР». Р’С‚РѕСЂР°СЏ, 2</span></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -808,7 +808,7 @@ line-height:150%'>Таблица1</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
-  line-height:150%'><span style='font-family:"Times New Roman"'>Иванов</span></p>
+  line-height:150%'><span style='font-family:"Times New Roman"'>РРІР°РЅРѕРІ</span></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -820,7 +820,7 @@ line-height:150%'>Таблица1</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-indent:0cm;
-  line-height:150%'><span style='font-family:"Times New Roman"'>Ул. Первая, 3</span></p>
+  line-height:150%'><span style='font-family:"Times New Roman"'>РЈР». РџРµСЂРІР°СЏ, 3</span></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -835,26 +835,26 @@ line-height:150%'>Таблица1</span></i></p>
 
 <p class=MsoBodyTextIndent style='margin-top:12.0pt;margin-right:0cm;
 margin-bottom:6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>Если необходимо осуществлять частый поиск
-информации в основной таблице по фамилии, то ключевым полем будет являться
-фамилия. Если же при поиске нас больше интересует возраст человека (например,
-если эти же сведения используются в военкомате), то роль ключа может играть 
-год рождения. </span></p>
+style='font-family:"Times New Roman"'>Р•СЃР»Рё РЅРµРѕР±С…РѕРґРёРјРѕ РѕСЃСѓС‰РµСЃС‚РІР»СЏС‚СЊ С‡Р°СЃС‚С‹Р№ РїРѕРёСЃРє
+РёРЅС„РѕСЂРјР°С†РёРё РІ РѕСЃРЅРѕРІРЅРѕР№ С‚Р°Р±Р»РёС†Рµ РїРѕ С„Р°РјРёР»РёРё, С‚Рѕ РєР»СЋС‡РµРІС‹Рј РїРѕР»РµРј Р±СѓРґРµС‚ СЏРІР»СЏС‚СЊСЃСЏ
+С„Р°РјРёР»РёСЏ. Р•СЃР»Рё Р¶Рµ РїСЂРё РїРѕРёСЃРєРµ РЅР°СЃ Р±РѕР»СЊС€Рµ РёРЅС‚РµСЂРµСЃСѓРµС‚ РІРѕР·СЂР°СЃС‚ С‡РµР»РѕРІРµРєР° (РЅР°РїСЂРёРјРµСЂ,
+РµСЃР»Рё СЌС‚Рё Р¶Рµ СЃРІРµРґРµРЅРёСЏ РёСЃРїРѕР»СЊР·СѓСЋС‚СЃСЏ РІ РІРѕРµРЅРєРѕРјР°С‚Рµ), С‚Рѕ СЂРѕР»СЊ РєР»СЋС‡Р° РјРѕР¶РµС‚ РёРіСЂР°С‚СЊВ 
+РіРѕРґ СЂРѕР¶РґРµРЅРёСЏ. </span></p>
 
 <p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
 6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>При больших размерах таблиц поиск данных,
-имеющих указанный ключ, может потребовать больших затрат времени. Если же
-помимо поиска требуется произвести сортировку данных, то временн<b>ые</b>
-затраты многократно возрастут, так как потребуется осуществлять их перестановку
-(перемещение). В этом случае можно уменьшить время обработки за счет создания
-дополнительного массива – таблицы ключей, содержащей индекс элемента в исходной
-таблице и выбранный ключ. Если в качестве ключевого поля используется фамилия,
-то таблица ключей будет выглядеть как в табл. 2. </span></p>
+style='font-family:"Times New Roman"'>РџСЂРё Р±РѕР»СЊС€РёС… СЂР°Р·РјРµСЂР°С… С‚Р°Р±Р»РёС† РїРѕРёСЃРє РґР°РЅРЅС‹С…,
+РёРјРµСЋС‰РёС… СѓРєР°Р·Р°РЅРЅС‹Р№ РєР»СЋС‡, РјРѕР¶РµС‚ РїРѕС‚СЂРµР±РѕРІР°С‚СЊ Р±РѕР»СЊС€РёС… Р·Р°С‚СЂР°С‚ РІСЂРµРјРµРЅРё. Р•СЃР»Рё Р¶Рµ
+РїРѕРјРёРјРѕ РїРѕРёСЃРєР° С‚СЂРµР±СѓРµС‚СЃСЏ РїСЂРѕРёР·РІРµСЃС‚Рё СЃРѕСЂС‚РёСЂРѕРІРєСѓ РґР°РЅРЅС‹С…, С‚Рѕ РІСЂРµРјРµРЅРЅ<b>С‹Рµ</b>
+Р·Р°С‚СЂР°С‚С‹ РјРЅРѕРіРѕРєСЂР°С‚РЅРѕ РІРѕР·СЂР°СЃС‚СѓС‚, С‚Р°Рє РєР°Рє РїРѕС‚СЂРµР±СѓРµС‚СЃСЏ РѕСЃСѓС‰РµСЃС‚РІР»СЏС‚СЊ РёС… РїРµСЂРµСЃС‚Р°РЅРѕРІРєСѓ
+(РїРµСЂРµРјРµС‰РµРЅРёРµ). Р’ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ РјРѕР¶РЅРѕ СѓРјРµРЅСЊС€РёС‚СЊ РІСЂРµРјСЏ РѕР±СЂР°Р±РѕС‚РєРё Р·Р° СЃС‡РµС‚ СЃРѕР·РґР°РЅРёСЏ
+РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ РјР°СЃСЃРёРІР° вЂ“ С‚Р°Р±Р»РёС†С‹ РєР»СЋС‡РµР№, СЃРѕРґРµСЂР¶Р°С‰РµР№ РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р° РІ РёСЃС…РѕРґРЅРѕР№
+С‚Р°Р±Р»РёС†Рµ Рё РІС‹Р±СЂР°РЅРЅС‹Р№ РєР»СЋС‡. Р•СЃР»Рё РІ РєР°С‡РµСЃС‚РІРµ РєР»СЋС‡РµРІРѕРіРѕ РїРѕР»СЏ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ С„Р°РјРёР»РёСЏ,
+С‚Рѕ С‚Р°Р±Р»РёС†Р° РєР»СЋС‡РµР№ Р±СѓРґРµС‚ РІС‹РіР»СЏРґРµС‚СЊ РєР°Рє РІ С‚Р°Р±Р». 2. </span></p>
 
 <p class=MsoBodyText align=right style='margin-right:67.95pt;text-align:right;
 text-indent:35.45pt;line-height:150%'><i><span style='font-size:12.0pt;
-line-height:150%'>Таблица2</span></i></p>
+line-height:150%'>РўР°Р±Р»РёС†Р°2</span></i></p>
 
 <div align=center>
 
@@ -864,18 +864,18 @@ line-height:150%'>Таблица2</span></i></p>
   <td width=55 valign=top style='width:41.4pt;border:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>№п/п</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>в„–Рї/Рї</span></b></p>
   </td>
   <td width=222 valign=top style='width:166.2pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Индекс
-  исходной таблицы</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>РРЅРґРµРєСЃ
+  РёСЃС…РѕРґРЅРѕР№ С‚Р°Р±Р»РёС†С‹</span></b></p>
   </td>
   <td width=127 valign=top style='width:95.5pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Фамилия</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Р¤Р°РјРёР»РёСЏ</span></b></p>
   </td>
  </tr>
  <tr>
@@ -894,7 +894,7 @@ line-height:150%'>Таблица2</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Сидоров</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РЎРёРґРѕСЂРѕРІ</span></p>
   </td>
  </tr>
  <tr>
@@ -913,7 +913,7 @@ line-height:150%'>Таблица2</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петров</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РџРµС‚СЂРѕРІ</span></p>
   </td>
  </tr>
  <tr>
@@ -932,7 +932,7 @@ line-height:150%'>Таблица2</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Иванов</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РРІР°РЅРѕРІ</span></p>
   </td>
  </tr>
 </table>
@@ -941,14 +941,14 @@ line-height:150%'>Таблица2</span></i></p>
 
 <p class=MsoBodyTextIndent style='margin-top:12.0pt;margin-right:0cm;
 margin-bottom:12.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>При необходимости произвести сортировку
-данных в основной таблице,  (см. табл.1) осуществляется упорядочивание
-соответствующих ключей в дополнительном массиве (табл.3). При этом расположение
-записей в основной таблице не меняется. </span></p>
+style='font-family:"Times New Roman"'>РџСЂРё РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё РїСЂРѕРёР·РІРµСЃС‚Рё СЃРѕСЂС‚РёСЂРѕРІРєСѓ
+РґР°РЅРЅС‹С… РІ РѕСЃРЅРѕРІРЅРѕР№ С‚Р°Р±Р»РёС†Рµ,В  (СЃРј. С‚Р°Р±Р».1) РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ СѓРїРѕСЂСЏРґРѕС‡РёРІР°РЅРёРµ
+СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёС… РєР»СЋС‡РµР№ РІ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРј РјР°СЃСЃРёРІРµ (С‚Р°Р±Р».3). РџСЂРё СЌС‚РѕРј СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ
+Р·Р°РїРёСЃРµР№ РІ РѕСЃРЅРѕРІРЅРѕР№ С‚Р°Р±Р»РёС†Рµ РЅРµ РјРµРЅСЏРµС‚СЃСЏ. </span></p>
 
 <p class=MsoBodyText align=right style='margin-right:67.95pt;text-align:right;
 text-indent:35.45pt;line-height:150%'><i><span style='font-size:12.0pt;
-line-height:150%'>Таблица3</span></i></p>
+line-height:150%'>РўР°Р±Р»РёС†Р°3</span></i></p>
 
 <div align=center>
 
@@ -958,19 +958,19 @@ line-height:150%'>Таблица3</span></i></p>
   <td width=57 valign=top style='width:42.7pt;border:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>№п/п
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>в„–Рї/Рї
   </span></b></p>
   </td>
   <td width=216 valign=top style='width:162.0pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Индекс
-  исходной таблицы</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>РРЅРґРµРєСЃ
+  РёСЃС…РѕРґРЅРѕР№ С‚Р°Р±Р»РёС†С‹</span></b></p>
   </td>
   <td width=124 valign=top style='width:92.65pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Фамилия</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Р¤Р°РјРёР»РёСЏ</span></b></p>
   </td>
  </tr>
  <tr>
@@ -989,7 +989,7 @@ line-height:150%'>Таблица3</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Иванов</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РРІР°РЅРѕРІ</span></p>
   </td>
  </tr>
  <tr>
@@ -1008,7 +1008,7 @@ line-height:150%'>Таблица3</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петров</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РџРµС‚СЂРѕРІ</span></p>
   </td>
  </tr>
  <tr>
@@ -1027,7 +1027,7 @@ line-height:150%'>Таблица3</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Сидоров</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РЎРёРґРѕСЂРѕРІ</span></p>
   </td>
  </tr>
 </table>
@@ -1039,30 +1039,30 @@ line-height:150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
 
 <p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
 6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>Для того чтобы вывести информацию из
-основной таблицы (см. табл.1) в алфавитном порядке следования фамилий, надо
-данные из нее выбирать в том порядке, в котором они находятся дополнительном
-массиве- в таблице ключей (см. табл.3). То есть, в нашем примере, первой должна
-быть напечатана третья запись из табл. 1, потом вторая, а потом первая. Таким
-образом экономится время, поскольку перестановка записей в исходной таблице,
-которая иногда может содержать достаточно большое число полей, отсутствует.
-Этот выигрыш во времени особенно заметен при большой размерности таблиц и при
-правильно подобранных ключах. При этом, правда, надо помнить, что для
-размещения таблицы ключей требуется дополнительная память. Кроме того, следует
-учитывать, что если в качестве ключа используется символьное поле записи, то
-это влечет за собой необходимость посимвольной обработки данного поля в цикле,
-и, следовательно, приводит к увеличению времени выполнения любых операций. </span></p>
+style='font-family:"Times New Roman"'>Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РІС‹РІРµСЃС‚Рё РёРЅС„РѕСЂРјР°С†РёСЋ РёР·
+РѕСЃРЅРѕРІРЅРѕР№ С‚Р°Р±Р»РёС†С‹ (СЃРј. С‚Р°Р±Р».1) РІ Р°Р»С„Р°РІРёС‚РЅРѕРј РїРѕСЂСЏРґРєРµ СЃР»РµРґРѕРІР°РЅРёСЏ С„Р°РјРёР»РёР№, РЅР°РґРѕ
+РґР°РЅРЅС‹Рµ РёР· РЅРµРµ РІС‹Р±РёСЂР°С‚СЊ РІ С‚РѕРј РїРѕСЂСЏРґРєРµ, РІ РєРѕС‚РѕСЂРѕРј РѕРЅРё РЅР°С…РѕРґСЏС‚СЃСЏ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРј
+РјР°СЃСЃРёРІРµ- РІ С‚Р°Р±Р»РёС†Рµ РєР»СЋС‡РµР№ (СЃРј. С‚Р°Р±Р».3). РўРѕ РµСЃС‚СЊ, РІ РЅР°С€РµРј РїСЂРёРјРµСЂРµ, РїРµСЂРІРѕР№ РґРѕР»Р¶РЅР°
+Р±С‹С‚СЊ РЅР°РїРµС‡Р°С‚Р°РЅР° С‚СЂРµС‚СЊСЏ Р·Р°РїРёСЃСЊ РёР· С‚Р°Р±Р». 1, РїРѕС‚РѕРј РІС‚РѕСЂР°СЏ, Р° РїРѕС‚РѕРј РїРµСЂРІР°СЏ. РўР°РєРёРј
+РѕР±СЂР°Р·РѕРј СЌРєРѕРЅРѕРјРёС‚СЃСЏ РІСЂРµРјСЏ, РїРѕСЃРєРѕР»СЊРєСѓ РїРµСЂРµСЃС‚Р°РЅРѕРІРєР° Р·Р°РїРёСЃРµР№ РІ РёСЃС…РѕРґРЅРѕР№ С‚Р°Р±Р»РёС†Рµ,
+РєРѕС‚РѕСЂР°СЏ РёРЅРѕРіРґР° РјРѕР¶РµС‚ СЃРѕРґРµСЂР¶Р°С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р±РѕР»СЊС€РѕРµ С‡РёСЃР»Рѕ РїРѕР»РµР№, РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚.
+Р­С‚РѕС‚ РІС‹РёРіСЂС‹С€ РІРѕ РІСЂРµРјРµРЅРё РѕСЃРѕР±РµРЅРЅРѕ Р·Р°РјРµС‚РµРЅ РїСЂРё Р±РѕР»СЊС€РѕР№ СЂР°Р·РјРµСЂРЅРѕСЃС‚Рё С‚Р°Р±Р»РёС† Рё РїСЂРё
+РїСЂР°РІРёР»СЊРЅРѕ РїРѕРґРѕР±СЂР°РЅРЅС‹С… РєР»СЋС‡Р°С…. РџСЂРё СЌС‚РѕРј, РїСЂР°РІРґР°, РЅР°РґРѕ РїРѕРјРЅРёС‚СЊ, С‡С‚Рѕ РґР»СЏ
+СЂР°Р·РјРµС‰РµРЅРёСЏ С‚Р°Р±Р»РёС†С‹ РєР»СЋС‡РµР№ С‚СЂРµР±СѓРµС‚СЃСЏ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РїР°РјСЏС‚СЊ. РљСЂРѕРјРµ С‚РѕРіРѕ, СЃР»РµРґСѓРµС‚
+СѓС‡РёС‚С‹РІР°С‚СЊ, С‡С‚Рѕ РµСЃР»Рё РІ РєР°С‡РµСЃС‚РІРµ РєР»СЋС‡Р° РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ СЃРёРјРІРѕР»СЊРЅРѕРµ РїРѕР»Рµ Р·Р°РїРёСЃРё, С‚Рѕ
+СЌС‚Рѕ РІР»РµС‡РµС‚ Р·Р° СЃРѕР±РѕР№ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚СЊ РїРѕСЃРёРјРІРѕР»СЊРЅРѕР№ РѕР±СЂР°Р±РѕС‚РєРё РґР°РЅРЅРѕРіРѕ РїРѕР»СЏ РІ С†РёРєР»Рµ,
+Рё, СЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ, РїСЂРёРІРѕРґРёС‚ Рє СѓРІРµР»РёС‡РµРЅРёСЋ РІСЂРµРјРµРЅРё РІС‹РїРѕР»РЅРµРЅРёСЏ Р»СЋР±С‹С… РѕРїРµСЂР°С†РёР№. </span></p>
 
 <p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
 6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>Отметим еще, что при подобной организации
-вычислительного процесса разделяются понятия хранения данных и их
-структурирования и обработки. Например, добавим в табл.1 еще несколько записей
-и получим табл.4:</span></p>
+style='font-family:"Times New Roman"'>РћС‚РјРµС‚РёРј РµС‰Рµ, С‡С‚Рѕ РїСЂРё РїРѕРґРѕР±РЅРѕР№ РѕСЂРіР°РЅРёР·Р°С†РёРё
+РІС‹С‡РёСЃР»РёС‚РµР»СЊРЅРѕРіРѕ РїСЂРѕС†РµСЃСЃР° СЂР°Р·РґРµР»СЏСЋС‚СЃСЏ РїРѕРЅСЏС‚РёСЏ С…СЂР°РЅРµРЅРёСЏ РґР°РЅРЅС‹С… Рё РёС…
+СЃС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРёСЏ Рё РѕР±СЂР°Р±РѕС‚РєРё. РќР°РїСЂРёРјРµСЂ, РґРѕР±Р°РІРёРј РІ С‚Р°Р±Р».1 РµС‰Рµ РЅРµСЃРєРѕР»СЊРєРѕ Р·Р°РїРёСЃРµР№
+Рё РїРѕР»СѓС‡РёРј С‚Р°Р±Р».4:</span></p>
 
 <p class=MsoBodyText align=right style='margin-right:13.95pt;text-align:right;
 text-indent:35.45pt;line-height:150%'><i><span style='font-size:12.0pt;
-line-height:150%'>Таблица4</span></i></p>
+line-height:150%'>РўР°Р±Р»РёС†Р°4</span></i></p>
 
 <div align=center>
 
@@ -1072,28 +1072,28 @@ line-height:150%'>Таблица4</span></i></p>
   <td width=79 valign=top style='width:59.4pt;border:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Индекс</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>РРЅРґРµРєСЃ</span></b></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Фамилия</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Р¤Р°РјРёР»РёСЏ</span></b></p>
   </td>
   <td width=108 valign=top style='width:81.0pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Телефон</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>РўРµР»РµС„РѕРЅ</span></b></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Год
-  рождения</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Р“РѕРґ
+  СЂРѕР¶РґРµРЅРёСЏ</span></b></p>
   </td>
   <td width=120 valign=top style='width:90.0pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Адрес</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>РђРґСЂРµСЃ</span></b></p>
   </td>
  </tr>
  <tr>
@@ -1106,7 +1106,7 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Сидоров</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РЎРёРґРѕСЂРѕРІ</span></p>
   </td>
   <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1124,8 +1124,8 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
-  Первая,1</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РЈР».
+  РџРµСЂРІР°СЏ,1</span></p>
   </td>
  </tr>
  <tr>
@@ -1138,7 +1138,7 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петров</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РџРµС‚СЂРѕРІ</span></p>
   </td>
   <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1156,8 +1156,8 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
-  Вторая,2</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РЈР».
+  Р’С‚РѕСЂР°СЏ,2</span></p>
   </td>
  </tr>
  <tr>
@@ -1170,7 +1170,7 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Иванов</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РРІР°РЅРѕРІ</span></p>
   </td>
   <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1188,8 +1188,8 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
-  Первая,3</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РЈР».
+  РџРµСЂРІР°СЏ,3</span></p>
   </td>
  </tr>
  <tr>
@@ -1203,7 +1203,7 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петрова</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РџРµС‚СЂРѕРІР°</span></p>
   </td>
   <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1221,8 +1221,8 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
-  Вторая,3</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РЈР».
+  Р’С‚РѕСЂР°СЏ,3</span></p>
   </td>
  </tr>
  <tr>
@@ -1235,7 +1235,7 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ющенко</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Р®С‰РµРЅРєРѕ</span></p>
   </td>
   <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1253,8 +1253,8 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
-  Третья,1</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РЈР».
+  РўСЂРµС‚СЊСЏ,1</span></p>
   </td>
  </tr>
  <tr>
@@ -1267,7 +1267,7 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Антонов</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РђРЅС‚РѕРЅРѕРІ</span></p>
   </td>
   <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1285,8 +1285,8 @@ line-height:150%'>Таблица4</span></i></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.25pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ул.
-  Первая,23</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РЈР».
+  РџРµСЂРІР°СЏ,23</span></p>
   </td>
  </tr>
 </table>
@@ -1298,12 +1298,12 @@ line-height:150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
 
 <p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
 6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>Эти записи вносятся, в конец таблицы.
-Тогда после упорядочивания записей по фамилии табл. 2 будет выглядеть как
-табл.5.</span></p>
+style='font-family:"Times New Roman"'>Р­С‚Рё Р·Р°РїРёСЃРё РІРЅРѕСЃСЏС‚СЃСЏ, РІ РєРѕРЅРµС† С‚Р°Р±Р»РёС†С‹.
+РўРѕРіРґР° РїРѕСЃР»Рµ СѓРїРѕСЂСЏРґРѕС‡РёРІР°РЅРёСЏ Р·Р°РїРёСЃРµР№ РїРѕ С„Р°РјРёР»РёРё С‚Р°Р±Р». 2 Р±СѓРґРµС‚ РІС‹РіР»СЏРґРµС‚СЊ РєР°Рє
+С‚Р°Р±Р».5.</span></p>
 
 <p class=MsoBodyTextIndent align=right style='margin-right:68.05pt;text-align:
-right;text-indent:35.45pt;line-height:150%'><i><span style='font-family:"Times New Roman"'>Таблица5</span></i></p>
+right;text-indent:35.45pt;line-height:150%'><i><span style='font-family:"Times New Roman"'>РўР°Р±Р»РёС†Р°5</span></i></p>
 
 <div align=center>
 
@@ -1313,19 +1313,19 @@ right;text-indent:35.45pt;line-height:150%'><i><span style='font-family:"Times N
   <td width=56 valign=top style='width:42.05pt;border:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>№п/п
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>в„–Рї/Рї
   </span></b></p>
   </td>
   <td width=216 valign=top style='width:162.0pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Индекс
-  исходной таблицы </span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>РРЅРґРµРєСЃ
+  РёСЃС…РѕРґРЅРѕР№ С‚Р°Р±Р»РёС†С‹ </span></b></p>
   </td>
   <td width=123 valign=top style='width:92.0pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent align=center style='margin-right:-.3pt;text-align:
-  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Фамилия</span></b></p>
+  center;text-indent:0cm;line-height:150%'><b><span style='font-family:"Times New Roman"'>Р¤Р°РјРёР»РёСЏ</span></b></p>
   </td>
  </tr>
  <tr>
@@ -1344,7 +1344,7 @@ right;text-indent:35.45pt;line-height:150%'><i><span style='font-family:"Times N
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Антонов</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РђРЅС‚РѕРЅРѕРІ</span></p>
   </td>
  </tr>
  <tr>
@@ -1363,7 +1363,7 @@ right;text-indent:35.45pt;line-height:150%'><i><span style='font-family:"Times N
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Иванов</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РРІР°РЅРѕРІ</span></p>
   </td>
  </tr>
  <tr>
@@ -1382,7 +1382,7 @@ right;text-indent:35.45pt;line-height:150%'><i><span style='font-family:"Times N
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петров</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РџРµС‚СЂРѕРІ</span></p>
   </td>
  </tr>
  <tr>
@@ -1401,7 +1401,7 @@ right;text-indent:35.45pt;line-height:150%'><i><span style='font-family:"Times N
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Петрова</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РџРµС‚СЂРѕРІР°</span></p>
   </td>
  </tr>
  <tr>
@@ -1420,7 +1420,7 @@ right;text-indent:35.45pt;line-height:150%'><i><span style='font-family:"Times N
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Сидоров</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>РЎРёРґРѕСЂРѕРІ</span></p>
   </td>
  </tr>
  <tr>
@@ -1439,7 +1439,7 @@ right;text-indent:35.45pt;line-height:150%'><i><span style='font-family:"Times N
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoBodyTextIndent style='margin-right:-.3pt;text-align:justify;
-  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Ющенко</span></p>
+  text-indent:0cm;line-height:150%'><span style='font-family:"Times New Roman"'>Р®С‰РµРЅРєРѕ</span></p>
   </td>
  </tr>
 </table>
@@ -1451,220 +1451,220 @@ line-height:150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
 
 <p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
 6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>Итак, расположение данных в исходной
-таблице, т.е. в табл.1, осталось прежним. Следовательно, удалось снизить
-затраты на их структурирование.</span></p>
+style='font-family:"Times New Roman"'>РС‚Р°Рє, СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ РґР°РЅРЅС‹С… РІ РёСЃС…РѕРґРЅРѕР№
+С‚Р°Р±Р»РёС†Рµ, С‚.Рµ. РІ С‚Р°Р±Р».1, РѕСЃС‚Р°Р»РѕСЃСЊ РїСЂРµР¶РЅРёРј. РЎР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ, СѓРґР°Р»РѕСЃСЊ СЃРЅРёР·РёС‚СЊ
+Р·Р°С‚СЂР°С‚С‹ РЅР° РёС… СЃС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРёРµ.</span></p>
 
 <p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
 6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>Таблицы является достаточно
-распространенной структурой данных для многих программно–информационных систем.
-Например, их широко используют при разработке компиляторов для создания таблиц
-операций, идентификаторов, ошибок и т.д. </span></p>
+style='font-family:"Times New Roman"'>РўР°Р±Р»РёС†С‹ СЏРІР»СЏРµС‚СЃСЏ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ
+СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРЅРѕР№ СЃС‚СЂСѓРєС‚СѓСЂРѕР№ РґР°РЅРЅС‹С… РґР»СЏ РјРЅРѕРіРёС… РїСЂРѕРіСЂР°РјРјРЅРѕвЂ“РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹С… СЃРёСЃС‚РµРј.
+РќР°РїСЂРёРјРµСЂ, РёС… С€РёСЂРѕРєРѕ РёСЃРїРѕР»СЊР·СѓСЋС‚ РїСЂРё СЂР°Р·СЂР°Р±РѕС‚РєРµ РєРѕРјРїРёР»СЏС‚РѕСЂРѕРІ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ С‚Р°Р±Р»РёС†
+РѕРїРµСЂР°С†РёР№, РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ, РѕС€РёР±РѕРє Рё С‚.Рґ. </span></p>
 
 <p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
 6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>Принцип разделения хранения и
-структурирования информации часто применяется при хранении больших объемов
-информации в файлах, например, для хранения изображений. В этом случае создаются
-реестры (дополнительные массивы записей), содержащие ссылки на изображения,
-играющие роль ключевого значения, и имя файла. </span></p>
+style='font-family:"Times New Roman"'>РџСЂРёРЅС†РёРї СЂР°Р·РґРµР»РµРЅРёСЏ С…СЂР°РЅРµРЅРёСЏ Рё
+СЃС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРёСЏ РёРЅС„РѕСЂРјР°С†РёРё С‡Р°СЃС‚Рѕ РїСЂРёРјРµРЅСЏРµС‚СЃСЏ РїСЂРё С…СЂР°РЅРµРЅРёРё Р±РѕР»СЊС€РёС… РѕР±СЉРµРјРѕРІ
+РёРЅС„РѕСЂРјР°С†РёРё РІ С„Р°Р№Р»Р°С…, РЅР°РїСЂРёРјРµСЂ, РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РёР·РѕР±СЂР°Р¶РµРЅРёР№. Р’ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ СЃРѕР·РґР°СЋС‚СЃСЏ
+СЂРµРµСЃС‚СЂС‹ (РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РјР°СЃСЃРёРІС‹ Р·Р°РїРёСЃРµР№), СЃРѕРґРµСЂР¶Р°С‰РёРµ СЃСЃС‹Р»РєРё РЅР° РёР·РѕР±СЂР°Р¶РµРЅРёСЏ,
+РёРіСЂР°СЋС‰РёРµ СЂРѕР»СЊ РєР»СЋС‡РµРІРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ, Рё РёРјСЏ С„Р°Р№Р»Р°. </span></p>
 
-<h2>Задание</h2>
+<h2>Р—Р°РґР°РЅРёРµ</h2>
 
 <p class=MsoBodyText2 style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-weight:normal;font-style:normal'>Создать таблицу,
-содержащую не менее 40 записей с вариантной частью. Упорядочить ее по
-возрастанию ключей (где ключ – любое невариантное поле по выбору программиста),
-используя : а) исходную таблицу; б) массив ключей.</span></p>
+150%'><span style='font-weight:normal;font-style:normal'>РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ,
+СЃРѕРґРµСЂР¶Р°С‰СѓСЋ РЅРµ РјРµРЅРµРµ 40 Р·Р°РїРёСЃРµР№ СЃ РІР°СЂРёР°РЅС‚РЅРѕР№ С‡Р°СЃС‚СЊСЋ. РЈРїРѕСЂСЏРґРѕС‡РёС‚СЊ РµРµ РїРѕ
+РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ РєР»СЋС‡РµР№ (РіРґРµ РєР»СЋС‡ вЂ“ Р»СЋР±РѕРµ РЅРµРІР°СЂРёР°РЅС‚РЅРѕРµ РїРѕР»Рµ РїРѕ РІС‹Р±РѕСЂСѓ РїСЂРѕРіСЂР°РјРјРёСЃС‚Р°),
+РёСЃРїРѕР»СЊР·СѓСЏ : Р°) РёСЃС…РѕРґРЅСѓСЋ С‚Р°Р±Р»РёС†Сѓ; Р±) РјР°СЃСЃРёРІ РєР»СЋС‡РµР№.</span></p>
 
 <p class=MsoBodyText2 style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-weight:normal;font-style:normal'>Сравнить время,
-затраченное на упорядочивание информации в таблице, и объем памяти в случаях а)
-и б). Обосновать выбор алгоритма упорядочивания.</span></p>
+150%'><span style='font-weight:normal;font-style:normal'>РЎСЂР°РІРЅРёС‚СЊ РІСЂРµРјСЏ,
+Р·Р°С‚СЂР°С‡РµРЅРЅРѕРµ РЅР° СѓРїРѕСЂСЏРґРѕС‡РёРІР°РЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РІ С‚Р°Р±Р»РёС†Рµ, Рё РѕР±СЉРµРј РїР°РјСЏС‚Рё РІ СЃР»СѓС‡Р°СЏС… Р°)
+Рё Р±). РћР±РѕСЃРЅРѕРІР°С‚СЊ РІС‹Р±РѕСЂ Р°Р»РіРѕСЂРёС‚РјР° СѓРїРѕСЂСЏРґРѕС‡РёРІР°РЅРёСЏ.</span></p>
 
 <p class=MsoBodyText2 style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-weight:normal;font-style:normal'>Примерные варианты
-заданий приведены в приложении.</span></p>
+150%'><span style='font-weight:normal;font-style:normal'>РџСЂРёРјРµСЂРЅС‹Рµ РІР°СЂРёР°РЅС‚С‹
+Р·Р°РґР°РЅРёР№ РїСЂРёРІРµРґРµРЅС‹ РІ РїСЂРёР»РѕР¶РµРЅРёРё.</span></p>
 
-<h2>Указания к выполнению работы</h2>
+<h2>РЈРєР°Р·Р°РЅРёСЏ Рє РІС‹РїРѕР»РЅРµРЅРёСЋ СЂР°Р±РѕС‚С‹</h2>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>Интерфейс программы
-должен быть понятен неподготовленному пользователю. При разработке интерфейса
-программы следует предусмотреть:</span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РРЅС‚РµСЂС„РµР№СЃ РїСЂРѕРіСЂР°РјРјС‹
+РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РїРѕРЅСЏС‚РµРЅ РЅРµРїРѕРґРіРѕС‚РѕРІР»РµРЅРЅРѕРјСѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ. РџСЂРё СЂР°Р·СЂР°Р±РѕС‚РєРµ РёРЅС‚РµСЂС„РµР№СЃР°
+РїСЂРѕРіСЂР°РјРјС‹ СЃР»РµРґСѓРµС‚ РїСЂРµРґСѓСЃРјРѕС‚СЂРµС‚СЊ:</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
-font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:12.0pt;line-height:150%'>указание формата
-и диапазона данных при вводе и (или) добавлении записей;</span></p>
+font-family:Symbol'>В·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>СѓРєР°Р·Р°РЅРёРµ С„РѕСЂРјР°С‚Р°
+Рё РґРёР°РїР°Р·РѕРЅР° РґР°РЅРЅС‹С… РїСЂРё РІРІРѕРґРµ Рё (РёР»Рё) РґРѕР±Р°РІР»РµРЅРёРё Р·Р°РїРёСЃРµР№;</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
-font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:12.0pt;line-height:150%'>указание операций
-производимых программой;</span></p>
+font-family:Symbol'>В·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>СѓРєР°Р·Р°РЅРёРµ РѕРїРµСЂР°С†РёР№
+РїСЂРѕРёР·РІРѕРґРёРјС‹С… РїСЂРѕРіСЂР°РјРјРѕР№;</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
-font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:12.0pt;line-height:150%'>наличие пояснений
-при выводе результата.</span></p>
+font-family:Symbol'>В·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:150%'>РЅР°Р»РёС‡РёРµ РїРѕСЏСЃРЅРµРЅРёР№
+РїСЂРё РІС‹РІРѕРґРµ СЂРµР·СѓР»СЊС‚Р°С‚Р°.</span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>Одним из результатов
-работы программы должна быть количественная информация с указанием времени,
-затраченного на обработку исходной таблицы и таблицы ключей. </span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РћРґРЅРёРј РёР· СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
+СЂР°Р±РѕС‚С‹ РїСЂРѕРіСЂР°РјРјС‹ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРµРЅРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ СЃ СѓРєР°Р·Р°РЅРёРµРј РІСЂРµРјРµРЅРё,
+Р·Р°С‚СЂР°С‡РµРЅРЅРѕРіРѕ РЅР° РѕР±СЂР°Р±РѕС‚РєСѓ РёСЃС…РѕРґРЅРѕР№ С‚Р°Р±Р»РёС†С‹ Рё С‚Р°Р±Р»РёС†С‹ РєР»СЋС‡РµР№. </span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>При тестировании
-программы необходимо:</span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РџСЂРё С‚РµСЃС‚РёСЂРѕРІР°РЅРёРё
+РїСЂРѕРіСЂР°РјРјС‹ РЅРµРѕР±С…РѕРґРёРјРѕ:</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
 font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
-правильность ввода и вывода данных (в том числе, отследить попытки ввода
-неверных по типу данных в вариантную часть записи); </span></p>
+</span></span><span style='font-size:12.0pt;line-height:150%'>РїСЂРѕРІРµСЂРёС‚СЊ
+РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ РІРІРѕРґР° Рё РІС‹РІРѕРґР° РґР°РЅРЅС‹С… (РІ С‚РѕРј С‡РёСЃР»Рµ, РѕС‚СЃР»РµРґРёС‚СЊ РїРѕРїС‹С‚РєРё РІРІРѕРґР°
+РЅРµРІРµСЂРЅС‹С… РїРѕ С‚РёРїСѓ РґР°РЅРЅС‹С… РІ РІР°СЂРёР°РЅС‚РЅСѓСЋ С‡Р°СЃС‚СЊ Р·Р°РїРёСЃРё); </span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
 font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:12.0pt;line-height:150%'>обеспечить вывод
-сообщений при отсутствии входных данных («пустой ввод»); </span></p>
+</span></span><span style='font-size:12.0pt;line-height:150%'>РѕР±РµСЃРїРµС‡РёС‚СЊ РІС‹РІРѕРґ
+СЃРѕРѕР±С‰РµРЅРёР№ РїСЂРё РѕС‚СЃСѓС‚СЃС‚РІРёРё РІС…РѕРґРЅС‹С… РґР°РЅРЅС‹С… (В«РїСѓСЃС‚РѕР№ РІРІРѕРґВ»); </span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
 font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:12.0pt;line-height:150%'>проверить
-правильность выполнения операций;</span></p>
+</span></span><span style='font-size:12.0pt;line-height:150%'>РїСЂРѕРІРµСЂРёС‚СЊ
+РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ РІС‹РїРѕР»РЅРµРЅРёСЏ РѕРїРµСЂР°С†РёР№;</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%;
 font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:12.0pt;line-height:150%'>отследить
-переполнение таблицы.</span></p>
+</span></span><span style='font-size:12.0pt;line-height:150%'>РѕС‚СЃР»РµРґРёС‚СЊ
+РїРµСЂРµРїРѕР»РЅРµРЅРёРµ С‚Р°Р±Р»РёС†С‹.</span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>При хранении исходных
-данных в файлах необходимо также проверить наличие файла.</span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РџСЂРё С…СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅС‹С…
+РґР°РЅРЅС‹С… РІ С„Р°Р№Р»Р°С… РЅРµРѕР±С…РѕРґРёРјРѕ С‚Р°РєР¶Рµ РїСЂРѕРІРµСЂРёС‚СЊ РЅР°Р»РёС‡РёРµ С„Р°Р№Р»Р°.</span></p>
 
-<h2>Содержание отчета</h2>
+<h2>РЎРѕРґРµСЂР¶Р°РЅРёРµ РѕС‚С‡РµС‚Р°</h2>
 
 <p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
 6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>В отчете по лабораторной работе должна
-быть обоснована целесообразность применения типа «запись» с вариантной частью.
-Там же должен быть проведен сравнительный анализ и сделан вывод о том, какие
-преимущества и недостатки (с учетом времени, затрачиваемого на обработку
-данных, и необходимого объема памяти) влечет за собой применение
-дополнительного массива ключей при работе с таблицами. Вывод должен быть
-подтвержден числовыми данными, полученными в процессе тестирования программы на
-таблицах разной размерности. </span></p>
+style='font-family:"Times New Roman"'>Р’ РѕС‚С‡РµС‚Рµ РїРѕ Р»Р°Р±РѕСЂР°С‚РѕСЂРЅРѕР№ СЂР°Р±РѕС‚Рµ РґРѕР»Р¶РЅР°
+Р±С‹С‚СЊ РѕР±РѕСЃРЅРѕРІР°РЅР° С†РµР»РµСЃРѕРѕР±СЂР°Р·РЅРѕСЃС‚СЊ РїСЂРёРјРµРЅРµРЅРёСЏ С‚РёРїР° В«Р·Р°РїРёСЃСЊВ» СЃ РІР°СЂРёР°РЅС‚РЅРѕР№ С‡Р°СЃС‚СЊСЋ.
+РўР°Рј Р¶Рµ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РїСЂРѕРІРµРґРµРЅ СЃСЂР°РІРЅРёС‚РµР»СЊРЅС‹Р№ Р°РЅР°Р»РёР· Рё СЃРґРµР»Р°РЅ РІС‹РІРѕРґ Рѕ С‚РѕРј, РєР°РєРёРµ
+РїСЂРµРёРјСѓС‰РµСЃС‚РІР° Рё РЅРµРґРѕСЃС‚Р°С‚РєРё (СЃ СѓС‡РµС‚РѕРј РІСЂРµРјРµРЅРё, Р·Р°С‚СЂР°С‡РёРІР°РµРјРѕРіРѕ РЅР° РѕР±СЂР°Р±РѕС‚РєСѓ
+РґР°РЅРЅС‹С…, Рё РЅРµРѕР±С…РѕРґРёРјРѕРіРѕ РѕР±СЉРµРјР° РїР°РјСЏС‚Рё) РІР»РµС‡РµС‚ Р·Р° СЃРѕР±РѕР№ РїСЂРёРјРµРЅРµРЅРёРµ
+РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ РјР°СЃСЃРёРІР° РєР»СЋС‡РµР№ РїСЂРё СЂР°Р±РѕС‚Рµ СЃ С‚Р°Р±Р»РёС†Р°РјРё. Р’С‹РІРѕРґ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ
+РїРѕРґС‚РІРµСЂР¶РґРµРЅ С‡РёСЃР»РѕРІС‹РјРё РґР°РЅРЅС‹РјРё, РїРѕР»СѓС‡РµРЅРЅС‹РјРё РІ РїСЂРѕС†РµСЃСЃРµ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ РїСЂРѕРіСЂР°РјРјС‹ РЅР°
+С‚Р°Р±Р»РёС†Р°С… СЂР°Р·РЅРѕР№ СЂР°Р·РјРµСЂРЅРѕСЃС‚Рё. </span></p>
 
 <p class=MsoBodyTextIndent style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
 6.0pt;margin-left:0cm;text-align:justify;line-height:150%'><span
-style='font-family:"Times New Roman"'>Кроме того, отчет по лабораторной работе
-должен содержать ответы на следующие вопросы:</span></p>
+style='font-family:"Times New Roman"'>РљСЂРѕРјРµ С‚РѕРіРѕ, РѕС‚С‡РµС‚ РїРѕ Р»Р°Р±РѕСЂР°С‚РѕСЂРЅРѕР№ СЂР°Р±РѕС‚Рµ
+РґРѕР»Р¶РµРЅ СЃРѕРґРµСЂР¶Р°С‚СЊ РѕС‚РІРµС‚С‹ РЅР° СЃР»РµРґСѓСЋС‰РёРµ РІРѕРїСЂРѕСЃС‹:</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>1.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-size:12.0pt;line-height:150%'>Как выделяется память под вариантную
-часть записи?</span></p>
+style='font-size:12.0pt;line-height:150%'>РљР°Рє РІС‹РґРµР»СЏРµС‚СЃСЏ РїР°РјСЏС‚СЊ РїРѕРґ РІР°СЂРёР°РЅС‚РЅСѓСЋ
+С‡Р°СЃС‚СЊ Р·Р°РїРёСЃРё?</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>2.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-size:12.0pt;line-height:150%'>Что будет, если в вариантную часть
-ввести данные, несоответствующие описанным?</span></p>
+style='font-size:12.0pt;line-height:150%'>Р§С‚Рѕ Р±СѓРґРµС‚, РµСЃР»Рё РІ РІР°СЂРёР°РЅС‚РЅСѓСЋ С‡Р°СЃС‚СЊ
+РІРІРµСЃС‚Рё РґР°РЅРЅС‹Рµ, РЅРµСЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРµ РѕРїРёСЃР°РЅРЅС‹Рј?</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>3.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-size:12.0pt;line-height:150%'>Кто должен следить за правильностью
-выполнения операций с вариантной частью записи?</span></p>
+style='font-size:12.0pt;line-height:150%'>РљС‚Рѕ РґРѕР»Р¶РµРЅ СЃР»РµРґРёС‚СЊ Р·Р° РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊСЋ
+РІС‹РїРѕР»РЅРµРЅРёСЏ РѕРїРµСЂР°С†РёР№ СЃ РІР°СЂРёР°РЅС‚РЅРѕР№ С‡Р°СЃС‚СЊСЋ Р·Р°РїРёСЃРё?</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>4.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-size:12.0pt;line-height:150%'>Что представляет собой таблица
-ключей, зачем она нужна?</span></p>
+style='font-size:12.0pt;line-height:150%'>Р§С‚Рѕ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ СЃРѕР±РѕР№ С‚Р°Р±Р»РёС†Р°
+РєР»СЋС‡РµР№, Р·Р°С‡РµРј РѕРЅР° РЅСѓР¶РЅР°?</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>5.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-size:12.0pt;line-height:150%'>В каких случаях эффективнее
-обрабатывать данные в самой таблице, а когда – использовать таблицу ключей?</span></p>
+style='font-size:12.0pt;line-height:150%'>Р’ РєР°РєРёС… СЃР»СѓС‡Р°СЏС… СЌС„С„РµРєС‚РёРІРЅРµРµ
+РѕР±СЂР°Р±Р°С‚С‹РІР°С‚СЊ РґР°РЅРЅС‹Рµ РІ СЃР°РјРѕР№ С‚Р°Р±Р»РёС†Рµ, Р° РєРѕРіРґР° вЂ“ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ РєР»СЋС‡РµР№?</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>6.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-size:12.0pt;line-height:150%'>Какие способы сортировки
-предпочтительнее для обработки таблиц и почему?</span></p>
+style='font-size:12.0pt;line-height:150%'>РљР°РєРёРµ СЃРїРѕСЃРѕР±С‹ СЃРѕСЂС‚РёСЂРѕРІРєРё
+РїСЂРµРґРїРѕС‡С‚РёС‚РµР»СЊРЅРµРµ РґР»СЏ РѕР±СЂР°Р±РѕС‚РєРё С‚Р°Р±Р»РёС† Рё РїРѕС‡РµРјСѓ?</span></p>
 
 <p class=MsoBodyText style='text-align:justify;text-indent:27.0pt;line-height:
-150%'><span style='font-size:12.0pt;line-height:150%'>Отчет представляется в
-электронном или печатном виде.</span></p>
+150%'><span style='font-size:12.0pt;line-height:150%'>РћС‚С‡РµС‚ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚СЃСЏ РІ
+СЌР»РµРєС‚СЂРѕРЅРЅРѕРј РёР»Рё РїРµС‡Р°С‚РЅРѕРј РІРёРґРµ.</span></p>
 
-<h2>Список рекомендуемой литературы</h2>
+<h2>РЎРїРёСЃРѕРє СЂРµРєРѕРјРµРЅРґСѓРµРјРѕР№ Р»РёС‚РµСЂР°С‚СѓСЂС‹</h2>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>1.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
-style='font-size:11.0pt;line-height:150%'>Вирт Н.&nbsp;</span></i><span
-style='font-size:11.0pt;line-height:150%'>Алгоритмы и структуры данных: Пер. с
-англ. СПб.: Невский диалект, 2001. C. 37</span><span style='font-size:11.0pt;
-line-height:150%'>–44, .67-69.</span></p>
+style='font-size:11.0pt;line-height:150%'>Р’РёСЂС‚ Рќ.&nbsp;</span></i><span
+style='font-size:11.0pt;line-height:150%'>РђР»РіРѕСЂРёС‚РјС‹ Рё СЃС‚СЂСѓРєС‚СѓСЂС‹ РґР°РЅРЅС‹С…: РџРµСЂ. СЃ
+Р°РЅРіР». РЎРџР±.: РќРµРІСЃРєРёР№ РґРёР°Р»РµРєС‚, 2001. C. 37</span><span style='font-size:11.0pt;
+line-height:150%'>вЂ“44, .67-69.</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>2.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
-style='font-size:11.0pt;line-height:150%'>Баунси Кен </span></i><span
-style='font-size:11.0pt;line-height:150%'>Основные концепции структур данных и
-реализация в С++: Пер. с англ. М.: Издат. Дом «Вильямс», 2002. C. 37</span><span style='font-size:11.0pt;line-height:150%'>–44.</span></p>
+style='font-size:11.0pt;line-height:150%'>Р‘Р°СѓРЅСЃРё РљРµРЅ </span></i><span
+style='font-size:11.0pt;line-height:150%'>РћСЃРЅРѕРІРЅС‹Рµ РєРѕРЅС†РµРїС†РёРё СЃС‚СЂСѓРєС‚СѓСЂ РґР°РЅРЅС‹С… Рё
+СЂРµР°Р»РёР·Р°С†РёСЏ РІ РЎ++: РџРµСЂ. СЃ Р°РЅРіР». Рњ.: РР·РґР°С‚. Р”РѕРј В«Р’РёР»СЊСЏРјСЃВ», 2002. C. 37</span><span style='font-size:11.0pt;line-height:150%'>вЂ“44.</span></p>
 
 <p class=MsoBodyText style='margin-left:36.0pt;text-align:justify;text-indent:
 -18.0pt;line-height:150%'><span style='font-size:12.0pt;line-height:150%'>3.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
-style='font-size:11.0pt;line-height:150%'>Иванова Г.&nbsp;С. </span></i><span
-style='font-size:11.0pt;line-height:150%'>Основы программирования. М.:  Изд-во
-МГТУ им. Н.Э. Баумана, 2001.  C. 140</span><span style='font-size:11.0pt;
-line-height:150%'>–143</span></p>
+style='font-size:11.0pt;line-height:150%'>РРІР°РЅРѕРІР° Р“.&nbsp;РЎ. </span></i><span
+style='font-size:11.0pt;line-height:150%'>РћСЃРЅРѕРІС‹ РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏ. Рњ.:В  РР·Рґ-РІРѕ
+РњР“РўРЈ РёРј. Рќ.Р­. Р‘Р°СѓРјР°РЅР°, 2001.В  C. 140</span><span style='font-size:11.0pt;
+line-height:150%'>вЂ“143</span></p>
 
 <p class=MsoNormal align=right style='margin-top:6.0pt;text-align:right;
-text-indent:26.95pt;line-height:150%'><b>Приложение</b></p>
+text-indent:26.95pt;line-height:150%'><b>РџСЂРёР»РѕР¶РµРЅРёРµ</b></p>
 
 <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
-margin-left:0cm;text-indent:26.95pt;line-height:150%'><b>Примерные варианты
-заданий</b></p>
+margin-left:0cm;text-indent:26.95pt;line-height:150%'><b>РџСЂРёРјРµСЂРЅС‹Рµ РІР°СЂРёР°РЅС‚С‹
+Р·Р°РґР°РЅРёР№</b></p>
 
 <p class=MsoBodyText3 style='margin-right:3.6pt;text-indent:27.0pt;line-height:
-150%'><span style='font-family:"Times New Roman"'>1    Ввести список
-литературы, содержащий фамилию автора, название книги, год издания,
-издательство, количество страниц, вид литературы (техническая – отечественная,
-переводная; художественная – роман, пьеса, стихи, детская – стихи, сказки,
-рассказы). Вывести список всех детских стихов</span></p>
+150%'><span style='font-family:"Times New Roman"'>1В В В  Р’РІРµСЃС‚Рё СЃРїРёСЃРѕРє
+Р»РёС‚РµСЂР°С‚СѓСЂС‹, СЃРѕРґРµСЂР¶Р°С‰РёР№ С„Р°РјРёР»РёСЋ Р°РІС‚РѕСЂР°, РЅР°Р·РІР°РЅРёРµ РєРЅРёРіРё, РіРѕРґ РёР·РґР°РЅРёСЏ,
+РёР·РґР°С‚РµР»СЊСЃС‚РІРѕ, РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂР°РЅРёС†, РІРёРґ Р»РёС‚РµСЂР°С‚СѓСЂС‹ (С‚РµС…РЅРёС‡РµСЃРєР°СЏ вЂ“ РѕС‚РµС‡РµСЃС‚РІРµРЅРЅР°СЏ,
+РїРµСЂРµРІРѕРґРЅР°СЏ; С…СѓРґРѕР¶РµСЃС‚РІРµРЅРЅР°СЏ вЂ“ СЂРѕРјР°РЅ, РїСЊРµСЃР°, СЃС‚РёС…Рё, РґРµС‚СЃРєР°СЏ вЂ“ СЃС‚РёС…Рё, СЃРєР°Р·РєРё,
+СЂР°СЃСЃРєР°Р·С‹). Р’С‹РІРµСЃС‚Рё СЃРїРёСЃРѕРє РІСЃРµС… РґРµС‚СЃРєРёС… СЃС‚РёС…РѕРІ</span></p>
 
 <p class=MsoBodyText3 style='margin-right:3.6pt;text-indent:27.0pt;line-height:
-150%'><span style='font-family:"Times New Roman"'>2    Ввести список растений,
-содержащий название,  страну произрастания, время жизни (однолетние,
-двухлетние, многолетние), отношение к свету, к воде, вид (дерево – высоту,
-требуемую площадь, цветок – цвет, время цветения, запах, кустарник – цветение,
-размер). Вывести цветущие кустарники меньше указанного размера.</span></p>
+150%'><span style='font-family:"Times New Roman"'>2В В В  Р’РІРµСЃС‚Рё СЃРїРёСЃРѕРє СЂР°СЃС‚РµРЅРёР№,
+СЃРѕРґРµСЂР¶Р°С‰РёР№ РЅР°Р·РІР°РЅРёРµ,В  СЃС‚СЂР°РЅСѓ РїСЂРѕРёР·СЂР°СЃС‚Р°РЅРёСЏ, РІСЂРµРјСЏ Р¶РёР·РЅРё (РѕРґРЅРѕР»РµС‚РЅРёРµ,
+РґРІСѓС…Р»РµС‚РЅРёРµ, РјРЅРѕРіРѕР»РµС‚РЅРёРµ), РѕС‚РЅРѕС€РµРЅРёРµ Рє СЃРІРµС‚Сѓ, Рє РІРѕРґРµ, РІРёРґ (РґРµСЂРµРІРѕ вЂ“ РІС‹СЃРѕС‚Сѓ,
+С‚СЂРµР±СѓРµРјСѓСЋ РїР»РѕС‰Р°РґСЊ, С†РІРµС‚РѕРє вЂ“ С†РІРµС‚, РІСЂРµРјСЏ С†РІРµС‚РµРЅРёСЏ, Р·Р°РїР°С…, РєСѓСЃС‚Р°СЂРЅРёРє вЂ“ С†РІРµС‚РµРЅРёРµ,
+СЂР°Р·РјРµСЂ). Р’С‹РІРµСЃС‚Рё С†РІРµС‚СѓС‰РёРµ РєСѓСЃС‚Р°СЂРЅРёРєРё РјРµРЅСЊС€Рµ СѓРєР°Р·Р°РЅРЅРѕРіРѕ СЂР°Р·РјРµСЂР°.</span></p>
 
 <p class=MsoBodyText3 style='margin-right:3.6pt;text-indent:27.0pt;line-height:
-150%'><span style='font-family:"Times New Roman"'>3    Ввести репертуар
-театров, содержащий название театра, дата, спектакль, автор,  тип спектакля
-(детский – для какого возраста; взрослый – пьеса, драма, комедия; музыкальный –
-композитор). Вывести список всех комедий. </span></p>
+150%'><span style='font-family:"Times New Roman"'>3В В В  Р’РІРµСЃС‚Рё СЂРµРїРµСЂС‚СѓР°СЂ
+С‚РµР°С‚СЂРѕРІ, СЃРѕРґРµСЂР¶Р°С‰РёР№ РЅР°Р·РІР°РЅРёРµ С‚РµР°С‚СЂР°, РґР°С‚Р°, СЃРїРµРєС‚Р°РєР»СЊ, Р°РІС‚РѕСЂ,В  С‚РёРї СЃРїРµРєС‚Р°РєР»СЏ
+(РґРµС‚СЃРєРёР№ вЂ“ РґР»СЏ РєР°РєРѕРіРѕ РІРѕР·СЂР°СЃС‚Р°; РІР·СЂРѕСЃР»С‹Р№ вЂ“ РїСЊРµСЃР°, РґСЂР°РјР°, РєРѕРјРµРґРёСЏ; РјСѓР·С‹РєР°Р»СЊРЅС‹Р№ вЂ“
+РєРѕРјРїРѕР·РёС‚РѕСЂ). Р’С‹РІРµСЃС‚Рё СЃРїРёСЃРѕРє РІСЃРµС… РєРѕРјРµРґРёР№. </span></p>
 
 <p class=MsoBodyText3 style='margin-right:3.6pt;text-indent:27.0pt;line-height:
-150%'><span style='font-family:"Times New Roman"'>4    Ввести список машин, имеющихся
-в автомагазине, содержащий марку автомобиля, страну-производитель, цвет, объем
-двигателя,  модификация кузова, цену и состояние (новый - гарантия; нет – год
-выпуска, пробег). Вывести все марки машин с пробегом меньше 10 тыс. км.</span></p>
+150%'><span style='font-family:"Times New Roman"'>4В В В  Р’РІРµСЃС‚Рё СЃРїРёСЃРѕРє РјР°С€РёРЅ, РёРјРµСЋС‰РёС…СЃСЏ
+РІ Р°РІС‚РѕРјР°РіР°Р·РёРЅРµ, СЃРѕРґРµСЂР¶Р°С‰РёР№ РјР°СЂРєСѓ Р°РІС‚РѕРјРѕР±РёР»СЏ, СЃС‚СЂР°РЅСѓ-РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ, С†РІРµС‚, РѕР±СЉРµРј
+РґРІРёРіР°С‚РµР»СЏ,В  РјРѕРґРёС„РёРєР°С†РёСЏ РєСѓР·РѕРІР°, С†РµРЅСѓ Рё СЃРѕСЃС‚РѕСЏРЅРёРµ (РЅРѕРІС‹Р№ - РіР°СЂР°РЅС‚РёСЏ; РЅРµС‚ вЂ“ РіРѕРґ
+РІС‹РїСѓСЃРєР°, РїСЂРѕР±РµРі). Р’С‹РІРµСЃС‚Рё РІСЃРµ РјР°СЂРєРё РјР°С€РёРЅ СЃ РїСЂРѕР±РµРіРѕРј РјРµРЅСЊС€Рµ 10 С‚С‹СЃ. РєРј.</span></p>
 
 <p class=MsoBodyText3 style='margin-right:3.6pt;text-indent:27.0pt;line-height:
 150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
